@@ -278,3 +278,81 @@ python verify.py                 # самопроверка стенда, дол
   версиях (в первую очередь Faker и numpy);
 - `.gitattributes` отключает преобразование концов строк для `data/`, иначе git на Windows изменил
   бы CSV и хэши перестали бы совпадать.
+
+---
+
+## Эксперимент: ReAct-агент
+
+### Архитектура
+
+DuckDB — встраиваемая СУБД, поэтому БД не поднимается в контейнере и не слушает сеть. По сети
+ходят только запросы к API моделей. Цикл одного эпизода:
+
+```
+оркестратор (agent.py) ──HTTP──> API модели (OpenRouter / GigaChat / Groq через litellm)
+        ^                              │ ответ: tool_call run_sql(sql) или submit_rules(rules)
+        │                              v
+        └── tools.run_sql: валидация -> duckdb.connect(dirty.duckdb, read_only=True) -> результат
+```
+
+- **run_sql** — разведка: один `SELECT`/`WITH`, запрещённые ключевые слова отсекаются до
+  исполнения, таймаут 5 с через `con.interrupt()`, модели возвращается не более 20 строк;
+- **submit_rules** — финальный ответ: список `{table, dimension, description, sql}`;
+- бюджет — 15 обращений к модели; за шаг до конца модели напоминают сдать правила; эпизод без
+  `submit_rules` получает статус `incomplete` и нулевое покрытие;
+- системный промпт (`prompt.py`) — задача, DDL и полный словарь данных с бизнес-правилами и
+  законными особенностями данных.
+
+### Модели (`models.py`)
+
+| Семейство | Модели | Провайдер | Роль |
+|---|---|---|---|
+| Qwen3 (dense) | 8B, 14B, 32B | OpenRouter | основная лестница размеров одного семейства |
+| GigaChat 2 | Lite, Pro, Max | GigaChat API | вторая лестница (размеры не раскрыты, только ранг) |
+| Llama | 3.1 8B, 3.3 70B | Groq | контроль |
+| GPT-OSS | 20B, 120B | Groq | контроль |
+
+### Метрики (`evaluate.py`)
+
+Правило r для таблицы t возвращает множество ключей R_r; T_f — нарушители дефекта f из журнала,
+T^(t) — все нарушители таблицы t.
+
+- execution rate — доля правил, выполнившихся без ошибки;
+- schema hallucination rate — доля правил с несуществующими таблицами/столбцами;
+- precision(r) = |R_r ∩ T^(t)| / |R_r|, усредняется по правилам;
+- coverage(f) = max_r |R_r ∩ T_f| / |T_f| (максимум, а не объединение, — чтобы нельзя было набрать
+  покрытие сотней случайных правил); усредняется по дефектам уровня L1/L2/L3.
+
+Подача эталонных правил `oracle_rules.sql` как ответа модели даёт 1.00 по всем метрикам.
+
+### Запуск
+
+`.env` в корне проекта (в git не попадает):
+
+```
+OPENROUTER_API_KEY=...
+GIGACHAT_CREDENTIALS=...     # Authorization key (base64 client_id:client_secret)
+GROQ_API_KEY=...
+```
+
+```bash
+pip install -r requirements.txt
+python check_providers.py                     # какие ключи найдены и какие модели отвечают с tool calling
+python run_matrix.py --models qwen3-8b --repeats 1   # пробный эпизод
+python run_matrix.py --models qwen3-8b qwen3-14b qwen3-32b --repeats 5
+python aggregate.py                           # таблица + графики
+```
+
+`run_matrix.py` пропускает уже посчитанные прогоны (`--force` — пересчитать), поэтому его можно
+прерывать и перезапускать.
+
+### Результаты (`data/results/`)
+
+| Файл | Содержимое |
+|---|---|
+| `results/<model>_run<k>.json` | статус, шаги, токены, правила модели, метрики, разбор каждого правила |
+| `results/transcripts/<model>_run<k>.json` | полный диалог с моделью |
+| `results_runs.csv` | одна строка на прогон |
+| `results_summary.csv` | среднее ± std по модели |
+| `results_by_fault.csv` | покрытие каждого дефекта F01–F19 по моделям |
+| `results_plot.png` | график покрытия L1/L2/L3, precision и execution rate по моделям |
