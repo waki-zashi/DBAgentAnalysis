@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "python": "3.14.4",
+  "packages": {
+    "duckdb": "2.0.0",
+    "faker": "40.44.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "tables": {
+    "customers": {
+      "rows": 2000,
+      "sha256": "df3a945a11638886b5e3d3311619a575acafefdf88d0f2b10603a953dd288de4"
+    },
+    "products": {
+      "rows": 150,
+      "sha256": "f3f4875f61da9b67a3bab5c6ff4c9e9222d7d2f66e069587434bd47b0fb7e992"
+    },
+    "orders": {
+      "rows": 6000,
+      "sha256": "147960655d43291ce84b39d5fdc285959080e916985f7e402690c647c8e71f46"
+    },
+    "order_items": {
+      "rows": 13254,
+      "sha256": "424b21c5f99135c4a9dd76a88e067580610c9dfe5284f91f40ac822faf9993c0"
+    },
+    "payments": {
+      "rows": 4853,
+      "sha256": "91693d7b537554c72ab2e2412dabb6dfbdbd305f0620166ffc6f994f196c2394"
+    }
+  }
+}

@@ -1,0 +1,1288 @@
+fault,level,op,table,pk,column,old,new
+F01,L1,update,customers,1782,email,bikovanina@inbox.ru,
+F01,L1,update,customers,983,email,majaorehova@bk.ru,
+F01,L1,update,customers,1859,email,ninelteterina@inbox.ru,
+F01,L1,update,customers,640,email,gedeon_2010@bk.ru,
+F01,L1,update,customers,1229,email,konon1973@bk.ru,
+F01,L1,update,customers,310,email,artemi1984@bk.ru,
+F01,L1,update,customers,1452,email,vatslav_1971@yandex.ru,
+F01,L1,update,customers,678,email,margaritamolchanova@rambler.ru,
+F01,L1,update,customers,891,email,nonna1971@yandex.ru,
+F01,L1,update,customers,713,email,pestovboris@bk.ru,
+F01,L1,update,customers,943,email,nesterovamaja@list.ru,
+F01,L1,update,customers,851,email,evstafimedvedev@list.ru,
+F01,L1,update,customers,284,email,andron2002@rambler.ru,
+F01,L1,update,customers,1568,email,kuzminpankrat@yandex.ru,
+F01,L1,update,customers,995,email,vladislav_38@list.ru,
+F01,L1,update,customers,323,email,isa12@inbox.ru,
+F01,L1,update,customers,319,email,kudrjashovaolga@inbox.ru,
+F01,L1,update,customers,1269,email,marfa2021@inbox.ru,
+F01,L1,update,customers,382,email,martinovmark@list.ru,
+F01,L1,update,customers,1569,email,kolesnikovtit@yandex.ru,
+F01,L1,update,customers,189,email,pestovagalina@mail.ru,
+F01,L1,update,customers,588,email,agata_46@yandex.ru,
+F01,L1,update,customers,1658,email,sinklitikija_35@mail.ru,
+F01,L1,update,customers,633,email,valerjan1999@list.ru,
+F01,L1,update,customers,340,email,hristofor_61@list.ru,
+F01,L1,update,customers,26,email,eliseevippolit@list.ru,
+F01,L1,update,customers,1733,email,borisovataisija@bk.ru,
+F01,L1,update,customers,1165,email,gorbachevamaja@yandex.ru,
+F01,L1,update,customers,378,email,radim_25@bk.ru,
+F01,L1,update,customers,830,email,dfedorova@rambler.ru,
+F01,L1,update,customers,817,email,polina_14@rambler.ru,
+F01,L1,update,customers,838,email,samsonovapolina@inbox.ru,
+F01,L1,update,customers,1176,email,vitali_1972@mail.ru,
+F01,L1,update,customers,853,email,larisaefimova@yandex.ru,
+F01,L1,update,customers,1253,email,savelevmir@bk.ru,
+F01,L1,update,customers,51,email,sokolovaalevtina@gmail.com,
+F01,L1,update,customers,544,email,pankrat_2008@list.ru,
+F01,L1,update,customers,623,email,elenaignatova@bk.ru,
+F01,L1,update,customers,856,email,bogdan_2001@gmail.com,
+F01,L1,update,customers,1251,email,qkornilova@gmail.com,
+F01,L1,update,customers,1868,email,filippshubin@rambler.ru,
+F01,L1,update,customers,1718,email,polikarp_1984@gmail.com,
+F01,L1,update,customers,341,email,mihalovboris@mail.ru,
+F01,L1,update,customers,1512,email,fominatamara@mail.ru,
+F01,L1,update,customers,934,email,julijaignateva@bk.ru,
+F01,L1,update,customers,697,email,muravevalukija@list.ru,
+F01,L1,update,customers,707,email,ilarionkapustin@list.ru,
+F01,L1,update,customers,1382,email,dmitri76@list.ru,
+F01,L1,update,customers,1245,email,gedeon1977@yandex.ru,
+F01,L1,update,customers,908,email,drozdovvisheslav@inbox.ru,
+F01,L1,update,customers,1945,email,subbotinegor@yandex.ru,
+F01,L1,update,customers,874,email,velimir_1979@yandex.ru,
+F01,L1,update,customers,211,email,longinkazakov@bk.ru,
+F01,L1,update,customers,228,email,antip_1987@bk.ru,
+F01,L1,update,customers,1076,email,efim1980@rambler.ru,
+F01,L1,update,customers,1589,email,ipahomov@list.ru,
+F01,L1,update,customers,1394,email,fedot1978@rambler.ru,
+F01,L1,update,customers,156,email,kiraponomareva@bk.ru,
+F01,L1,update,customers,868,email,anisim_26@inbox.ru,
+F01,L1,update,customers,1113,email,hristoforchernov@mail.ru,
+F01,L1,update,customers,573,email,beljaevsila@bk.ru,
+F01,L1,update,customers,1836,email,fekla54@gmail.com,
+F01,L1,update,customers,1097,email,filaret_1999@bk.ru,
+F01,L1,update,customers,527,email,safonovradovan@yandex.ru,
+F01,L1,update,customers,1195,email,wgromov@mail.ru,
+F01,L1,update,customers,1646,email,angelina_03@yandex.ru,
+F01,L1,update,customers,1380,email,lmarkov@inbox.ru,
+F01,L1,update,customers,1770,email,tatjanafedorova@mail.ru,
+F01,L1,update,customers,407,email,kondratevaanzhela@rambler.ru,
+F01,L1,update,customers,1596,email,petrovisidor@gmail.com,
+F01,L1,update,customers,520,email,kgushchin@rambler.ru,
+F01,L1,update,customers,1348,email,muhinbogdan@gmail.com,
+F01,L1,update,customers,153,email,evpraksija_1998@bk.ru,
+F01,L1,update,customers,1400,email,valerijarusakova@rambler.ru,
+F01,L1,update,customers,539,email,zhuravlevkondrat@mail.ru,
+F01,L1,update,customers,1164,email,aristarhilin@mail.ru,
+F01,L1,update,customers,1225,email,avdeevpavel@inbox.ru,
+F01,L1,update,customers,1300,email,ivannaafanaseva@list.ru,
+F01,L1,update,customers,1022,email,kondrati88@inbox.ru,
+F01,L1,update,customers,1157,email,zuevaanzhelika@inbox.ru,
+F01,L1,update,customers,1881,email,zosima2017@list.ru,
+F01,L1,update,customers,454,email,tamara_1977@rambler.ru,
+F01,L1,update,customers,1620,email,potapovalora@rambler.ru,
+F01,L1,update,customers,1040,email,fnazarov@bk.ru,
+F01,L1,update,customers,656,email,danila96@bk.ru,
+F01,L1,update,customers,809,email,tihon_26@list.ru,
+F01,L1,update,customers,1933,email,vorobevfeofan@yandex.ru,
+F01,L1,update,customers,913,email,agge_1980@bk.ru,
+F01,L1,update,customers,1892,email,evpraksijashcherbakova@rambler.ru,
+F01,L1,update,customers,1462,email,radim24@rambler.ru,
+F01,L1,update,customers,178,email,terenti_1988@rambler.ru,
+F01,L1,update,customers,9,email,lora47@rambler.ru,
+F01,L1,update,customers,1617,email,bogdan_56@rambler.ru,
+F01,L1,update,customers,680,email,nikiforovipati@inbox.ru,
+F01,L1,update,customers,440,email,znikitin@bk.ru,
+F01,L1,update,customers,1935,email,ermakovaanna@list.ru,
+F01,L1,update,customers,305,email,evdokijagavrilova@gmail.com,
+F01,L1,update,customers,1219,email,alinasidorova@yandex.ru,
+F01,L1,update,customers,411,email,tvorimirnesterov@bk.ru,
+F01,L1,update,customers,1291,email,varfolome_62@inbox.ru,
+F02,L1,update,customers,129,city,Нижний Новгород,-
+F02,L1,update,customers,550,city,Нижний Новгород,-
+F02,L1,update,customers,1972,city,Пермь,нет данных
+F02,L1,update,customers,1156,city,Пермь,N/A
+F02,L1,update,customers,278,city,Москва, 
+F02,L1,update,customers,163,city,Екатеринбург,N/A
+F02,L1,update,customers,1713,city,Ростов-на-Дону,
+F02,L1,update,customers,554,city,Уфа, 
+F02,L1,update,customers,1235,city,Москва,N/A
+F02,L1,update,customers,706,city,Новосибирск,-
+F02,L1,update,customers,1329,city,Уфа, 
+F02,L1,update,customers,60,city,Нижний Новгород, 
+F02,L1,update,customers,1480,city,Воронеж,
+F02,L1,update,customers,458,city,Казань,
+F02,L1,update,customers,65,city,Екатеринбург,N/A
+F02,L1,update,customers,1099,city,Пермь,нет данных
+F02,L1,update,customers,1752,city,Новосибирск,N/A
+F02,L1,update,customers,628,city,Самара,
+F02,L1,update,customers,1321,city,Уфа,N/A
+F02,L1,update,customers,1536,city,Уфа,
+F02,L1,update,customers,1641,city,Казань,-
+F02,L1,update,customers,1108,city,Воронеж,N/A
+F02,L1,update,customers,1830,city,Самара, 
+F02,L1,update,customers,782,city,Пенза, 
+F02,L1,update,customers,1680,city,Уфа,
+F02,L1,update,customers,1583,city,Воронеж, 
+F02,L1,update,customers,1429,city,Уфа,N/A
+F02,L1,update,customers,1200,city,Новосибирск,N/A
+F02,L1,update,customers,256,city,Екатеринбург,-
+F02,L1,update,customers,909,city,Воронеж,нет данных
+F02,L1,update,customers,1548,city,Санкт-Петербург,
+F02,L1,update,customers,950,city,Воронеж,нет данных
+F02,L1,update,customers,1163,city,Пенза,N/A
+F02,L1,update,customers,622,city,Уфа,
+F02,L1,update,customers,258,city,Ростов-на-Дону,нет данных
+F02,L1,update,customers,1956,city,Пермь,нет данных
+F02,L1,update,customers,1851,city,Нижний Новгород, 
+F02,L1,update,customers,631,city,Пенза,
+F02,L1,update,customers,1182,city,Казань, 
+F02,L1,update,customers,1613,city,Нижний Новгород,нет данных
+F02,L1,update,customers,249,city,Самара,нет данных
+F02,L1,update,customers,1188,city,Новосибирск, 
+F02,L1,update,customers,508,city,Казань,N/A
+F02,L1,update,customers,1978,city,Самара,-
+F02,L1,update,customers,1314,city,Екатеринбург,
+F02,L1,update,customers,150,city,Самара,-
+F02,L1,update,customers,671,city,Ростов-на-Дону, 
+F02,L1,update,customers,658,city,Уфа,нет данных
+F02,L1,update,customers,1293,city,Воронеж,
+F02,L1,update,customers,1497,city,Москва,нет данных
+F02,L1,update,customers,924,city,Воронеж,-
+F02,L1,update,customers,1987,city,Москва, 
+F02,L1,update,customers,663,city,Уфа,нет данных
+F02,L1,update,customers,1025,city,Ростов-на-Дону,-
+F02,L1,update,customers,931,city,Нижний Новгород,N/A
+F02,L1,update,customers,1860,city,Пенза,-
+F02,L1,update,customers,233,city,Нижний Новгород,-
+F02,L1,update,customers,576,city,Уфа,
+F02,L1,update,customers,651,city,Ростов-на-Дону, 
+F02,L1,update,customers,832,city,Казань,-
+F03,L1,update,customers,807,email,bfedoseev@yandex.ru,bfedoseev@@yandex.ru
+F03,L1,update,customers,903,email,qshcherbakova@gmail.com,qshcherbakova@@gmail.com
+F03,L1,update,customers,400,email,lukashchukin@yandex.ru,lukashchukin@@yandex.ru
+F03,L1,update,customers,418,email,adrian1976@rambler.ru,adrian1976 @rambler.ru
+F03,L1,update,customers,1406,email,anisim_2001@rambler.ru,anisim_2001@ramblerru
+F03,L1,update,customers,1129,email,emeljan_80@yandex.ru,emeljan_80yandex.ru
+F03,L1,update,customers,1530,email,dorofe_1995@rambler.ru,dorofe_1995@ramblerru
+F03,L1,update,customers,655,email,vera_05@rambler.ru,vera_05@ramblerru
+F03,L1,update,customers,1983,email,rturova@list.ru,rturova@listru
+F03,L1,update,customers,1000,email,pavel_2023@list.ru,pavel_2023@@list.ru
+F03,L1,update,customers,1730,email,leonti_01@list.ru,leonti_01@@list.ru
+F03,L1,update,customers,1755,email,konovalovafekla@gmail.com,konovalovafekla @gmail.com
+F03,L1,update,customers,1295,email,ovchinnikovauljana@bk.ru,ovchinnikovauljanabk.ru
+F03,L1,update,customers,829,email,aleksandr_01@gmail.com,aleksandr_01@@gmail.com
+F03,L1,update,customers,1309,email,savelimolchanov@gmail.com,savelimolchanovgmail.com
+F03,L1,update,customers,1683,email,elenavishnjakova@list.ru,elenavishnjakovalist.ru
+F03,L1,update,customers,788,email,anisimovadrian@inbox.ru,anisimovadrian@@inbox.ru
+F03,L1,update,customers,1961,email,evdokimovnaum@list.ru,evdokimovnaum@@list.ru
+F03,L1,update,customers,917,email,silvestr42@yandex.ru,silvestr42yandex.ru
+F03,L1,update,customers,1719,email,moke_1992@rambler.ru,moke_1992@ramblerru
+F03,L1,update,customers,404,email,ivan_1972@yandex.ru,ivan_1972yandex.ru
+F03,L1,update,customers,312,email,vikenti1975@inbox.ru,vikenti1975inbox.ru
+F03,L1,update,customers,151,email,izjaslav_93@rambler.ru,izjaslav_93rambler.ru
+F03,L1,update,customers,1063,email,darjastepanova@inbox.ru,darjastepanova @inbox.ru
+F03,L1,update,customers,1962,email,leonid_30@yandex.ru,leonid_30@yandexru
+F03,L1,update,customers,473,email,leonti88@mail.ru,leonti88mail.ru
+F03,L1,update,customers,1460,email,foka2017@mail.ru,foka2017mail.ru
+F03,L1,update,customers,1264,email,wkorolev@rambler.ru,wkorolev@@rambler.ru
+F03,L1,update,customers,536,email,stanimir_41@bk.ru,stanimir_41bk.ru
+F03,L1,update,customers,43,email,pelageja_61@bk.ru,pelageja_61bk.ru
+F03,L1,update,customers,1101,email,lavrentevaalina@yandex.ru,lavrentevaalina@yandexru
+F03,L1,update,customers,1477,email,varvarasoloveva@mail.ru,varvarasolovevamail.ru
+F03,L1,update,customers,703,email,vjacheslavkonstantinov@bk.ru,vjacheslavkonstantinov @bk.ru
+F03,L1,update,customers,517,email,evgeni_37@list.ru,evgeni_37@listru
+F03,L1,update,customers,406,email,bivanov@rambler.ru,bivanov @rambler.ru
+F03,L1,update,customers,1676,email,ljubovnikonova@list.ru,ljubovnikonovalist.ru
+F03,L1,update,customers,1779,email,xvladimirov@rambler.ru,xvladimirov@@rambler.ru
+F03,L1,update,customers,1072,email,elizar_1991@yandex.ru,elizar_1991yandex.ru
+F03,L1,update,customers,14,email,ignati2018@inbox.ru,ignati2018@inboxru
+F03,L1,update,customers,1531,email,antonovaanzhelika@rambler.ru,antonovaanzhelika@@rambler.ru
+F03,L1,update,customers,1432,email,braginaangelina@yandex.ru,braginaangelina@yandexru
+F03,L1,update,customers,563,email,rusakovafevronija@mail.ru,rusakovafevronija@@mail.ru
+F03,L1,update,customers,1784,email,ernest33@inbox.ru,ernest33 @inbox.ru
+F03,L1,update,customers,348,email,volkovgrigori@inbox.ru,volkovgrigoriinbox.ru
+F03,L1,update,customers,48,email,ilarion64@mail.ru,ilarion64@mailru
+F03,L1,update,customers,1145,email,radovankovalev@inbox.ru,radovankovalev@inboxru
+F03,L1,update,customers,980,email,bolshakovkuprijan@bk.ru,bolshakovkuprijan @bk.ru
+F03,L1,update,customers,1917,email,nikon74@bk.ru,nikon74bk.ru
+F03,L1,update,customers,620,email,kazimir58@inbox.ru,kazimir58@@inbox.ru
+F03,L1,update,customers,1059,email,zhanna1984@mail.ru,zhanna1984@@mail.ru
+F04,L1,update,products,43,price,2725.0,-2725.0
+F04,L1,update,products,119,price,3910.0,-3910.0
+F04,L1,update,products,30,price,1751.0,-1751.0
+F04,L1,update,products,94,price,1131.0,0.0
+F04,L1,update,products,31,price,2415.0,-2415.0
+F04,L1,update,products,116,price,621.0,0.0
+F04,L1,update,products,77,price,1051.0,0.0
+F04,L1,update,products,113,price,2982.0,0.0
+F05,L1,update,order_items,4989,quantity,5,0
+F05,L1,update,orders,2246,total_amount,13162.0,1412.0
+F05,L1,update,payments,1814,amount,13162.0,1412.0
+F05,L1,update,order_items,6361,quantity,3,0
+F05,L1,update,orders,2868,total_amount,20713.0,7165.0
+F05,L1,update,payments,2314,amount,20713.0,7165.0
+F05,L1,update,order_items,5596,quantity,3,-2
+F05,L1,update,orders,2524,total_amount,54766.0,29106.0
+F05,L1,update,payments,2044,amount,54766.0,29106.0
+F05,L1,update,order_items,11680,quantity,4,0
+F05,L1,update,orders,5291,total_amount,28827.0,18611.0
+F05,L1,update,payments,4273,amount,28827.0,18611.0
+F05,L1,update,order_items,9953,quantity,5,0
+F05,L1,update,orders,4501,total_amount,10965.0,1610.0
+F05,L1,update,payments,3658,amount,10965.0,1610.0
+F05,L1,update,order_items,6730,quantity,5,-2
+F05,L1,update,orders,3034,total_amount,51074.0,46265.0
+F05,L1,update,order_items,3501,quantity,5,-1
+F05,L1,update,orders,1603,total_amount,12431.0,6671.0
+F05,L1,update,payments,1300,amount,12431.0,6671.0
+F05,L1,update,order_items,1411,quantity,5,0
+F05,L1,update,orders,639,total_amount,10810.0,8175.0
+F05,L1,update,payments,512,amount,10810.0,8175.0
+F05,L1,update,order_items,2534,quantity,5,-2
+F05,L1,update,orders,1152,total_amount,10664.0,5547.0
+F05,L1,update,payments,925,amount,10664.0,5547.0
+F05,L1,update,order_items,8450,quantity,3,0
+F05,L1,update,orders,3811,total_amount,9218.0,2828.0
+F05,L1,update,payments,3098,amount,9218.0,2828.0
+F05,L1,update,order_items,2570,quantity,4,-1
+F05,L1,update,orders,1170,total_amount,43374.0,28544.0
+F05,L1,update,payments,942,amount,43374.0,28544.0
+F05,L1,update,order_items,8914,quantity,5,-2
+F05,L1,update,orders,4020,total_amount,17487.0,9486.0
+F05,L1,update,payments,3267,amount,17487.0,9486.0
+F05,L1,update,order_items,2143,quantity,5,-1
+F05,L1,update,orders,969,total_amount,17565.0,10779.0
+F05,L1,update,payments,768,amount,17565.0,10779.0
+F05,L1,update,order_items,9998,quantity,2,0
+F05,L1,update,orders,4524,total_amount,6206.0,1376.0
+F05,L1,update,payments,3677,amount,6206.0,1376.0
+F05,L1,update,order_items,5796,quantity,4,0
+F05,L1,update,orders,2614,total_amount,157039.0,152215.0
+F05,L1,update,payments,2113,amount,157039.0,152215.0
+F05,L1,update,order_items,3685,quantity,4,0
+F05,L1,update,orders,1683,total_amount,20863.0,5755.0
+F05,L1,update,payments,1361,amount,20863.0,5755.0
+F05,L1,update,order_items,7814,quantity,3,0
+F05,L1,update,orders,3518,total_amount,15252.0,1704.0
+F05,L1,update,payments,2850,amount,15252.0,1704.0
+F05,L1,update,order_items,3803,quantity,3,0
+F05,L1,update,orders,1734,total_amount,12834.0,3936.0
+F05,L1,update,payments,1401,amount,12834.0,3936.0
+F05,L1,update,order_items,13070,quantity,3,-1
+F05,L1,update,orders,5925,total_amount,22738.0,9922.0
+F05,L1,update,payments,4790,amount,22738.0,9922.0
+F05,L1,update,order_items,8969,quantity,2,-1
+F05,L1,update,orders,4046,total_amount,28820.0,20336.0
+F05,L1,update,payments,3289,amount,28820.0,20336.0
+F05,L1,update,order_items,11296,quantity,2,-1
+F05,L1,update,orders,5125,total_amount,2934.0,2061.0
+F05,L1,update,payments,4146,amount,2934.0,2061.0
+F05,L1,update,order_items,7045,quantity,3,-1
+F05,L1,update,orders,3177,total_amount,14912.0,6716.0
+F05,L1,update,order_items,7203,quantity,1,-2
+F05,L1,update,orders,3244,total_amount,16207.0,8389.0
+F05,L1,update,order_items,6696,quantity,5,-1
+F05,L1,update,orders,3020,total_amount,12996.0,7236.0
+F05,L1,update,payments,2445,amount,12996.0,7236.0
+F05,L1,update,order_items,523,quantity,1,-2
+F05,L1,update,orders,235,total_amount,62141.0,61268.0
+F05,L1,update,order_items,11857,quantity,4,-2
+F05,L1,update,orders,5372,total_amount,19911.0,4371.0
+F05,L1,update,payments,4335,amount,19911.0,4371.0
+F05,L1,update,order_items,12299,quantity,1,-1
+F05,L1,update,orders,5569,total_amount,27371.0,21761.0
+F05,L1,update,payments,4496,amount,27371.0,21761.0
+F05,L1,update,order_items,10699,quantity,2,-1
+F05,L1,update,orders,4845,total_amount,30778.0,21727.0
+F05,L1,update,payments,3926,amount,30778.0,21727.0
+F05,L1,update,order_items,8518,quantity,4,-1
+F05,L1,update,orders,3840,total_amount,13856.0,5101.0
+F05,L1,update,payments,3127,amount,13856.0,5101.0
+F05,L1,update,order_items,4149,quantity,1,-1
+F05,L1,update,orders,1883,total_amount,8356.0,7342.0
+F05,L1,update,order_items,12822,quantity,2,0
+F05,L1,update,orders,5805,total_amount,4040.0,790.0
+F05,L1,update,payments,4692,amount,4040.0,790.0
+F05,L1,update,order_items,6469,quantity,1,-2
+F05,L1,update,orders,2914,total_amount,9611.0,107.0
+F05,L1,update,payments,2354,amount,9611.0,107.0
+F05,L1,update,order_items,8291,quantity,2,-1
+F05,L1,update,orders,3733,total_amount,5880.0,3900.0
+F05,L1,update,order_items,10899,quantity,2,-1
+F05,L1,update,orders,4936,total_amount,8109.0,309.0
+F05,L1,update,payments,3997,amount,8109.0,309.0
+F05,L1,update,order_items,6012,quantity,1,-1
+F05,L1,update,orders,2711,total_amount,14552.0,13232.0
+F05,L1,update,order_items,10837,quantity,5,0
+F05,L1,update,orders,4912,total_amount,4043.0,388.0
+F05,L1,update,payments,3979,amount,4043.0,388.0
+F05,L1,update,order_items,10555,quantity,1,0
+F05,L1,update,orders,4778,total_amount,59649.0,57396.0
+F05,L1,update,payments,3872,amount,59649.0,57396.0
+F05,L1,update,order_items,3838,quantity,2,0
+F05,L1,update,orders,1749,total_amount,19063.0,18741.0
+F05,L1,update,payments,1414,amount,19063.0,18741.0
+F05,L1,update,order_items,473,quantity,5,0
+F05,L1,update,orders,208,total_amount,22051.0,16796.0
+F05,L1,update,payments,178,amount,22051.0,16796.0
+F05,L1,update,order_items,11598,quantity,2,-1
+F05,L1,update,orders,5254,total_amount,20029.0,17965.0
+F05,L1,update,payments,4247,amount,20029.0,17965.0
+F06,L1,update,orders,424,status,delivered,Delivered
+F06,L1,update,orders,3668,status,delivered,Delivered
+F06,L1,update,orders,5961,status,delivered,Delivered
+F06,L1,update,orders,1249,status,delivered,Delivered
+F06,L1,update,orders,547,status,delivered,Delivered
+F06,L1,update,orders,137,status,delivered,Delivered
+F06,L1,update,orders,1063,status,delivered,Delivered
+F06,L1,update,orders,4650,status,delivered,Delivered
+F06,L1,update,orders,3299,status,delivered,Delivered
+F06,L1,update,orders,5413,status,shipped,shiped
+F06,L1,update,orders,4685,status,paid,PAID
+F06,L1,update,orders,3527,status,delivered,Delivered
+F06,L1,update,orders,681,status,delivered,Delivered
+F06,L1,update,orders,5562,status,delivered,Delivered
+F06,L1,update,orders,2788,status,delivered,Delivered
+F06,L1,update,orders,732,status,delivered,Delivered
+F06,L1,update,orders,1780,status,cancelled,canceled
+F06,L1,update,orders,3838,status,delivered,Delivered
+F06,L1,update,orders,2190,status,delivered,Delivered
+F06,L1,update,orders,4538,status,delivered,Delivered
+F06,L1,update,orders,5449,status,paid,PAID
+F06,L1,update,orders,1333,status,delivered,Delivered
+F06,L1,update,orders,3662,status,delivered,Delivered
+F06,L1,update,orders,4920,status,cancelled,canceled
+F06,L1,update,orders,786,status,delivered,Delivered
+F06,L1,update,orders,3747,status,new,NEW 
+F06,L1,update,orders,372,status,delivered,Delivered
+F06,L1,update,orders,1799,status,delivered,Delivered
+F06,L1,update,orders,5296,status,cancelled,canceled
+F06,L1,update,orders,2615,status,delivered,Delivered
+F06,L1,update,orders,654,status,delivered,Delivered
+F06,L1,update,orders,1813,status,cancelled,canceled
+F06,L1,update,orders,4482,status,shipped,shiped
+F06,L1,update,orders,5200,status,delivered,Delivered
+F06,L1,update,orders,3854,status,delivered,Delivered
+F06,L1,update,orders,2288,status,cancelled,canceled
+F06,L1,update,orders,4998,status,shipped,shiped
+F06,L1,update,orders,109,status,shipped,shiped
+F06,L1,update,orders,2364,status,delivered,Delivered
+F06,L1,update,orders,419,status,delivered,Delivered
+F06,L1,update,orders,3766,status,delivered,Delivered
+F06,L1,update,orders,3280,status,delivered,Delivered
+F06,L1,update,orders,3274,status,delivered,Delivered
+F06,L1,update,orders,2606,status,delivered,Delivered
+F06,L1,update,orders,867,status,shipped,shiped
+F06,L1,update,orders,5855,status,paid,PAID
+F06,L1,update,orders,565,status,cancelled,canceled
+F06,L1,update,orders,2180,status,delivered,Delivered
+F06,L1,update,orders,58,status,delivered,Delivered
+F06,L1,update,orders,1762,status,new,NEW 
+F06,L1,update,orders,4486,status,cancelled,canceled
+F06,L1,update,orders,5198,status,delivered,Delivered
+F06,L1,update,orders,3934,status,delivered,Delivered
+F06,L1,update,orders,3424,status,delivered,Delivered
+F06,L1,update,orders,3340,status,shipped,shiped
+F06,L1,update,orders,2950,status,cancelled,canceled
+F06,L1,update,orders,3321,status,shipped,shiped
+F06,L1,update,orders,2763,status,delivered,Delivered
+F06,L1,update,orders,4585,status,cancelled,canceled
+F06,L1,update,orders,2639,status,delivered,Delivered
+F06,L1,update,orders,2157,status,paid,PAID
+F06,L1,update,orders,4344,status,delivered,Delivered
+F06,L1,update,orders,2681,status,delivered,Delivered
+F06,L1,update,orders,2961,status,delivered,Delivered
+F06,L1,update,orders,4066,status,paid,PAID
+F06,L1,update,orders,5831,status,paid,PAID
+F06,L1,update,orders,382,status,delivered,Delivered
+F06,L1,update,orders,4097,status,delivered,Delivered
+F06,L1,update,orders,3151,status,paid,PAID
+F06,L1,update,orders,2779,status,delivered,Delivered
+F06,L1,update,orders,5070,status,delivered,Delivered
+F06,L1,update,orders,2907,status,delivered,Delivered
+F06,L1,update,orders,4553,status,new,NEW 
+F06,L1,update,orders,4917,status,shipped,shiped
+F06,L1,update,orders,3015,status,delivered,Delivered
+F06,L1,update,orders,510,status,cancelled,canceled
+F06,L1,update,orders,3690,status,delivered,Delivered
+F06,L1,update,orders,2054,status,paid,PAID
+F06,L1,update,orders,3445,status,delivered,Delivered
+F06,L1,update,orders,310,status,delivered,Delivered
+F06,L1,update,orders,701,status,delivered,Delivered
+F06,L1,update,orders,1578,status,delivered,Delivered
+F06,L1,update,orders,4953,status,cancelled,canceled
+F06,L1,update,orders,866,status,delivered,Delivered
+F06,L1,update,orders,425,status,cancelled,canceled
+F06,L1,update,orders,5767,status,delivered,Delivered
+F06,L1,update,orders,2425,status,cancelled,canceled
+F06,L1,update,orders,956,status,delivered,Delivered
+F06,L1,update,orders,2080,status,cancelled,canceled
+F06,L1,update,orders,1588,status,delivered,Delivered
+F07,L1,update,customers,1160,birth_date,1964-12-23 00:00:00,1895-12-03 00:00:00
+F07,L1,update,customers,1863,birth_date,1983-12-08 00:00:00,1860-05-16 00:00:00
+F07,L1,update,customers,772,birth_date,2003-07-27 00:00:00,1862-10-07 00:00:00
+F07,L1,update,customers,397,birth_date,1983-08-31 00:00:00,2029-03-03 00:00:00
+F07,L1,update,customers,25,birth_date,1977-03-29 00:00:00,2024-08-15 00:00:00
+F07,L1,update,customers,484,birth_date,1981-04-27 00:00:00,2026-06-19 00:00:00
+F07,L1,update,customers,932,birth_date,1991-09-27 00:00:00,2028-02-20 00:00:00
+F07,L1,update,customers,39,birth_date,1975-07-06 00:00:00,1887-02-26 00:00:00
+F07,L1,update,customers,166,birth_date,1981-03-17 00:00:00,2024-07-09 00:00:00
+F07,L1,update,customers,1313,birth_date,1994-07-18 00:00:00,1864-03-01 00:00:00
+F07,L1,update,customers,1430,birth_date,1981-09-27 00:00:00,1896-07-14 00:00:00
+F07,L1,update,customers,44,birth_date,1966-03-18 00:00:00,2024-11-10 00:00:00
+F07,L1,update,customers,564,birth_date,1986-06-12 00:00:00,2025-04-17 00:00:00
+F07,L1,update,customers,755,birth_date,1956-01-29 00:00:00,2024-08-05 00:00:00
+F07,L1,update,customers,237,birth_date,1951-01-02 00:00:00,2022-08-14 00:00:00
+F07,L1,update,customers,353,birth_date,1951-02-05 00:00:00,1863-03-09 00:00:00
+F07,L1,update,customers,1446,birth_date,1977-08-15 00:00:00,2026-04-16 00:00:00
+F07,L1,update,customers,612,birth_date,2002-10-08 00:00:00,1855-08-16 00:00:00
+F07,L1,update,customers,849,birth_date,1951-12-07 00:00:00,2027-08-07 00:00:00
+F07,L1,update,customers,1894,birth_date,2003-09-18 00:00:00,1880-04-14 00:00:00
+F08,L2,insert,customers,2001,,,"{""customer_id"": 2001, ""full_name"": ""Василиса Робертовна Артемьева"", ""email"": ""marfa28@rambler.ru"", ""phone"": null, ""birth_date"": ""1983-09-22 00:00:00"", ""city"": ""Пенза"", ""registered_at"": ""2024-05-24 12:05:43""}"
+F08,L2,insert,customers,2002,,,"{""customer_id"": 2002, ""full_name"": ""Пестова Наталья Федоровна"", ""email"": ""viktorijalukina@gmail.com"", ""phone"": ""8 925 556 2588"", ""birth_date"": ""2002-02-02 00:00:00"", ""city"": ""Нижний Новгород"", ""registered_at"": ""2023-11-22 01:42:55""}"
+F08,L2,insert,customers,2003,,,"{""customer_id"": 2003, ""full_name"": ""Майя Андреевна Быкова"", ""email"": ""lazarkotov@list.ru"", ""phone"": ""8 159 514 84 65"", ""birth_date"": ""2000-05-06 00:00:00"", ""city"": ""Воронеж"", ""registered_at"": ""2023-05-13 22:11:44""}"
+F08,L2,insert,customers,2004,,,"{""customer_id"": 2004, ""full_name"": ""Красильников Мокей Арсеньевич"", ""email"": ""agafja_1972@yandex.ru"", ""phone"": ""8 411 082 5559"", ""birth_date"": ""2000-03-15 00:00:00"", ""city"": ""Самара"", ""registered_at"": ""2022-04-19 17:19:08""}"
+F08,L2,insert,customers,2005,,,"{""customer_id"": 2005, ""full_name"": ""Захаров Михаил Гавриилович"", ""email"": ""evpraksijasazonova@yandex.ru"", ""phone"": ""+74446306000"", ""birth_date"": ""1960-04-04 00:00:00"", ""city"": ""Санкт-Петербург"", ""registered_at"": ""2022-10-19 00:26:44""}"
+F08,L2,insert,customers,2006,,,"{""customer_id"": 2006, ""full_name"": ""Мартынова Наталья Олеговна"", ""email"": ""nikodimtimofeev@mail.ru"", ""phone"": ""+7 (915) 596-3632"", ""birth_date"": ""1969-03-30 00:00:00"", ""city"": ""Нижний Новгород"", ""registered_at"": ""2022-11-09 04:50:08""}"
+F08,L2,insert,customers,2007,,,"{""customer_id"": 2007, ""full_name"": ""Филиппов Лука Трифонович"", ""email"": ""askold_1979@bk.ru"", ""phone"": ""+7 385 977 0348"", ""birth_date"": ""1972-10-02 00:00:00"", ""city"": ""Екатеринбург"", ""registered_at"": ""2023-09-01 21:57:44""}"
+F08,L2,insert,customers,2008,,,"{""customer_id"": 2008, ""full_name"": ""Олимпиада Вениаминовна Ширяева"", ""email"": ""arhip2004@list.ru"", ""phone"": ""8 (080) 531-00-33"", ""birth_date"": ""1993-06-17 00:00:00"", ""city"": ""Пермь"", ""registered_at"": ""2022-10-28 19:24:45""}"
+F08,L2,insert,customers,2009,,,"{""customer_id"": 2009, ""full_name"": ""Зиновьева Вероника Архиповна"", ""email"": ""izjaslav_65@bk.ru"", ""phone"": ""+7 (401) 484-39-91"", ""birth_date"": ""1996-04-27 00:00:00"", ""city"": ""Воронеж"", ""registered_at"": ""2022-03-07 10:19:09""}"
+F08,L2,insert,customers,2010,,,"{""customer_id"": 2010, ""full_name"": ""Соловьев Панкрат Богданович"", ""email"": ""belozerovigor@bk.ru"", ""phone"": ""+7 (318) 751-0979"", ""birth_date"": ""1977-05-26 00:00:00"", ""city"": ""Ростов-на-Дону"", ""registered_at"": ""2022-02-16 00:33:45""}"
+F08,L2,insert,customers,2011,,,"{""customer_id"": 2011, ""full_name"": ""Меркушев Дементий Дмитриевич"", ""email"": ""serge03@yandex.ru"", ""phone"": null, ""birth_date"": ""1967-09-01 00:00:00"", ""city"": ""Пенза"", ""registered_at"": ""2023-02-24 17:34:05""}"
+F08,L2,insert,customers,2012,,,"{""customer_id"": 2012, ""full_name"": ""Стоян Федосьевич Иванов"", ""email"": ""izot_91@rambler.ru"", ""phone"": ""+7 158 144 9147"", ""birth_date"": ""1952-03-31 00:00:00"", ""city"": ""Пермь"", ""registered_at"": ""2024-05-14 09:27:24""}"
+F08,L2,insert,customers,2013,,,"{""customer_id"": 2013, ""full_name"": ""Христофор Гаврилович Осипов"", ""email"": ""gkonstantinov@inbox.ru"", ""phone"": null, ""birth_date"": ""1975-02-24 00:00:00"", ""city"": ""Москва"", ""registered_at"": ""2023-07-14 04:47:10""}"
+F08,L2,insert,customers,2014,,,"{""customer_id"": 2014, ""full_name"": ""Власова Анжелика Владиславовна"", ""email"": ""anastasija_1986@rambler.ru"", ""phone"": null, ""birth_date"": ""1961-10-15 00:00:00"", ""city"": ""Нижний Новгород"", ""registered_at"": ""2022-01-05 02:23:26""}"
+F08,L2,insert,customers,2015,,,"{""customer_id"": 2015, ""full_name"": ""Самойлова Виктория Архиповна"", ""email"": ""fbeljaev@list.ru"", ""phone"": ""+7 840 118 45 82"", ""birth_date"": ""1976-10-26 00:00:00"", ""city"": ""Казань"", ""registered_at"": ""2023-02-09 06:09:21""}"
+F08,L2,insert,customers,2016,,,"{""customer_id"": 2016, ""full_name"": ""Аксенова Елена Святославовна"", ""email"": ""jaroslav91@mail.ru"", ""phone"": null, ""birth_date"": ""1963-09-11 00:00:00"", ""city"": ""Новосибирск"", ""registered_at"": ""2023-11-22 22:08:37""}"
+F08,L2,insert,customers,2017,,,"{""customer_id"": 2017, ""full_name"": ""Потапова Фёкла Наумовна"", ""email"": ""pankratilavrentev@yandex.ru"", ""phone"": ""+7 (317) 393-6385"", ""birth_date"": ""2006-01-04 00:00:00"", ""city"": ""Пенза"", ""registered_at"": ""2023-08-30 17:10:51""}"
+F08,L2,insert,customers,2018,,,"{""customer_id"": 2018, ""full_name"": ""Клавдия Сергеевна Сазонова"", ""email"": ""solovevafekla@list.ru"", ""phone"": null, ""birth_date"": ""1952-08-16 00:00:00"", ""city"": ""Екатеринбург"", ""registered_at"": ""2023-05-19 19:37:18""}"
+F08,L2,insert,customers,2019,,,"{""customer_id"": 2019, ""full_name"": ""Ратмир Антипович Афанасьев"", ""email"": ""nestor1973@list.ru"", ""phone"": ""8 329 092 79 14"", ""birth_date"": ""1958-07-04 00:00:00"", ""city"": ""Екатеринбург"", ""registered_at"": ""2022-08-12 02:07:02""}"
+F08,L2,insert,customers,2020,,,"{""customer_id"": 2020, ""full_name"": ""Гаврила Эдгарович Шашков"", ""email"": ""gorbunovemeljan@inbox.ru"", ""phone"": ""+7 973 741 89 72"", ""birth_date"": ""1957-11-19 00:00:00"", ""city"": ""Самара"", ""registered_at"": ""2022-10-05 08:51:22""}"
+F08,L2,insert,customers,2021,,,"{""customer_id"": 2021, ""full_name"": ""Леон Эдгардович Сидоров"", ""email"": ""oksanablinova@list.ru"", ""phone"": ""8 577 242 95 43"", ""birth_date"": ""2004-11-29 00:00:00"", ""city"": ""Москва"", ""registered_at"": ""2023-11-03 03:19:59""}"
+F08,L2,insert,customers,2022,,,"{""customer_id"": 2022, ""full_name"": ""Мария Святославовна Стрелкова"", ""email"": ""ebobilev@gmail.com"", ""phone"": ""+7 355 251 05 05"", ""birth_date"": ""1964-10-22 00:00:00"", ""city"": ""Ростов-на-Дону"", ""registered_at"": ""2023-12-21 19:57:22""}"
+F08,L2,insert,customers,2023,,,"{""customer_id"": 2023, ""full_name"": ""Трофимов Гедеон Викторович"", ""email"": ""juli60@gmail.com"", ""phone"": ""+78491025625"", ""birth_date"": ""1953-10-02 00:00:00"", ""city"": ""Казань"", ""registered_at"": ""2024-03-26 22:09:39""}"
+F08,L2,insert,customers,2024,,,"{""customer_id"": 2024, ""full_name"": ""Воронцов Дементий Игнатьевич"", ""email"": ""narkiskonovalov@mail.ru"", ""phone"": ""+7 (282) 005-57-78"", ""birth_date"": ""1958-10-10 00:00:00"", ""city"": ""Воронеж"", ""registered_at"": ""2023-11-30 02:01:22""}"
+F08,L2,insert,customers,2025,,,"{""customer_id"": 2025, ""full_name"": ""Аверкий Артёмович Королев"", ""email"": ""zinaidamaksimova@rambler.ru"", ""phone"": ""+7 705 802 56 62"", ""birth_date"": ""1996-07-31 00:00:00"", ""city"": ""Уфа"", ""registered_at"": ""2022-10-08 03:56:48""}"
+F09,L2,insert,customers,2026,,,"{""customer_id"": 2026, ""full_name"": ""Павлов Арефий Алексеевич"", ""email"": ""Avdeevmatve@YANDEX.RU"", ""phone"": null, ""birth_date"": ""1980-04-30 00:00:00"", ""city"": ""Пермь"", ""registered_at"": ""2024-09-19 19:49:36""}"
+F09,L2,insert,customers,2027,,,"{""customer_id"": 2027, ""full_name"": ""Архипова Наталья Григорьевна"", ""email"": ""Ershovafaina@INBOX.RU"", ""phone"": null, ""birth_date"": ""1974-01-27 00:00:00"", ""city"": ""Москва"", ""registered_at"": ""2024-01-23 05:57:51""}"
+F09,L2,insert,customers,2028,,,"{""customer_id"": 2028, ""full_name"": ""Павлова Елизавета Рубеновна"", ""email"": ""Kovalevaevfrosinija@MAIL.RU"", ""phone"": null, ""birth_date"": ""1960-06-01 00:00:00"", ""city"": ""Пенза"", ""registered_at"": ""2025-06-10 09:20:00""}"
+F09,L2,insert,customers,2029,,,"{""customer_id"": 2029, ""full_name"": ""тов. Носова Фаина Тарасовна"", ""email"": ""Ignati69@INBOX.RU"", ""phone"": null, ""birth_date"": ""1962-06-21 00:00:00"", ""city"": ""Казань"", ""registered_at"": ""2023-01-24 04:47:55""}"
+F09,L2,insert,customers,2030,,,"{""customer_id"": 2030, ""full_name"": ""Сидор Викторович Мишин"", ""email"": ""Fedoseevaregina@LIST.RU"", ""phone"": null, ""birth_date"": ""1952-09-05 00:00:00"", ""city"": ""Москва"", ""registered_at"": ""2023-02-13 01:24:27""}"
+F09,L2,insert,customers,2031,,,"{""customer_id"": 2031, ""full_name"": ""Зиновьев Лавр Викторович"", ""email"": ""Kir1995@BK.RU"", ""phone"": null, ""birth_date"": ""1978-07-26 00:00:00"", ""city"": ""Уфа"", ""registered_at"": ""2024-04-16 02:37:27""}"
+F09,L2,insert,customers,2032,,,"{""customer_id"": 2032, ""full_name"": ""Крюкова Эмилия Игоревна"", ""email"": ""Radovan_19@RAMBLER.RU"", ""phone"": null, ""birth_date"": ""1957-04-06 00:00:00"", ""city"": ""Нижний Новгород"", ""registered_at"": ""2023-02-03 22:50:03""}"
+F09,L2,insert,customers,2033,,,"{""customer_id"": 2033, ""full_name"": ""Якушев Егор Ефимович"", ""email"": ""Oleg1990@INBOX.RU"", ""phone"": null, ""birth_date"": ""2006-01-21 00:00:00"", ""city"": ""Самара"", ""registered_at"": ""2023-01-14 02:28:44""}"
+F09,L2,insert,customers,2034,,,"{""customer_id"": 2034, ""full_name"": ""Сысоева Валентина Леоновна"", ""email"": ""Harlampi2016@INBOX.RU"", ""phone"": null, ""birth_date"": ""1968-09-13 00:00:00"", ""city"": ""Пермь"", ""registered_at"": ""2023-12-11 07:36:18""}"
+F09,L2,insert,customers,2035,,,"{""customer_id"": 2035, ""full_name"": ""Богдан Харлампович Харитонов"", ""email"": ""Bogdanovajulija@BK.RU"", ""phone"": null, ""birth_date"": ""1996-02-18 00:00:00"", ""city"": ""Уфа"", ""registered_at"": ""2024-02-24 11:28:59""}"
+F09,L2,insert,customers,2036,,,"{""customer_id"": 2036, ""full_name"": ""Михеев Вячеслав Ефстафьевич"", ""email"": ""Ruslan_69@GMAIL.COM"", ""phone"": null, ""birth_date"": ""1961-06-21 00:00:00"", ""city"": ""Екатеринбург"", ""registered_at"": ""2024-09-02 22:27:54""}"
+F09,L2,insert,customers,2037,,,"{""customer_id"": 2037, ""full_name"": ""Ким Викентьевич Соловьев"", ""email"": ""Psavin@YANDEX.RU"", ""phone"": null, ""birth_date"": ""1991-12-22 00:00:00"", ""city"": ""Воронеж"", ""registered_at"": ""2023-09-24 03:27:13""}"
+F09,L2,insert,customers,2038,,,"{""customer_id"": 2038, ""full_name"": ""Григорий Валерианович Лебедев"", ""email"": ""Kiraribakova@GMAIL.COM"", ""phone"": null, ""birth_date"": ""1977-03-08 00:00:00"", ""city"": ""Ростов-на-Дону"", ""registered_at"": ""2025-01-15 11:55:21""}"
+F09,L2,insert,customers,2039,,,"{""customer_id"": 2039, ""full_name"": ""Афанасьева Пелагея Ниловна"", ""email"": ""Pankratagafonov@YANDEX.RU"", ""phone"": null, ""birth_date"": ""2007-01-04 00:00:00"", ""city"": ""Москва"", ""registered_at"": ""2022-11-21 20:54:55""}"
+F09,L2,insert,customers,2040,,,"{""customer_id"": 2040, ""full_name"": ""Всеволод Жоресович Архипов"", ""email"": ""Ivannailina@BK.RU"", ""phone"": null, ""birth_date"": ""1958-08-16 00:00:00"", ""city"": ""Екатеринбург"", ""registered_at"": ""2025-01-27 13:41:04""}"
+F09,L2,insert,customers,2041,,,"{""customer_id"": 2041, ""full_name"": ""Аркадий Юлианович Суворов"", ""email"": ""Samson_1989@INBOX.RU"", ""phone"": null, ""birth_date"": ""1979-03-24 00:00:00"", ""city"": ""Новосибирск"", ""registered_at"": ""2025-03-14 00:13:09""}"
+F09,L2,insert,customers,2042,,,"{""customer_id"": 2042, ""full_name"": ""Белов Иннокентий Филатович"", ""email"": ""Erofe2019@LIST.RU"", ""phone"": null, ""birth_date"": ""2000-07-25 00:00:00"", ""city"": ""Пенза"", ""registered_at"": ""2025-02-09 12:14:40""}"
+F09,L2,insert,customers,2043,,,"{""customer_id"": 2043, ""full_name"": ""Макаров Ладислав Феодосьевич"", ""email"": ""Ostromir_2004@RAMBLER.RU"", ""phone"": null, ""birth_date"": ""1961-07-18 00:00:00"", ""city"": ""Москва"", ""registered_at"": ""2023-03-28 01:39:42""}"
+F09,L2,insert,customers,2044,,,"{""customer_id"": 2044, ""full_name"": ""Пров Аксёнович Исаков"", ""email"": ""Shchukinagalina@MAIL.RU"", ""phone"": null, ""birth_date"": ""1978-08-10 00:00:00"", ""city"": ""Ростов-на-Дону"", ""registered_at"": ""2022-12-29 08:20:44""}"
+F09,L2,insert,customers,2045,,,"{""customer_id"": 2045, ""full_name"": ""Михеева Ольга Георгиевна"", ""email"": ""Pestovalidija@BK.RU"", ""phone"": null, ""birth_date"": ""2000-01-16 00:00:00"", ""city"": ""Ростов-на-Дону"", ""registered_at"": ""2023-02-26 20:15:59""}"
+F09,L2,insert,customers,2046,,,"{""customer_id"": 2046, ""full_name"": ""Дроздова Вероника Николаевна"", ""email"": ""Taras_47@INBOX.RU"", ""phone"": null, ""birth_date"": ""1952-07-28 00:00:00"", ""city"": ""Воронеж"", ""registered_at"": ""2025-03-16 22:21:38""}"
+F09,L2,insert,customers,2047,,,"{""customer_id"": 2047, ""full_name"": ""Феврония Болеславовна Ершова"", ""email"": ""Agatafomina@RAMBLER.RU"", ""phone"": null, ""birth_date"": ""1988-08-04 00:00:00"", ""city"": ""Санкт-Петербург"", ""registered_at"": ""2023-09-02 16:13:11""}"
+F09,L2,insert,customers,2048,,,"{""customer_id"": 2048, ""full_name"": ""Симонов Азарий Трифонович"", ""email"": ""Stanimireliseev@BK.RU"", ""phone"": null, ""birth_date"": ""1957-10-13 00:00:00"", ""city"": ""Санкт-Петербург"", ""registered_at"": ""2024-06-10 20:48:05""}"
+F09,L2,insert,customers,2049,,,"{""customer_id"": 2049, ""full_name"": ""Зинаида Андреевна Самойлова"", ""email"": ""Gorshkovtaras@BK.RU"", ""phone"": null, ""birth_date"": ""1972-09-28 00:00:00"", ""city"": ""Ростов-на-Дону"", ""registered_at"": ""2023-04-24 16:27:45""}"
+F09,L2,insert,customers,2050,,,"{""customer_id"": 2050, ""full_name"": ""Сорокин Николай Фокич"", ""email"": ""Andreevveniamin@MAIL.RU"", ""phone"": null, ""birth_date"": ""1981-10-20 00:00:00"", ""city"": ""Ростов-на-Дону"", ""registered_at"": ""2024-09-16 00:06:41""}"
+F10,L2,update,orders,1660,shipped_at,2024-07-24 18:57:14,2024-07-23 17:14:33
+F10,L2,update,orders,3342,delivered_at,2024-02-01 16:53:39,2024-01-28 00:09:33
+F10,L2,update,orders,4148,shipped_at,2023-10-08 08:00:50,2023-10-05 04:25:43
+F10,L2,update,orders,4966,shipped_at,2023-02-01 10:20:36,2023-01-28 07:47:58
+F10,L2,update,orders,1539,shipped_at,2025-04-27 16:54:49,2025-04-23 08:00:29
+F10,L2,update,orders,728,shipped_at,2025-03-10 05:52:04,2025-03-06 04:45:24
+F10,L2,update,orders,4248,shipped_at,2024-01-13 20:38:48,2024-01-09 10:54:15
+F10,L2,update,orders,4090,shipped_at,2024-03-06 03:41:18,2024-03-04 04:55:35
+F10,L2,update,orders,5740,delivered_at,2025-01-04 13:02:29,2024-12-30 12:39:05
+F10,L2,update,orders,3270,delivered_at,2025-02-01 11:36:39,2025-01-22 20:28:26
+F10,L2,update,orders,3544,delivered_at,2024-06-11 02:16:19,2024-06-05 15:50:25
+F10,L2,update,orders,3319,delivered_at,2024-03-23 16:40:38,2024-03-17 04:40:04
+F10,L2,update,orders,4580,shipped_at,2023-11-06 21:28:49,2023-11-03 17:17:38
+F10,L2,update,orders,5728,shipped_at,2024-12-29 12:12:45,2024-12-27 14:52:34
+F10,L2,update,orders,3660,shipped_at,2024-01-14 19:23:04,2024-01-11 00:35:24
+F10,L2,update,orders,4727,delivered_at,2025-01-03 07:56:53,2024-12-26 11:47:18
+F10,L2,update,orders,5036,delivered_at,2024-03-30 06:20:29,2024-03-23 22:25:22
+F10,L2,update,orders,5434,delivered_at,2024-04-26 15:57:43,2024-04-20 19:40:17
+F10,L2,update,orders,3791,shipped_at,2023-04-22 15:44:16,2023-04-16 12:14:58
+F10,L2,update,orders,2810,delivered_at,2024-04-24 01:19:11,2024-04-20 17:48:04
+F10,L2,update,orders,5694,shipped_at,2024-11-02 12:24:19,2024-10-30 04:30:13
+F10,L2,update,orders,895,delivered_at,2023-04-11 03:36:09,2023-04-04 20:23:46
+F10,L2,update,orders,4644,delivered_at,2023-12-14 10:52:03,2023-12-06 02:19:45
+F10,L2,update,orders,4038,shipped_at,2022-04-19 19:52:08,2022-04-14 21:49:06
+F10,L2,update,orders,5320,shipped_at,2024-01-14 03:36:36,2024-01-10 14:20:20
+F10,L2,update,orders,3072,delivered_at,2023-11-19 14:46:09,2023-11-13 19:19:53
+F10,L2,update,orders,1222,shipped_at,2025-04-06 08:40:54,2025-04-02 03:48:51
+F10,L2,update,orders,4680,shipped_at,2023-07-29 04:18:16,2023-07-27 17:27:37
+F10,L2,update,orders,5231,shipped_at,2024-11-05 05:03:07,2024-11-01 19:25:29
+F10,L2,update,orders,5333,shipped_at,2022-08-01 23:06:46,2022-07-27 05:21:46
+F10,L2,update,orders,1896,shipped_at,2024-06-21 12:43:38,2024-06-17 03:46:07
+F10,L2,update,orders,1180,shipped_at,2023-10-15 04:12:56,2023-10-09 06:42:31
+F10,L2,update,orders,1992,delivered_at,2024-03-05 09:24:25,2024-03-01 20:53:07
+F10,L2,update,orders,3125,shipped_at,2025-02-20 16:54:59,2025-02-17 10:45:20
+F10,L2,update,orders,2285,shipped_at,2024-08-06 23:34:51,2024-08-01 20:12:08
+F10,L2,update,orders,3580,shipped_at,2023-09-17 12:40:16,2023-09-15 07:05:18
+F10,L2,update,orders,3568,delivered_at,2025-05-21 10:07:24,2025-05-16 00:40:20
+F10,L2,update,orders,347,shipped_at,2024-11-12 18:00:38,2024-11-09 16:26:59
+F10,L2,update,orders,1386,delivered_at,2023-04-16 01:05:36,2023-04-11 19:01:44
+F10,L2,update,orders,1609,delivered_at,2025-05-04 14:24:53,2025-04-23 13:25:32
+F10,L2,update,orders,501,delivered_at,2025-01-24 13:15:57,2025-01-15 20:54:26
+F10,L2,update,orders,1538,shipped_at,2025-01-18 09:16:45,2025-01-15 03:41:21
+F10,L2,update,orders,2948,delivered_at,2024-08-19 16:57:40,2024-08-13 01:57:30
+F10,L2,update,orders,4643,shipped_at,2025-04-03 23:40:20,2025-04-01 08:27:44
+F10,L2,update,orders,4694,shipped_at,2023-05-29 21:49:09,2023-05-26 00:02:37
+F10,L2,update,orders,1132,delivered_at,2024-11-22 11:01:42,2024-11-17 21:43:50
+F10,L2,update,orders,3096,shipped_at,2025-01-19 05:43:50,2025-01-15 16:51:54
+F10,L2,update,orders,972,delivered_at,2024-10-07 12:41:35,2024-10-04 20:50:15
+F10,L2,update,orders,4666,delivered_at,2023-09-07 23:36:20,2023-09-04 04:25:57
+F10,L2,update,orders,5080,delivered_at,2024-07-02 12:39:19,2024-06-23 10:47:18
+F10,L2,update,orders,4642,shipped_at,2025-07-01 00:49:25,2025-06-28 04:20:40
+F10,L2,update,orders,2698,shipped_at,2023-03-15 08:41:42,2023-03-11 02:54:15
+F10,L2,update,orders,1372,shipped_at,2025-02-12 23:43:52,2025-02-11 02:17:07
+F10,L2,update,orders,2221,shipped_at,2023-10-02 15:54:19,2023-09-30 03:22:32
+F10,L2,update,orders,104,shipped_at,2024-05-29 04:48:55,2024-05-27 13:39:57
+F10,L2,update,orders,1162,shipped_at,2024-05-29 15:47:29,2024-05-26 17:48:09
+F10,L2,update,orders,2238,delivered_at,2023-11-24 11:40:02,2023-11-22 03:34:25
+F10,L2,update,orders,5336,shipped_at,2024-12-04 10:12:33,2024-12-01 15:00:04
+F10,L2,update,orders,554,shipped_at,2025-05-22 13:35:23,2025-05-20 09:22:25
+F10,L2,update,orders,386,shipped_at,2024-08-05 21:00:17,2024-08-02 10:54:13
+F10,L2,update,orders,4620,shipped_at,2025-06-12 12:34:32,2025-06-09 10:36:25
+F10,L2,update,orders,697,shipped_at,2024-09-06 15:02:41,2024-09-04 04:29:39
+F10,L2,update,orders,3282,shipped_at,2023-02-03 22:10:05,2023-02-02 10:56:02
+F10,L2,update,orders,3975,shipped_at,2024-01-18 02:35:45,2024-01-14 15:50:40
+F10,L2,update,orders,2826,delivered_at,2025-01-01 18:24:33,2024-12-29 21:15:01
+F10,L2,update,orders,4770,shipped_at,2024-05-21 08:18:24,2024-05-19 08:35:35
+F10,L2,update,orders,1081,delivered_at,2023-01-09 15:47:02,2023-01-04 00:46:10
+F10,L2,update,orders,71,delivered_at,2023-07-21 20:22:42,2023-07-14 12:36:49
+F10,L2,update,orders,4813,delivered_at,2025-04-03 06:55:02,2025-03-25 18:47:42
+F10,L2,update,orders,1654,shipped_at,2025-03-18 19:18:35,2025-03-14 18:43:40
+F10,L2,update,orders,2848,delivered_at,2024-09-02 01:58:44,2024-08-28 02:34:14
+F10,L2,update,orders,4554,shipped_at,2024-03-04 14:03:31,2024-02-29 18:08:32
+F10,L2,update,orders,80,shipped_at,2025-02-25 10:06:34,2025-02-22 04:09:00
+F10,L2,update,orders,3213,delivered_at,2024-06-01 12:17:15,2024-05-25 20:38:41
+F10,L2,update,orders,3677,shipped_at,2024-09-04 05:13:45,2024-08-31 21:09:38
+F10,L2,update,orders,132,shipped_at,2024-08-31 04:51:37,2024-08-27 07:44:25
+F10,L2,update,orders,30,shipped_at,2023-11-13 00:12:57,2023-11-10 09:38:56
+F10,L2,update,orders,3159,shipped_at,2024-11-05 11:05:41,2024-11-03 02:15:50
+F10,L2,update,orders,3630,shipped_at,2024-02-29 16:19:50,2024-02-27 21:02:42
+F10,L2,update,orders,2457,shipped_at,2024-12-10 17:50:03,2024-12-06 03:13:55
+F11,L2,update,orders,4373,shipped_at,,2024-11-14 03:30:39
+F11,L2,update,orders,4373,delivered_at,,2024-11-15 03:30:39
+F11,L2,update,orders,4826,shipped_at,,2023-06-22 23:37:33
+F11,L2,update,orders,4826,delivered_at,,2023-06-24 23:37:33
+F11,L2,update,orders,2637,shipped_at,,2024-02-20 15:35:46
+F11,L2,update,orders,2637,delivered_at,,2024-02-29 15:35:46
+F11,L2,update,orders,4103,shipped_at,,2025-03-03 20:07:35
+F11,L2,update,orders,4103,delivered_at,,2025-03-05 20:07:35
+F11,L2,update,orders,5963,shipped_at,,2024-06-04 19:31:58
+F11,L2,update,orders,5963,delivered_at,,2024-06-05 19:31:58
+F11,L2,update,orders,2407,shipped_at,,2024-10-10 01:54:35
+F11,L2,update,orders,2407,delivered_at,,2024-10-19 01:54:35
+F11,L2,update,orders,4466,shipped_at,,2024-08-28 15:56:20
+F11,L2,update,orders,4466,delivered_at,,2024-09-02 15:56:20
+F11,L2,update,orders,5224,shipped_at,,2025-06-17 16:28:08
+F11,L2,update,orders,5224,delivered_at,,2025-06-23 16:28:08
+F11,L2,update,orders,4958,shipped_at,,2024-03-19 12:02:34
+F11,L2,update,orders,4958,delivered_at,,2024-03-25 12:02:34
+F11,L2,update,orders,4627,shipped_at,,2022-07-30 12:43:39
+F11,L2,update,orders,4627,delivered_at,,2022-07-31 12:43:39
+F11,L2,update,orders,454,shipped_at,,2023-10-10 05:55:41
+F11,L2,update,orders,454,delivered_at,,2023-10-18 05:55:41
+F11,L2,update,orders,3082,shipped_at,,2025-02-26 01:21:10
+F11,L2,update,orders,3082,delivered_at,,2025-03-06 01:21:10
+F11,L2,update,orders,2249,shipped_at,,2024-01-21 17:12:47
+F11,L2,update,orders,2249,delivered_at,,2024-01-26 17:12:47
+F11,L2,update,orders,5746,shipped_at,,2024-12-24 14:06:38
+F11,L2,update,orders,5746,delivered_at,,2024-12-26 14:06:38
+F11,L2,update,orders,970,shipped_at,,2025-02-28 08:45:51
+F11,L2,update,orders,970,delivered_at,,2025-03-01 08:45:51
+F11,L2,update,orders,3549,shipped_at,,2025-02-02 01:23:53
+F11,L2,update,orders,3549,delivered_at,,2025-02-09 01:23:53
+F11,L2,update,orders,5284,shipped_at,,2023-09-17 16:08:35
+F11,L2,update,orders,5284,delivered_at,,2023-09-24 16:08:35
+F11,L2,update,orders,315,shipped_at,,2024-09-24 21:10:38
+F11,L2,update,orders,315,delivered_at,,2024-09-26 21:10:38
+F11,L2,update,orders,4122,shipped_at,,2025-03-14 14:15:28
+F11,L2,update,orders,4122,delivered_at,,2025-03-22 14:15:28
+F11,L2,update,orders,5256,shipped_at,,2025-03-18 00:31:29
+F11,L2,update,orders,5256,delivered_at,,2025-03-23 00:31:29
+F11,L2,update,orders,5184,shipped_at,,2022-09-06 20:30:33
+F11,L2,update,orders,5184,delivered_at,,2022-09-07 20:30:33
+F11,L2,update,orders,231,shipped_at,,2024-06-17 22:42:36
+F11,L2,update,orders,231,delivered_at,,2024-06-21 22:42:36
+F11,L2,update,orders,188,shipped_at,,2023-11-13 12:50:15
+F11,L2,update,orders,188,delivered_at,,2023-11-20 12:50:15
+F11,L2,update,orders,677,shipped_at,,2023-12-04 04:55:12
+F11,L2,update,orders,677,delivered_at,,2023-12-13 04:55:12
+F11,L2,update,orders,4656,shipped_at,,2025-01-18 22:35:46
+F11,L2,update,orders,4656,delivered_at,,2025-01-19 22:35:46
+F11,L2,update,orders,963,shipped_at,,2025-02-03 16:06:03
+F11,L2,update,orders,963,delivered_at,,2025-02-11 16:06:03
+F11,L2,update,orders,881,shipped_at,,2024-10-28 23:33:44
+F11,L2,update,orders,881,delivered_at,,2024-11-02 23:33:44
+F11,L2,update,orders,5319,shipped_at,,2022-05-15 19:13:58
+F11,L2,update,orders,5319,delivered_at,,2022-05-20 19:13:58
+F11,L2,update,orders,2035,shipped_at,,2024-09-11 20:01:55
+F11,L2,update,orders,2035,delivered_at,,2024-09-20 20:01:55
+F11,L2,update,orders,5215,shipped_at,,2024-11-20 15:11:15
+F11,L2,update,orders,5215,delivered_at,,2024-11-27 15:11:15
+F11,L2,update,orders,3042,delivered_at,2024-12-27 09:02:26,
+F11,L2,update,orders,193,delivered_at,2024-07-28 04:31:57,
+F11,L2,update,orders,1919,delivered_at,2022-04-04 00:05:13,
+F11,L2,update,orders,4785,delivered_at,2025-02-25 23:20:51,
+F11,L2,update,orders,978,delivered_at,2024-12-16 10:31:10,
+F11,L2,update,orders,4070,delivered_at,2024-09-04 22:28:49,
+F11,L2,update,orders,4671,delivered_at,2023-05-04 07:53:58,
+F11,L2,update,orders,3120,delivered_at,2024-09-30 03:33:20,
+F11,L2,update,orders,2229,delivered_at,2025-01-28 16:54:06,
+F11,L2,update,orders,4294,delivered_at,2023-12-06 15:12:43,
+F11,L2,update,orders,1825,delivered_at,2024-04-24 14:49:09,
+F11,L2,update,orders,1876,delivered_at,2024-10-18 11:47:34,
+F11,L2,update,orders,3018,delivered_at,2024-04-30 06:00:38,
+F11,L2,update,orders,1612,delivered_at,2023-12-16 08:28:29,
+F11,L2,update,orders,5957,delivered_at,2025-01-12 08:17:20,
+F11,L2,update,orders,1981,delivered_at,2024-09-03 12:41:23,
+F11,L2,update,orders,3835,delivered_at,2024-06-14 07:38:56,
+F11,L2,update,orders,1412,delivered_at,2024-12-14 09:49:00,
+F11,L2,update,orders,2670,delivered_at,2023-03-09 02:19:15,
+F11,L2,update,orders,5713,delivered_at,2025-04-17 19:45:30,
+F11,L2,update,orders,4816,shipped_at,,2024-07-30 03:45:07
+F11,L2,update,orders,5244,shipped_at,,2024-03-18 14:00:36
+F11,L2,update,orders,2433,shipped_at,,2023-07-26 20:11:02
+F11,L2,update,orders,1437,shipped_at,,2023-09-11 09:16:48
+F11,L2,update,orders,118,shipped_at,,2024-01-27 00:51:59
+F11,L2,update,orders,4646,shipped_at,,2022-09-19 05:11:40
+F11,L2,update,orders,3881,shipped_at,,2024-09-23 12:55:04
+F11,L2,update,orders,5257,shipped_at,,2025-01-16 23:16:49
+F11,L2,update,orders,2172,shipped_at,,2024-08-14 06:12:43
+F11,L2,update,orders,4852,shipped_at,,2023-06-03 23:33:16
+F11,L2,update,orders,5281,shipped_at,,2024-12-18 14:01:50
+F11,L2,update,orders,3076,shipped_at,,2023-08-08 18:55:12
+F11,L2,update,orders,1894,shipped_at,,2022-10-23 08:27:25
+F11,L2,update,orders,5119,shipped_at,,2025-03-28 23:48:40
+F11,L2,update,orders,5304,shipped_at,,2024-09-20 02:56:20
+F11,L2,update,orders,4477,shipped_at,,2023-11-18 06:11:43
+F11,L2,update,orders,4935,shipped_at,,2024-11-30 22:18:34
+F11,L2,update,orders,453,shipped_at,,2022-10-19 02:28:23
+F11,L2,update,orders,1178,shipped_at,,2024-06-24 21:57:06
+F11,L2,update,orders,828,shipped_at,,2024-06-02 21:20:11
+F12,L2,update,order_items,4153,unit_price,2502.0,250200.0
+F12,L2,update,orders,1884,total_amount,36649.0,1027441.0
+F12,L2,update,payments,1523,amount,36649.0,1027441.0
+F12,L2,update,order_items,7425,unit_price,1625.0,162500.0
+F12,L2,update,orders,3344,total_amount,20876.0,181751.0
+F12,L2,update,order_items,9736,unit_price,447.0,44700.0
+F12,L2,update,orders,4402,total_amount,37126.0,125632.0
+F12,L2,update,payments,3578,amount,37126.0,125632.0
+F12,L2,update,order_items,11874,unit_price,447.0,44700.0
+F12,L2,update,orders,5379,total_amount,1788.0,178800.0
+F12,L2,update,payments,4339,amount,1788.0,178800.0
+F12,L2,update,order_items,2906,unit_price,3028.0,302800.0
+F12,L2,update,orders,1317,total_amount,8280.0,607824.0
+F12,L2,update,payments,1062,amount,8280.0,607824.0
+F12,L2,update,order_items,9236,unit_price,102.0,10200.0
+F12,L2,update,orders,4161,total_amount,8161.0,38455.0
+F12,L2,update,payments,3381,amount,8161.0,38455.0
+F12,L2,update,order_items,3073,unit_price,1376.0,137600.0
+F12,L2,update,orders,1400,total_amount,4128.0,412800.0
+F12,L2,update,payments,1135,amount,4128.0,412800.0
+F12,L2,update,order_items,7948,unit_price,2828.0,282800.0
+F12,L2,update,orders,3579,total_amount,7691.0,287663.0
+F12,L2,update,payments,2899,amount,7691.0,287663.0
+F12,L2,update,order_items,4660,unit_price,2590.0,259000.0
+F12,L2,update,orders,2106,total_amount,28430.0,1054070.0
+F12,L2,update,order_items,1167,unit_price,1245.0,124500.0
+F12,L2,update,orders,515,total_amount,8955.0,132210.0
+F12,L2,update,payments,414,amount,8955.0,132210.0
+F12,L2,update,order_items,9339,unit_price,1765.0,176500.0
+F12,L2,update,orders,4210,total_amount,11779.0,535984.0
+F12,L2,update,payments,3422,amount,11779.0,535984.0
+F12,L2,update,order_items,4679,unit_price,194.0,19400.0
+F12,L2,update,orders,2115,total_amount,10997.0,30203.0
+F12,L2,update,payments,1700,amount,10997.0,30203.0
+F12,L2,update,order_items,8163,unit_price,2982.0,298200.0
+F12,L2,update,orders,3678,total_amount,27118.0,912772.0
+F12,L2,update,payments,2984,amount,27118.0,912772.0
+F12,L2,update,order_items,4485,unit_price,417.0,41700.0
+F12,L2,update,orders,2037,total_amount,12958.0,54241.0
+F12,L2,update,order_items,8565,unit_price,1306.0,130600.0
+F12,L2,update,orders,3863,total_amount,5224.0,522400.0
+F12,L2,update,payments,3146,amount,5224.0,522400.0
+F12,L2,update,order_items,6741,unit_price,8351.0,835100.0
+F12,L2,update,orders,3038,total_amount,47613.0,3354609.0
+F12,L2,update,payments,2456,amount,47613.0,3354609.0
+F12,L2,update,order_items,51,unit_price,846.0,84600.0
+F12,L2,update,orders,21,total_amount,8328.0,259590.0
+F12,L2,update,payments,20,amount,8328.0,259590.0
+F12,L2,update,order_items,6394,unit_price,26918.0,2691800.0
+F12,L2,update,orders,2883,total_amount,59133.0,2724015.0
+F12,L2,update,order_items,4572,unit_price,360.0,36000.0
+F12,L2,update,orders,2069,total_amount,7128.0,78408.0
+F12,L2,update,payments,1663,amount,7128.0,78408.0
+F12,L2,update,order_items,9087,unit_price,8351.0,835100.0
+F12,L2,update,orders,4101,total_amount,46279.0,4180024.0
+F12,L2,update,payments,3337,amount,46279.0,4180024.0
+F12,L2,update,order_items,6284,unit_price,1143.0,114300.0
+F12,L2,update,orders,2837,total_amount,15365.0,354836.0
+F12,L2,update,payments,2290,amount,15365.0,354836.0
+F12,L2,update,order_items,6150,unit_price,2725.0,272500.0
+F12,L2,update,orders,2776,total_amount,28051.0,297826.0
+F12,L2,update,payments,2243,amount,28051.0,297826.0
+F12,L2,update,order_items,3302,unit_price,2828.0,282800.0
+F12,L2,update,orders,1504,total_amount,15898.0,1415758.0
+F12,L2,update,payments,1219,amount,15898.0,1415758.0
+F12,L2,update,order_items,7356,unit_price,1376.0,137600.0
+F12,L2,update,orders,3311,total_amount,52028.0,733148.0
+F12,L2,update,payments,2682,amount,52028.0,733148.0
+F12,L2,update,order_items,8469,unit_price,1694.0,169400.0
+F12,L2,update,orders,3820,total_amount,2962.0,170668.0
+F12,L2,update,payments,3107,amount,2962.0,170668.0
+F12,L2,update,order_items,10170,unit_price,2171.0,217100.0
+F12,L2,update,orders,4603,total_amount,4473.0,219402.0
+F12,L2,update,payments,3737,amount,4473.0,219402.0
+F12,L2,update,order_items,2147,unit_price,960.0,96000.0
+F12,L2,update,orders,971,total_amount,8418.0,483618.0
+F12,L2,update,payments,769,amount,8418.0,483618.0
+F12,L2,update,order_items,12908,unit_price,385.0,38500.0
+F12,L2,update,orders,5852,total_amount,14337.0,166797.0
+F12,L2,update,payments,4731,amount,14337.0,166797.0
+F12,L2,update,order_items,4361,unit_price,222.0,22200.0
+F12,L2,update,orders,1979,total_amount,24139.0,112051.0
+F12,L2,update,payments,1595,amount,24139.0,112051.0
+F12,L2,update,order_items,8986,unit_price,286.0,28600.0
+F12,L2,update,orders,4053,total_amount,90533.0,203789.0
+F12,L2,update,payments,3296,amount,90533.0,203789.0
+F13,L3,update,orders,3992,customer_id,1134,900000
+F13,L3,update,orders,4336,customer_id,1921,900001
+F13,L3,update,orders,2712,customer_id,1057,900002
+F13,L3,update,orders,4492,customer_id,88,900003
+F13,L3,update,orders,1625,customer_id,902,900004
+F13,L3,update,orders,2431,customer_id,148,900005
+F13,L3,update,orders,975,customer_id,1585,900006
+F13,L3,update,orders,902,customer_id,1546,900007
+F13,L3,update,orders,3609,customer_id,1200,900008
+F13,L3,update,orders,2374,customer_id,783,900009
+F13,L3,update,orders,5892,customer_id,1733,900010
+F13,L3,update,orders,1403,customer_id,655,900011
+F13,L3,update,orders,4102,customer_id,1095,900012
+F13,L3,update,orders,4746,customer_id,1063,900013
+F13,L3,update,orders,340,customer_id,939,900014
+F13,L3,update,orders,5209,customer_id,461,900015
+F13,L3,update,orders,3411,customer_id,770,900016
+F13,L3,update,orders,2573,customer_id,1878,900017
+F13,L3,update,orders,2724,customer_id,927,900018
+F13,L3,update,orders,562,customer_id,1284,900019
+F13,L3,update,orders,135,customer_id,976,900020
+F13,L3,update,orders,3918,customer_id,1505,900021
+F13,L3,update,orders,3764,customer_id,326,900022
+F13,L3,update,orders,1147,customer_id,1405,900023
+F13,L3,update,orders,4193,customer_id,19,900024
+F13,L3,update,orders,1228,customer_id,1819,900025
+F13,L3,update,orders,5698,customer_id,974,900026
+F13,L3,update,orders,4939,customer_id,706,900027
+F13,L3,update,orders,2526,customer_id,646,900028
+F13,L3,update,orders,3752,customer_id,1568,900029
+F13,L3,update,orders,5959,customer_id,1494,900030
+F13,L3,update,orders,1513,customer_id,1658,900031
+F13,L3,update,orders,1708,customer_id,1386,900032
+F13,L3,update,orders,152,customer_id,1056,900033
+F13,L3,update,orders,5167,customer_id,1410,900034
+F13,L3,update,orders,1025,customer_id,1198,900035
+F13,L3,update,orders,796,customer_id,17,900036
+F13,L3,update,orders,5019,customer_id,1209,900037
+F13,L3,update,orders,4451,customer_id,1442,900038
+F13,L3,update,orders,921,customer_id,1526,900039
+F13,L3,update,orders,228,customer_id,1426,900040
+F13,L3,update,orders,3093,customer_id,847,900041
+F13,L3,update,orders,4078,customer_id,344,900042
+F13,L3,update,orders,2108,customer_id,1539,900043
+F13,L3,update,orders,1434,customer_id,547,900044
+F13,L3,update,orders,4578,customer_id,216,900045
+F13,L3,update,orders,5887,customer_id,366,900046
+F13,L3,update,orders,2690,customer_id,64,900047
+F13,L3,update,orders,3390,customer_id,341,900048
+F13,L3,update,orders,2067,customer_id,814,900049
+F14,L3,update,order_items,9685,product_id,103,90000
+F14,L3,update,order_items,1582,product_id,30,90001
+F14,L3,update,order_items,1199,product_id,51,90002
+F14,L3,update,order_items,9870,product_id,45,90003
+F14,L3,update,order_items,2382,product_id,49,90004
+F14,L3,update,order_items,12866,product_id,76,90005
+F14,L3,update,order_items,5675,product_id,54,90006
+F14,L3,update,order_items,5748,product_id,130,90007
+F14,L3,update,order_items,6260,product_id,30,90008
+F14,L3,update,order_items,10696,product_id,42,90009
+F14,L3,update,order_items,1897,product_id,87,90010
+F14,L3,update,order_items,10391,product_id,146,90011
+F14,L3,update,order_items,300,product_id,140,90012
+F14,L3,update,order_items,9134,product_id,26,90013
+F14,L3,update,order_items,6569,product_id,53,90014
+F14,L3,update,order_items,8213,product_id,119,90015
+F14,L3,update,order_items,8746,product_id,78,90016
+F14,L3,update,order_items,10825,product_id,111,90017
+F14,L3,update,order_items,11353,product_id,13,90018
+F14,L3,update,order_items,1150,product_id,82,90019
+F14,L3,update,order_items,11215,product_id,58,90020
+F14,L3,update,order_items,7662,product_id,78,90021
+F14,L3,update,order_items,2099,product_id,85,90022
+F14,L3,update,order_items,3869,product_id,48,90023
+F14,L3,update,order_items,11339,product_id,135,90024
+F14,L3,update,order_items,13025,product_id,118,90025
+F14,L3,update,order_items,6033,product_id,53,90026
+F14,L3,update,order_items,11007,product_id,6,90027
+F14,L3,update,order_items,10301,product_id,120,90028
+F14,L3,update,order_items,4717,product_id,138,90029
+F14,L3,update,order_items,11792,product_id,18,90030
+F14,L3,update,order_items,1171,product_id,82,90031
+F14,L3,update,order_items,9342,product_id,54,90032
+F14,L3,update,order_items,8242,product_id,61,90033
+F14,L3,update,order_items,5299,product_id,39,90034
+F14,L3,update,order_items,176,product_id,52,90035
+F14,L3,update,order_items,577,product_id,16,90036
+F14,L3,update,order_items,12280,product_id,137,90037
+F14,L3,update,order_items,2452,product_id,91,90038
+F14,L3,update,order_items,6772,product_id,57,90039
+F14,L3,update,order_items,4262,product_id,150,90040
+F14,L3,update,order_items,11913,product_id,137,90041
+F14,L3,update,order_items,8312,product_id,43,90042
+F14,L3,update,order_items,2007,product_id,37,90043
+F14,L3,update,order_items,4708,product_id,26,90044
+F14,L3,update,order_items,11720,product_id,14,90045
+F14,L3,update,order_items,3214,product_id,136,90046
+F14,L3,update,order_items,8454,product_id,52,90047
+F14,L3,update,order_items,6095,product_id,94,90048
+F14,L3,update,order_items,2730,product_id,86,90049
+F15,L3,update,orders,3638,total_amount,10264.0,6279.38
+F15,L3,update,orders,5695,total_amount,7894.0,11699.92
+F15,L3,update,payments,4600,amount,7894.0,11699.92
+F15,L3,update,orders,4145,total_amount,16470.0,8954.65
+F15,L3,update,payments,3371,amount,16470.0,8954.65
+F15,L3,update,orders,2367,total_amount,17339.0,13191.87
+F15,L3,update,orders,5924,total_amount,24184.0,27636.57
+F15,L3,update,payments,4789,amount,24184.0,27636.57
+F15,L3,update,orders,668,total_amount,16510.0,23999.66
+F15,L3,update,payments,537,amount,16510.0,23999.66
+F15,L3,update,orders,3837,total_amount,7805.0,6360.54
+F15,L3,update,payments,3124,amount,7805.0,6360.54
+F15,L3,update,orders,5230,total_amount,14674.0,8918.24
+F15,L3,update,orders,157,total_amount,22234.0,25456.75
+F15,L3,update,payments,135,amount,22234.0,25456.75
+F15,L3,update,orders,590,total_amount,17200.0,21935.2
+F15,L3,update,orders,3866,total_amount,19307.0,28505.75
+F15,L3,update,payments,3148,amount,19307.0,28505.75
+F15,L3,update,orders,1541,total_amount,4999.0,4080.19
+F15,L3,update,payments,1248,amount,4999.0,4080.19
+F15,L3,update,orders,3509,total_amount,16446.0,14588.47
+F15,L3,update,payments,2843,amount,16446.0,14588.47
+F15,L3,update,orders,5375,total_amount,902.0,570.84
+F15,L3,update,payments,4336,amount,902.0,570.84
+F15,L3,update,orders,5946,total_amount,32187.0,21142.97
+F15,L3,update,payments,4809,amount,32187.0,21142.97
+F15,L3,update,orders,2542,total_amount,13804.0,7011.27
+F15,L3,update,payments,2057,amount,13804.0,7011.27
+F15,L3,update,orders,4857,total_amount,3453.0,2746.21
+F15,L3,update,orders,716,total_amount,6823.0,4576.29
+F15,L3,update,payments,573,amount,6823.0,4576.29
+F15,L3,update,orders,1411,total_amount,28886.0,19636.27
+F15,L3,update,payments,1145,amount,28886.0,19636.27
+F15,L3,update,orders,2695,total_amount,25096.0,32713.03
+F15,L3,update,payments,2175,amount,25096.0,32713.03
+F15,L3,update,orders,3184,total_amount,8351.0,10620.89
+F15,L3,update,orders,2176,total_amount,15873.0,12578.88
+F15,L3,update,payments,1752,amount,15873.0,12578.88
+F15,L3,update,orders,2299,total_amount,19495.0,23661.21
+F15,L3,update,payments,1853,amount,19495.0,23661.21
+F15,L3,update,orders,121,total_amount,10077.0,12711.18
+F15,L3,update,payments,102,amount,10077.0,12711.18
+F15,L3,update,orders,1159,total_amount,547.0,790.04
+F15,L3,update,payments,931,amount,547.0,790.04
+F15,L3,update,orders,551,total_amount,18996.0,10303.42
+F15,L3,update,payments,441,amount,18996.0,10303.42
+F15,L3,update,orders,3033,total_amount,5256.0,4644.95
+F15,L3,update,orders,3777,total_amount,2880.0,1750.21
+F15,L3,update,orders,4733,total_amount,5219.0,2727.86
+F15,L3,update,orders,5192,total_amount,7699.0,9057.88
+F15,L3,update,payments,4198,amount,7699.0,9057.88
+F15,L3,update,orders,1947,total_amount,16634.0,24068.54
+F15,L3,update,orders,3466,total_amount,50340.0,30086.26
+F15,L3,update,payments,2805,amount,50340.0,30086.26
+F15,L3,update,orders,216,total_amount,1990.0,2292.98
+F15,L3,update,orders,1139,total_amount,28164.0,19477.99
+F15,L3,update,orders,149,total_amount,8402.0,4499.85
+F15,L3,update,payments,128,amount,8402.0,4499.85
+F15,L3,update,orders,451,total_amount,6667.0,5954.96
+F15,L3,update,orders,2423,total_amount,10077.0,7689.55
+F15,L3,update,payments,1956,amount,10077.0,7689.55
+F15,L3,update,orders,4674,total_amount,43237.0,51803.68
+F15,L3,update,payments,3793,amount,43237.0,51803.68
+F15,L3,update,orders,194,total_amount,11730.0,6473.32
+F15,L3,update,orders,3670,total_amount,25660.0,34672.39
+F15,L3,update,payments,2976,amount,25660.0,34672.39
+F15,L3,update,orders,3597,total_amount,7022.0,4844.68
+F15,L3,update,payments,2915,amount,7022.0,4844.68
+F15,L3,update,orders,686,total_amount,10855.0,7589.84
+F15,L3,update,payments,548,amount,10855.0,7589.84
+F15,L3,update,orders,1059,total_amount,6462.0,5556.82
+F15,L3,update,payments,845,amount,6462.0,5556.82
+F15,L3,update,orders,720,total_amount,26915.0,22291.64
+F15,L3,update,orders,417,total_amount,24445.0,14729.4
+F15,L3,update,payments,342,amount,24445.0,14729.4
+F15,L3,update,orders,696,total_amount,11352.0,7561.01
+F15,L3,update,payments,556,amount,11352.0,7561.01
+F15,L3,update,orders,4428,total_amount,9368.0,7110.51
+F15,L3,update,payments,3600,amount,9368.0,7110.51
+F15,L3,update,orders,2494,total_amount,4263.0,2323.28
+F15,L3,update,payments,2019,amount,4263.0,2323.28
+F15,L3,update,orders,164,total_amount,5172.0,6197.01
+F15,L3,update,payments,140,amount,5172.0,6197.01
+F15,L3,update,orders,5920,total_amount,3563.0,3111.96
+F15,L3,update,payments,4786,amount,3563.0,3111.96
+F15,L3,update,orders,1190,total_amount,35817.0,44971.89
+F15,L3,update,payments,959,amount,35817.0,44971.89
+F15,L3,update,orders,2737,total_amount,31868.0,17830.81
+F15,L3,update,orders,2239,total_amount,35197.0,46085.88
+F15,L3,update,payments,1809,amount,35197.0,46085.88
+F15,L3,update,orders,4924,total_amount,7484.0,10405.92
+F15,L3,update,payments,3987,amount,7484.0,10405.92
+F15,L3,update,orders,366,total_amount,693.0,945.99
+F15,L3,update,payments,300,amount,693.0,945.99
+F15,L3,update,orders,611,total_amount,13760.0,16761.48
+F15,L3,update,payments,489,amount,13760.0,16761.48
+F15,L3,update,orders,4461,total_amount,17135.0,20771.58
+F15,L3,update,payments,3628,amount,17135.0,20771.58
+F15,L3,update,orders,1462,total_amount,15632.0,17488.71
+F15,L3,update,orders,3230,total_amount,21016.0,26603.56
+F15,L3,update,payments,2617,amount,21016.0,26603.56
+F15,L3,update,orders,1789,total_amount,6798.0,10008.03
+F15,L3,update,payments,1443,amount,6798.0,10008.03
+F15,L3,update,orders,4346,total_amount,27265.0,22877.43
+F15,L3,update,orders,4182,total_amount,6085.0,4252.57
+F15,L3,update,payments,3398,amount,6085.0,4252.57
+F15,L3,update,orders,1381,total_amount,5968.0,4887.92
+F15,L3,update,orders,1751,total_amount,2035.0,3014.63
+F15,L3,update,payments,1416,amount,2035.0,3014.63
+F15,L3,update,orders,4052,total_amount,6530.0,7999.7
+F15,L3,update,payments,3295,amount,6530.0,7999.7
+F15,L3,update,orders,3573,total_amount,51867.0,28270.72
+F15,L3,update,orders,4869,total_amount,11670.0,13748.12
+F15,L3,update,payments,3944,amount,11670.0,13748.12
+F15,L3,update,orders,5121,total_amount,37281.0,54729.74
+F15,L3,update,payments,4144,amount,37281.0,54729.74
+F15,L3,update,orders,2627,total_amount,6528.0,9504.82
+F15,L3,update,payments,2122,amount,6528.0,9504.82
+F15,L3,update,orders,3155,total_amount,14281.0,20558.56
+F15,L3,update,payments,2551,amount,14281.0,20558.56
+F15,L3,update,orders,885,total_amount,22428.0,11829.88
+F15,L3,update,payments,703,amount,22428.0,11829.88
+F15,L3,update,orders,4708,total_amount,30057.0,33149.75
+F15,L3,update,orders,509,total_amount,12420.0,14041.27
+F15,L3,update,orders,2454,total_amount,24374.0,34534.89
+F15,L3,update,payments,1981,amount,24374.0,34534.89
+F15,L3,update,orders,4055,total_amount,27540.0,23520.05
+F15,L3,update,payments,3298,amount,27540.0,23520.05
+F15,L3,update,orders,5958,total_amount,38246.0,30104.65
+F15,L3,update,orders,5043,total_amount,7818.0,5276.77
+F15,L3,update,payments,4081,amount,7818.0,5276.77
+F15,L3,update,orders,2273,total_amount,12480.0,18628.44
+F15,L3,update,orders,1065,total_amount,15584.0,21108.47
+F15,L3,update,payments,851,amount,15584.0,21108.47
+F15,L3,update,orders,5175,total_amount,24810.0,35301.07
+F15,L3,update,orders,4412,total_amount,13311.0,11086.89
+F15,L3,update,payments,3586,amount,13311.0,11086.89
+F15,L3,update,orders,3761,total_amount,9546.0,13914.67
+F15,L3,update,payments,3054,amount,9546.0,13914.67
+F15,L3,update,orders,2953,total_amount,25073.0,33773.82
+F15,L3,update,payments,2386,amount,25073.0,33773.82
+F15,L3,update,orders,1219,total_amount,4935.0,2473.13
+F15,L3,update,orders,2853,total_amount,2785.0,2506.44
+F15,L3,update,payments,2303,amount,2785.0,2506.44
+F15,L3,update,orders,4337,total_amount,6604.0,4520.06
+F15,L3,update,payments,3524,amount,6604.0,4520.06
+F15,L3,update,orders,1428,total_amount,20923.0,28039.44
+F15,L3,update,payments,1156,amount,20923.0,28039.44
+F15,L3,update,orders,4083,total_amount,19667.0,27525.67
+F15,L3,update,payments,3323,amount,19667.0,27525.67
+F15,L3,update,orders,632,total_amount,13200.0,19098.94
+F15,L3,update,payments,508,amount,13200.0,19098.94
+F15,L3,update,orders,3294,total_amount,50067.0,29028.08
+F15,L3,update,orders,3196,total_amount,5708.0,3928.78
+F15,L3,update,payments,2584,amount,5708.0,3928.78
+F15,L3,update,orders,5221,total_amount,14256.0,10700.01
+F15,L3,update,payments,4221,amount,14256.0,10700.01
+F15,L3,update,orders,1819,total_amount,28890.0,38643.1
+F15,L3,update,payments,1465,amount,28890.0,38643.1
+F15,L3,update,orders,1816,total_amount,24063.0,29077.04
+F15,L3,update,payments,1463,amount,24063.0,29077.04
+F15,L3,update,orders,3492,total_amount,1185.0,985.31
+F15,L3,update,payments,2828,amount,1185.0,985.31
+F15,L3,update,orders,1602,total_amount,12948.0,18207.39
+F15,L3,update,payments,1299,amount,12948.0,18207.39
+F15,L3,update,orders,2930,total_amount,5273.0,3231.02
+F15,L3,update,payments,2368,amount,5273.0,3231.02
+F15,L3,update,orders,694,total_amount,14126.0,16109.81
+F15,L3,update,orders,3248,total_amount,572.0,800.67
+F15,L3,update,payments,2630,amount,572.0,800.67
+F15,L3,update,orders,2244,total_amount,770.0,955.6
+F15,L3,update,payments,1812,amount,770.0,955.6
+F16,L3,update,payments,1461,amount,22798.0,22974.0
+F16,L3,update,payments,3379,amount,5562.0,5742.0
+F16,L3,update,payments,4192,amount,3942.0,1874.34
+F16,L3,update,payments,4588,amount,7715.0,8086.0
+F16,L3,update,payments,435,amount,3930.0,4305.0
+F16,L3,update,payments,1298,amount,2828.0,2954.0
+F16,L3,update,payments,4723,amount,32040.0,26509.76
+F16,L3,update,payments,3557,amount,2706.0,2927.0
+F16,L3,update,payments,4453,amount,7825.0,3447.37
+F16,L3,update,payments,2120,amount,10704.0,10836.0
+F16,L3,update,payments,1532,amount,790.0,401.08
+F16,L3,update,payments,3929,amount,3220.0,2493.51
+F16,L3,update,payments,2168,amount,12202.0,12287.0
+F16,L3,update,payments,4342,amount,7365.0,2837.88
+F16,L3,update,payments,3574,amount,8993.0,9430.0
+F16,L3,update,payments,2020,amount,6324.0,4294.34
+F16,L3,update,payments,3588,amount,22527.0,22824.0
+F16,L3,update,payments,1187,amount,8896.0,9273.0
+F16,L3,update,payments,3946,amount,10315.0,10546.0
+F16,L3,update,payments,1453,amount,11641.0,4565.02
+F16,L3,update,payments,4367,amount,5318.0,5455.0
+F16,L3,update,payments,4306,amount,53100.0,40485.52
+F16,L3,update,payments,1875,amount,16744.0,8822.72
+F16,L3,update,payments,3089,amount,4714.0,2166.91
+F16,L3,update,payments,3800,amount,14057.0,14374.0
+F16,L3,update,payments,4708,amount,22207.0,22462.0
+F16,L3,update,payments,2711,amount,1975.0,1662.97
+F16,L3,update,payments,4298,amount,1142.0,1242.0
+F16,L3,update,payments,981,amount,8535.0,5100.53
+F16,L3,update,payments,1609,amount,50564.0,50747.0
+F16,L3,update,payments,1270,amount,846.0,866.0
+F16,L3,update,payments,4768,amount,15731.0,15735.0
+F16,L3,update,payments,4257,amount,1216.0,1497.0
+F16,L3,update,payments,1154,amount,20428.0,10458.78
+F16,L3,update,payments,1525,amount,8201.0,8213.0
+F16,L3,update,payments,2334,amount,18874.0,19045.0
+F16,L3,update,payments,312,amount,23643.0,21866.34
+F16,L3,update,payments,3019,amount,14910.0,15313.0
+F16,L3,update,payments,323,amount,87027.0,87200.0
+F16,L3,update,payments,2879,amount,894.0,1157.0
+F16,L3,update,payments,3056,amount,8490.0,6263.7
+F16,L3,update,payments,2412,amount,17175.0,17210.0
+F16,L3,update,payments,3232,amount,25005.0,18811.72
+F16,L3,update,payments,1704,amount,47870.0,48021.0
+F16,L3,update,payments,3668,amount,5656.0,6098.0
+F16,L3,update,payments,2720,amount,4468.0,4562.0
+F16,L3,update,payments,2765,amount,23823.0,23886.0
+F16,L3,update,payments,4324,amount,7477.0,7624.0
+F16,L3,update,payments,2162,amount,38532.0,38760.0
+F16,L3,update,payments,579,amount,18339.0,18617.0
+F16,L3,update,payments,1061,amount,11432.0,11587.0
+F16,L3,update,payments,3653,amount,19310.0,19611.0
+F16,L3,update,payments,2693,amount,5511.0,5683.0
+F16,L3,update,payments,3088,amount,7573.0,7737.0
+F16,L3,update,payments,376,amount,5403.0,5073.27
+F16,L3,update,payments,2912,amount,13979.0,7640.4
+F16,L3,update,payments,3368,amount,4016.0,3324.06
+F16,L3,update,payments,1211,amount,23532.0,23929.0
+F16,L3,update,payments,2876,amount,3903.0,3530.26
+F16,L3,update,payments,3025,amount,9032.0,9423.0
+F17,L3,delete,payments,1492,,"{""payment_id"": 1492, ""order_id"": 1849, ""amount"": 73071.0, ""paid_at"": ""2024-09-26 22:26:56"", ""method"": ""card""}",
+F17,L3,delete,payments,10,,"{""payment_id"": 10, ""order_id"": 10, ""amount"": 5561.0, ""paid_at"": ""2024-08-31 09:50:08"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,1407,,"{""payment_id"": 1407, ""order_id"": 1741, ""amount"": 10918.0, ""paid_at"": ""2024-08-15 11:00:50"", ""method"": ""card""}",
+F17,L3,delete,payments,3847,,"{""payment_id"": 3847, ""order_id"": 4744, ""amount"": 3759.0, ""paid_at"": ""2023-08-03 21:37:03"", ""method"": ""wallet""}",
+F17,L3,delete,payments,1421,,"{""payment_id"": 1421, ""order_id"": 1757, ""amount"": 11705.0, ""paid_at"": ""2025-01-30 01:13:38"", ""method"": ""sbp""}",
+F17,L3,delete,payments,4338,,"{""payment_id"": 4338, ""order_id"": 5377, ""amount"": 8868.0, ""paid_at"": ""2024-09-24 09:12:33"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,3495,,"{""payment_id"": 3495, ""order_id"": 4303, ""amount"": 39744.0, ""paid_at"": ""2024-02-28 14:15:42"", ""method"": ""sbp""}",
+F17,L3,delete,payments,2795,,"{""payment_id"": 2795, ""order_id"": 3454, ""amount"": 5476.0, ""paid_at"": ""2024-04-27 15:40:42"", ""method"": ""wallet""}",
+F17,L3,delete,payments,3939,,"{""payment_id"": 3939, ""order_id"": 4860, ""amount"": 10964.0, ""paid_at"": ""2022-08-27 23:04:21"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,2849,,"{""payment_id"": 2849, ""order_id"": 3516, ""amount"": 5625.0, ""paid_at"": ""2025-02-03 08:23:09"", ""method"": ""card""}",
+F17,L3,delete,payments,3722,,"{""payment_id"": 3722, ""order_id"": 4582, ""amount"": 13005.0, ""paid_at"": ""2023-08-29 04:18:15"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,499,,"{""payment_id"": 499, ""order_id"": 622, ""amount"": 790.0, ""paid_at"": ""2024-03-28 07:27:25"", ""method"": ""card""}",
+F17,L3,delete,payments,1260,,"{""payment_id"": 1260, ""order_id"": 1557, ""amount"": 24556.0, ""paid_at"": ""2024-11-09 13:41:42"", ""method"": ""wallet""}",
+F17,L3,delete,payments,4358,,"{""payment_id"": 4358, ""order_id"": 5401, ""amount"": 8360.0, ""paid_at"": ""2024-10-22 03:01:09"", ""method"": ""wallet""}",
+F17,L3,delete,payments,2261,,"{""payment_id"": 2261, ""order_id"": 2799, ""amount"": 18015.0, ""paid_at"": ""2024-03-19 07:40:14"", ""method"": ""sbp""}",
+F17,L3,delete,payments,1653,,"{""payment_id"": 1653, ""order_id"": 2056, ""amount"": 9660.0, ""paid_at"": ""2024-07-24 07:27:18"", ""method"": ""sbp""}",
+F17,L3,delete,payments,2822,,"{""payment_id"": 2822, ""order_id"": 3485, ""amount"": 11584.0, ""paid_at"": ""2023-12-06 07:46:19"", ""method"": ""card""}",
+F17,L3,delete,payments,514,,"{""payment_id"": 514, ""order_id"": 641, ""amount"": 27933.0, ""paid_at"": ""2025-03-16 00:44:33"", ""method"": ""sbp""}",
+F17,L3,delete,payments,2784,,"{""payment_id"": 2784, ""order_id"": 3435, ""amount"": 8898.0, ""paid_at"": ""2023-12-14 14:11:32"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,2105,,"{""payment_id"": 2105, ""order_id"": 2603, ""amount"": 11750.0, ""paid_at"": ""2024-02-17 20:20:32"", ""method"": ""card""}",
+F17,L3,delete,payments,2724,,"{""payment_id"": 2724, ""order_id"": 3362, ""amount"": 5690.0, ""paid_at"": ""2023-07-21 12:44:36"", ""method"": ""wallet""}",
+F17,L3,delete,payments,47,,"{""payment_id"": 47, ""order_id"": 54, ""amount"": 23226.0, ""paid_at"": ""2025-01-11 06:14:01"", ""method"": ""sbp""}",
+F17,L3,delete,payments,1805,,"{""payment_id"": 1805, ""order_id"": 2234, ""amount"": 9210.0, ""paid_at"": ""2024-04-22 09:39:35"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,3754,,"{""payment_id"": 3754, ""order_id"": 4630, ""amount"": 19005.0, ""paid_at"": ""2025-03-23 07:00:18"", ""method"": ""wallet""}",
+F17,L3,delete,payments,2160,,"{""payment_id"": 2160, ""order_id"": 2676, ""amount"": 5720.0, ""paid_at"": ""2023-09-11 04:20:34"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,4576,,"{""payment_id"": 4576, ""order_id"": 5668, ""amount"": 3189.0, ""paid_at"": ""2024-12-29 10:32:34"", ""method"": ""sbp""}",
+F17,L3,delete,payments,3240,,"{""payment_id"": 3240, ""order_id"": 3986, ""amount"": 32296.0, ""paid_at"": ""2023-08-21 16:47:23"", ""method"": ""card""}",
+F17,L3,delete,payments,3411,,"{""payment_id"": 3411, ""order_id"": 4198, ""amount"": 27484.0, ""paid_at"": ""2023-08-15 21:44:45"", ""method"": ""card""}",
+F17,L3,delete,payments,3813,,"{""payment_id"": 3813, ""order_id"": 4695, ""amount"": 4824.0, ""paid_at"": ""2024-01-02 17:21:19"", ""method"": ""wallet""}",
+F17,L3,delete,payments,2581,,"{""payment_id"": 2581, ""order_id"": 3193, ""amount"": 7434.0, ""paid_at"": ""2025-05-06 22:21:27"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,3904,,"{""payment_id"": 3904, ""order_id"": 4819, ""amount"": 24500.0, ""paid_at"": ""2023-02-07 02:57:28"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,4851,,"{""payment_id"": 4851, ""order_id"": 5998, ""amount"": 29042.0, ""paid_at"": ""2024-03-10 10:41:25"", ""method"": ""card""}",
+F17,L3,delete,payments,3065,,"{""payment_id"": 3065, ""order_id"": 3773, ""amount"": 44308.0, ""paid_at"": ""2024-12-28 00:07:56"", ""method"": ""card""}",
+F17,L3,delete,payments,1528,,"{""payment_id"": 1528, ""order_id"": 1889, ""amount"": 7050.0, ""paid_at"": ""2024-10-31 12:18:16"", ""method"": ""sbp""}",
+F17,L3,delete,payments,2147,,"{""payment_id"": 2147, ""order_id"": 2659, ""amount"": 4980.0, ""paid_at"": ""2024-04-02 03:00:36"", ""method"": ""card""}",
+F17,L3,delete,payments,1754,,"{""payment_id"": 1754, ""order_id"": 2178, ""amount"": 5601.0, ""paid_at"": ""2023-02-28 23:46:21"", ""method"": ""card""}",
+F17,L3,delete,payments,1459,,"{""payment_id"": 1459, ""order_id"": 1810, ""amount"": 10186.0, ""paid_at"": ""2023-06-18 18:58:00"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,497,,"{""payment_id"": 497, ""order_id"": 620, ""amount"": 3440.0, ""paid_at"": ""2024-05-07 04:02:47"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,19,,"{""payment_id"": 19, ""order_id"": 20, ""amount"": 10847.0, ""paid_at"": ""2024-05-22 10:54:44"", ""method"": ""sbp""}",
+F17,L3,delete,payments,2457,,"{""payment_id"": 2457, ""order_id"": 3039, ""amount"": 38773.0, ""paid_at"": ""2024-06-30 23:43:13"", ""method"": ""card""}",
+F17,L3,delete,payments,1181,,"{""payment_id"": 1181, ""order_id"": 1456, ""amount"": 7041.0, ""paid_at"": ""2023-11-09 12:14:30"", ""method"": ""wallet""}",
+F17,L3,delete,payments,3196,,"{""payment_id"": 3196, ""order_id"": 3932, ""amount"": 33500.0, ""paid_at"": ""2025-06-14 16:58:35"", ""method"": ""card""}",
+F17,L3,delete,payments,4104,,"{""payment_id"": 4104, ""order_id"": 5076, ""amount"": 3644.0, ""paid_at"": ""2024-10-27 06:45:18"", ""method"": ""card""}",
+F17,L3,delete,payments,4152,,"{""payment_id"": 4152, ""order_id"": 5134, ""amount"": 6008.0, ""paid_at"": ""2024-05-10 10:56:38"", ""method"": ""wallet""}",
+F17,L3,delete,payments,4785,,"{""payment_id"": 4785, ""order_id"": 5919, ""amount"": 547.0, ""paid_at"": ""2023-06-15 10:07:27"", ""method"": ""wallet""}",
+F17,L3,delete,payments,3940,,"{""payment_id"": 3940, ""order_id"": 4862, ""amount"": 7245.0, ""paid_at"": ""2025-05-22 15:46:29"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,2681,,"{""payment_id"": 2681, ""order_id"": 3310, ""amount"": 24016.0, ""paid_at"": ""2024-09-11 14:13:13"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,2257,,"{""payment_id"": 2257, ""order_id"": 2794, ""amount"": 21461.0, ""paid_at"": ""2024-09-06 21:37:51"", ""method"": ""wallet""}",
+F17,L3,delete,payments,3026,,"{""payment_id"": 3026, ""order_id"": 3724, ""amount"": 5672.0, ""paid_at"": ""2024-09-03 14:32:42"", ""method"": ""cash_on_delivery""}",
+F17,L3,delete,payments,1967,,"{""payment_id"": 1967, ""order_id"": 2436, ""amount"": 5712.0, ""paid_at"": ""2023-12-21 06:03:24"", ""method"": ""wallet""}",
+F18,L3,update,orders,1911,ordered_at,2024-06-18 05:42:17,2024-02-18 10:48:25
+F18,L3,update,orders,5236,ordered_at,2024-01-26 10:00:34,2023-04-14 01:10:11
+F18,L3,update,orders,4202,ordered_at,2024-01-01 02:41:01,2023-05-06 03:19:35
+F18,L3,update,orders,4762,ordered_at,2023-07-20 06:12:35,2022-12-14 22:24:09
+F18,L3,update,orders,2368,ordered_at,2023-06-30 15:02:29,2022-05-17 13:59:07
+F18,L3,update,orders,3071,ordered_at,2025-05-18 09:35:43,2024-02-23 14:31:38
+F18,L3,update,orders,2090,ordered_at,2024-12-11 23:17:47,2024-03-28 19:23:02
+F18,L3,update,orders,1093,ordered_at,2025-04-11 20:11:46,2022-09-21 22:05:12
+F18,L3,update,orders,1505,ordered_at,2024-05-05 08:37:45,2023-05-15 10:57:03
+F18,L3,update,orders,4421,ordered_at,2024-09-15 07:09:57,2023-02-25 13:17:57
+F18,L3,update,orders,2815,ordered_at,2023-10-17 19:45:18,2023-09-26 05:07:25
+F18,L3,update,orders,446,ordered_at,2022-12-14 23:21:36,2022-07-28 21:09:16
+F18,L3,update,orders,3498,ordered_at,2024-05-23 10:23:24,2023-12-11 05:31:41
+F18,L3,update,orders,1748,ordered_at,2023-05-19 14:04:09,2022-01-26 04:10:32
+F18,L3,update,orders,5395,ordered_at,2025-01-07 02:55:57,2024-02-14 14:26:23
+F18,L3,update,orders,1148,ordered_at,2024-06-11 15:31:57,2023-07-18 18:54:48
+F18,L3,update,orders,2291,ordered_at,2024-10-29 01:39:06,2022-06-18 17:11:01
+F18,L3,update,orders,3304,ordered_at,2023-12-02 22:05:48,2022-09-28 06:08:58
+F18,L3,update,orders,5149,ordered_at,2023-09-17 02:34:02,2022-11-24 14:38:02
+F18,L3,update,orders,1763,ordered_at,2024-06-11 08:39:25,2023-08-10 15:06:20
+F18,L3,update,orders,4600,ordered_at,2024-11-02 09:43:38,2022-03-21 21:23:17
+F18,L3,update,orders,5101,ordered_at,2025-02-01 22:57:22,2024-01-28 12:28:02
+F18,L3,update,orders,979,ordered_at,2023-04-04 16:26:34,2022-07-15 06:10:39
+F18,L3,update,orders,5779,ordered_at,2024-02-01 03:44:30,2022-09-10 04:24:27
+F18,L3,update,orders,3909,ordered_at,2024-10-29 06:30:44,2023-02-16 06:40:55
+F18,L3,update,orders,1822,ordered_at,2025-02-19 21:57:02,2022-06-03 03:16:02
+F18,L3,update,orders,2599,ordered_at,2023-04-30 06:24:05,2022-10-16 22:56:53
+F18,L3,update,orders,4559,ordered_at,2022-10-15 12:36:02,2022-08-10 09:07:14
+F18,L3,update,orders,398,ordered_at,2024-06-02 10:46:40,2022-05-27 00:28:34
+F18,L3,update,orders,607,ordered_at,2025-02-03 06:33:34,2023-03-08 23:56:27
+F18,L3,update,orders,107,ordered_at,2025-03-20 21:57:43,2023-12-30 17:11:54
+F18,L3,update,orders,4051,ordered_at,2024-06-09 09:01:51,2024-02-23 03:55:13
+F18,L3,update,orders,525,ordered_at,2022-11-19 23:05:13,2022-08-18 21:54:57
+F18,L3,update,orders,2770,ordered_at,2023-03-21 22:30:27,2022-03-03 23:19:14
+F18,L3,update,orders,731,ordered_at,2024-08-31 00:36:53,2023-07-22 19:02:24
+F18,L3,update,orders,2400,ordered_at,2025-03-03 11:09:03,2022-02-08 19:36:54
+F18,L3,update,orders,3339,ordered_at,2023-09-25 10:45:43,2023-06-05 20:06:19
+F18,L3,update,orders,5416,ordered_at,2024-04-09 16:23:33,2022-11-05 14:24:33
+F18,L3,update,orders,550,ordered_at,2025-02-12 07:29:07,2023-03-24 09:29:08
+F18,L3,update,orders,3789,ordered_at,2023-07-23 16:54:16,2023-03-03 14:16:37
+F18,L3,update,orders,1998,ordered_at,2023-02-27 06:32:05,2022-07-03 03:47:41
+F18,L3,update,orders,5321,ordered_at,2024-03-01 05:38:20,2023-12-25 07:39:52
+F18,L3,update,orders,5630,ordered_at,2024-08-31 03:10:13,2022-01-07 02:25:12
+F18,L3,update,orders,1770,ordered_at,2024-03-22 18:09:44,2022-11-26 07:35:48
+F18,L3,update,orders,4246,ordered_at,2024-08-29 10:07:49,2022-11-27 20:37:32
+F18,L3,update,orders,3149,ordered_at,2024-07-20 12:47:40,2022-10-15 10:40:37
+F18,L3,update,orders,4629,ordered_at,2023-04-11 05:43:57,2022-09-08 06:17:21
+F18,L3,update,orders,1268,ordered_at,2023-01-25 20:16:24,2022-08-22 15:52:07
+F18,L3,update,orders,1306,ordered_at,2024-01-28 23:53:31,2022-11-07 03:53:28
+F18,L3,update,orders,2640,ordered_at,2023-09-16 10:58:22,2022-11-02 03:06:10
+F18,L3,update,orders,2347,ordered_at,2023-03-26 03:03:34,2022-08-21 14:57:16
+F18,L3,update,orders,893,ordered_at,2024-08-16 00:22:30,2024-01-24 18:23:15
+F18,L3,update,orders,3402,ordered_at,2024-05-30 05:30:05,2023-09-06 15:58:03
+F18,L3,update,orders,3911,ordered_at,2023-08-27 18:31:58,2021-11-21 17:31:35
+F18,L3,update,orders,190,ordered_at,2024-06-04 19:19:26,2023-11-02 01:19:59
+F18,L3,update,orders,5956,ordered_at,2024-06-21 08:44:44,2024-01-23 23:59:48
+F18,L3,update,orders,3421,ordered_at,2022-07-19 06:23:27,2022-02-14 15:10:02
+F18,L3,update,orders,5077,ordered_at,2024-03-10 08:51:55,2023-04-02 14:58:53
+F18,L3,update,orders,5437,ordered_at,2024-09-21 23:32:13,2023-07-24 07:18:53
+F18,L3,update,orders,691,ordered_at,2025-04-11 12:31:04,2023-05-12 11:49:58
+F19,L3,delete,order_items,3444,,"{""order_item_id"": 3444.0, ""order_id"": 1574.0, ""product_id"": 108.0, ""quantity"": 4.0, ""unit_price"": 417.0}",
+F19,L3,delete,order_items,3445,,"{""order_item_id"": 3445.0, ""order_id"": 1574.0, ""product_id"": 92.0, ""quantity"": 1.0, ""unit_price"": 3440.0}",
+F19,L3,delete,order_items,2200,,"{""order_item_id"": 2200.0, ""order_id"": 994.0, ""product_id"": 140.0, ""quantity"": 2.0, ""unit_price"": 2966.0}",
+F19,L3,delete,order_items,2201,,"{""order_item_id"": 2201.0, ""order_id"": 994.0, ""product_id"": 97.0, ""quantity"": 2.0, ""unit_price"": 1835.0}",
+F19,L3,delete,order_items,12030,,"{""order_item_id"": 12030.0, ""order_id"": 5446.0, ""product_id"": 4.0, ""quantity"": 4.0, ""unit_price"": 1694.0}",
+F19,L3,delete,order_items,5930,,"{""order_item_id"": 5930.0, ""order_id"": 2679.0, ""product_id"": 133.0, ""quantity"": 4.0, ""unit_price"": 5482.0}",
+F19,L3,delete,order_items,4983,,"{""order_item_id"": 4983.0, ""order_id"": 2243.0, ""product_id"": 148.0, ""quantity"": 2.0, ""unit_price"": 928.0}",
+F19,L3,delete,order_items,4984,,"{""order_item_id"": 4984.0, ""order_id"": 2243.0, ""product_id"": 50.0, ""quantity"": 2.0, ""unit_price"": 26918.0}",
+F19,L3,delete,order_items,2755,,"{""order_item_id"": 2755.0, ""order_id"": 1248.0, ""product_id"": 50.0, ""quantity"": 4.0, ""unit_price"": 26918.0}",
+F19,L3,delete,order_items,2756,,"{""order_item_id"": 2756.0, ""order_id"": 1248.0, ""product_id"": 116.0, ""quantity"": 4.0, ""unit_price"": 621.0}",
+F19,L3,delete,order_items,2757,,"{""order_item_id"": 2757.0, ""order_id"": 1248.0, ""product_id"": 28.0, ""quantity"": 1.0, ""unit_price"": 3359.0}",
+F19,L3,delete,order_items,2671,,"{""order_item_id"": 2671.0, ""order_id"": 1213.0, ""product_id"": 34.0, ""quantity"": 4.0, ""unit_price"": 1473.0}",
+F19,L3,delete,order_items,2672,,"{""order_item_id"": 2672.0, ""order_id"": 1213.0, ""product_id"": 39.0, ""quantity"": 2.0, ""unit_price"": 1871.0}",
+F19,L3,delete,order_items,2673,,"{""order_item_id"": 2673.0, ""order_id"": 1213.0, ""product_id"": 25.0, ""quantity"": 2.0, ""unit_price"": 483.0}",
+F19,L3,delete,order_items,2674,,"{""order_item_id"": 2674.0, ""order_id"": 1213.0, ""product_id"": 109.0, ""quantity"": 4.0, ""unit_price"": 1266.0}",
+F19,L3,delete,order_items,8792,,"{""order_item_id"": 8792.0, ""order_id"": 3966.0, ""product_id"": 64.0, ""quantity"": 5.0, ""unit_price"": 1412.0}",
+F19,L3,delete,order_items,8793,,"{""order_item_id"": 8793.0, ""order_id"": 3966.0, ""product_id"": 61.0, ""quantity"": 4.0, ""unit_price"": 1038.0}",
+F19,L3,delete,order_items,8794,,"{""order_item_id"": 8794.0, ""order_id"": 3966.0, ""product_id"": 15.0, ""quantity"": 2.0, ""unit_price"": 2413.0}",
+F19,L3,delete,order_items,9219,,"{""order_item_id"": 9219.0, ""order_id"": 4154.0, ""product_id"": 42.0, ""quantity"": 5.0, ""unit_price"": 395.0}",
+F19,L3,delete,order_items,9220,,"{""order_item_id"": 9220.0, ""order_id"": 4154.0, ""product_id"": 24.0, ""quantity"": 3.0, ""unit_price"": 507.0}",
+F19,L3,delete,order_items,9221,,"{""order_item_id"": 9221.0, ""order_id"": 4154.0, ""product_id"": 75.0, ""quantity"": 4.0, ""unit_price"": 4853.0}",
+F19,L3,delete,order_items,2138,,"{""order_item_id"": 2138.0, ""order_id"": 968.0, ""product_id"": 5.0, ""quantity"": 2.0, ""unit_price"": 7041.0}",
+F19,L3,delete,order_items,2139,,"{""order_item_id"": 2139.0, ""order_id"": 968.0, ""product_id"": 148.0, ""quantity"": 4.0, ""unit_price"": 928.0}",
+F19,L3,delete,order_items,2140,,"{""order_item_id"": 2140.0, ""order_id"": 968.0, ""product_id"": 139.0, ""quantity"": 3.0, ""unit_price"": 725.0}",
+F19,L3,delete,order_items,5660,,"{""order_item_id"": 5660.0, ""order_id"": 2551.0, ""product_id"": 112.0, ""quantity"": 2.0, ""unit_price"": 2828.0}",
+F19,L3,delete,order_items,5661,,"{""order_item_id"": 5661.0, ""order_id"": 2551.0, ""product_id"": 3.0, ""quantity"": 2.0, ""unit_price"": 1296.0}",
+F19,L3,delete,order_items,4799,,"{""order_item_id"": 4799.0, ""order_id"": 2169.0, ""product_id"": 94.0, ""quantity"": 2.0, ""unit_price"": 1131.0}",
+F19,L3,delete,order_items,2042,,"{""order_item_id"": 2042.0, ""order_id"": 926.0, ""product_id"": 17.0, ""quantity"": 2.0, ""unit_price"": 1581.0}",
+F19,L3,delete,order_items,2043,,"{""order_item_id"": 2043.0, ""order_id"": 926.0, ""product_id"": 127.0, ""quantity"": 1.0, ""unit_price"": 1625.0}",
+F19,L3,delete,order_items,2044,,"{""order_item_id"": 2044.0, ""order_id"": 926.0, ""product_id"": 75.0, ""quantity"": 2.0, ""unit_price"": 4853.0}",
+F19,L3,delete,order_items,11768,,"{""order_item_id"": 11768.0, ""order_id"": 5331.0, ""product_id"": 117.0, ""quantity"": 5.0, ""unit_price"": 3777.0}",
+F19,L3,delete,order_items,11769,,"{""order_item_id"": 11769.0, ""order_id"": 5331.0, ""product_id"": 82.0, ""quantity"": 4.0, ""unit_price"": 5778.0}",
+F19,L3,delete,order_items,326,,"{""order_item_id"": 326.0, ""order_id"": 142.0, ""product_id"": 17.0, ""quantity"": 5.0, ""unit_price"": 1581.0}",
+F19,L3,delete,order_items,327,,"{""order_item_id"": 327.0, ""order_id"": 142.0, ""product_id"": 102.0, ""quantity"": 2.0, ""unit_price"": 1430.0}",
+F19,L3,delete,order_items,354,,"{""order_item_id"": 354.0, ""order_id"": 155.0, ""product_id"": 6.0, ""quantity"": 4.0, ""unit_price"": 1209.0}",
+F19,L3,delete,order_items,355,,"{""order_item_id"": 355.0, ""order_id"": 155.0, ""product_id"": 63.0, ""quantity"": 3.0, ""unit_price"": 6302.0}",
+F19,L3,delete,order_items,2130,,"{""order_item_id"": 2130.0, ""order_id"": 964.0, ""product_id"": 150.0, ""quantity"": 3.0, ""unit_price"": 1301.0}",
+F19,L3,delete,order_items,2131,,"{""order_item_id"": 2131.0, ""order_id"": 964.0, ""product_id"": 95.0, ""quantity"": 4.0, ""unit_price"": 629.0}",
+F19,L3,delete,order_items,2132,,"{""order_item_id"": 2132.0, ""order_id"": 964.0, ""product_id"": 69.0, ""quantity"": 5.0, ""unit_price"": 1673.0}",
+F19,L3,delete,order_items,6058,,"{""order_item_id"": 6058.0, ""order_id"": 2735.0, ""product_id"": 108.0, ""quantity"": 4.0, ""unit_price"": 417.0}",
+F19,L3,delete,order_items,78,,"{""order_item_id"": 78.0, ""order_id"": 31.0, ""product_id"": 84.0, ""quantity"": 5.0, ""unit_price"": 2828.0}",
+F19,L3,delete,order_items,79,,"{""order_item_id"": 79.0, ""order_id"": 31.0, ""product_id"": 41.0, ""quantity"": 1.0, ""unit_price"": 286.0}",
+F19,L3,delete,order_items,1607,,"{""order_item_id"": 1607.0, ""order_id"": 725.0, ""product_id"": 139.0, ""quantity"": 2.0, ""unit_price"": 725.0}",
+F19,L3,delete,order_items,1608,,"{""order_item_id"": 1608.0, ""order_id"": 725.0, ""product_id"": 50.0, ""quantity"": 3.0, ""unit_price"": 26918.0}",
+F19,L3,delete,order_items,1609,,"{""order_item_id"": 1609.0, ""order_id"": 725.0, ""product_id"": 59.0, ""quantity"": 1.0, ""unit_price"": 407.0}",
+F19,L3,delete,order_items,1610,,"{""order_item_id"": 1610.0, ""order_id"": 725.0, ""product_id"": 95.0, ""quantity"": 1.0, ""unit_price"": 629.0}",
+F19,L3,delete,order_items,1611,,"{""order_item_id"": 1611.0, ""order_id"": 725.0, ""product_id"": 118.0, ""quantity"": 3.0, ""unit_price"": 385.0}",
+F19,L3,delete,order_items,8658,,"{""order_item_id"": 8658.0, ""order_id"": 3902.0, ""product_id"": 142.0, ""quantity"": 1.0, ""unit_price"": 1419.0}",
+F19,L3,delete,order_items,8659,,"{""order_item_id"": 8659.0, ""order_id"": 3902.0, ""product_id"": 115.0, ""quantity"": 2.0, ""unit_price"": 687.0}",
+F19,L3,delete,order_items,10661,,"{""order_item_id"": 10661.0, ""order_id"": 4829.0, ""product_id"": 8.0, ""quantity"": 3.0, ""unit_price"": 688.0}",
+F19,L3,delete,order_items,2744,,"{""order_item_id"": 2744.0, ""order_id"": 1244.0, ""product_id"": 18.0, ""quantity"": 1.0, ""unit_price"": 1698.0}",
+F19,L3,delete,order_items,2745,,"{""order_item_id"": 2745.0, ""order_id"": 1244.0, ""product_id"": 56.0, ""quantity"": 5.0, ""unit_price"": 1686.0}",
+F19,L3,delete,order_items,2746,,"{""order_item_id"": 2746.0, ""order_id"": 1244.0, ""product_id"": 65.0, ""quantity"": 3.0, ""unit_price"": 8351.0}",
+F19,L3,delete,order_items,2747,,"{""order_item_id"": 2747.0, ""order_id"": 1244.0, ""product_id"": 6.0, ""quantity"": 1.0, ""unit_price"": 1209.0}",
+F19,L3,delete,order_items,6589,,"{""order_item_id"": 6589.0, ""order_id"": 2972.0, ""product_id"": 12.0, ""quantity"": 3.0, ""unit_price"": 1801.0}",
+F19,L3,delete,order_items,11139,,"{""order_item_id"": 11139.0, ""order_id"": 5057.0, ""product_id"": 41.0, ""quantity"": 4.0, ""unit_price"": 286.0}",
+F19,L3,delete,order_items,11140,,"{""order_item_id"": 11140.0, ""order_id"": 5057.0, ""product_id"": 53.0, ""quantity"": 4.0, ""unit_price"": 295.0}",
+F19,L3,delete,order_items,11141,,"{""order_item_id"": 11141.0, ""order_id"": 5057.0, ""product_id"": 116.0, ""quantity"": 5.0, ""unit_price"": 621.0}",
+F19,L3,delete,order_items,11142,,"{""order_item_id"": 11142.0, ""order_id"": 5057.0, ""product_id"": 92.0, ""quantity"": 2.0, ""unit_price"": 3440.0}",
+F19,L3,delete,order_items,11143,,"{""order_item_id"": 11143.0, ""order_id"": 5057.0, ""product_id"": 49.0, ""quantity"": 1.0, ""unit_price"": 3855.0}",
+F19,L3,delete,order_items,10047,,"{""order_item_id"": 10047.0, ""order_id"": 4545.0, ""product_id"": 22.0, ""quantity"": 2.0, ""unit_price"": 6973.0}",
+F19,L3,delete,order_items,10048,,"{""order_item_id"": 10048.0, ""order_id"": 4545.0, ""product_id"": 89.0, ""quantity"": 3.0, ""unit_price"": 1765.0}",
+F19,L3,delete,order_items,6558,,"{""order_item_id"": 6558.0, ""order_id"": 2957.0, ""product_id"": 104.0, ""quantity"": 5.0, ""unit_price"": 2590.0}",
+F19,L3,delete,order_items,6559,,"{""order_item_id"": 6559.0, ""order_id"": 2957.0, ""product_id"": 43.0, ""quantity"": 3.0, ""unit_price"": 2725.0}",
+F19,L3,delete,order_items,2988,,"{""order_item_id"": 2988.0, ""order_id"": 1355.0, ""product_id"": 98.0, ""quantity"": 1.0, ""unit_price"": 6408.0}",
+F19,L3,delete,order_items,5334,,"{""order_item_id"": 5334.0, ""order_id"": 2404.0, ""product_id"": 134.0, ""quantity"": 4.0, ""unit_price"": 2130.0}",
+F19,L3,delete,order_items,5335,,"{""order_item_id"": 5335.0, ""order_id"": 2404.0, ""product_id"": 43.0, ""quantity"": 4.0, ""unit_price"": 2725.0}",
+F19,L3,delete,order_items,5336,,"{""order_item_id"": 5336.0, ""order_id"": 2404.0, ""product_id"": 1.0, ""quantity"": 3.0, ""unit_price"": 1571.0}",
+F19,L3,delete,order_items,5337,,"{""order_item_id"": 5337.0, ""order_id"": 2404.0, ""product_id"": 136.0, ""quantity"": 4.0, ""unit_price"": 846.0}",
+F19,L3,delete,order_items,404,,"{""order_item_id"": 404.0, ""order_id"": 175.0, ""product_id"": 145.0, ""quantity"": 1.0, ""unit_price"": 3017.0}",
+F19,L3,delete,order_items,405,,"{""order_item_id"": 405.0, ""order_id"": 175.0, ""product_id"": 77.0, ""quantity"": 1.0, ""unit_price"": 1051.0}",
+F19,L3,delete,order_items,8702,,"{""order_item_id"": 8702.0, ""order_id"": 3924.0, ""product_id"": 38.0, ""quantity"": 2.0, ""unit_price"": 2984.0}",
+F19,L3,delete,order_items,8703,,"{""order_item_id"": 8703.0, ""order_id"": 3924.0, ""product_id"": 26.0, ""quantity"": 2.0, ""unit_price"": 634.0}",
+F19,L3,delete,order_items,10133,,"{""order_item_id"": 10133.0, ""order_id"": 4587.0, ""product_id"": 39.0, ""quantity"": 5.0, ""unit_price"": 1871.0}",
+F19,L3,delete,order_items,1983,,"{""order_item_id"": 1983.0, ""order_id"": 898.0, ""product_id"": 140.0, ""quantity"": 5.0, ""unit_price"": 2966.0}",
+F19,L3,delete,order_items,1984,,"{""order_item_id"": 1984.0, ""order_id"": 898.0, ""product_id"": 109.0, ""quantity"": 1.0, ""unit_price"": 1266.0}",
+F19,L3,delete,order_items,11275,,"{""order_item_id"": 11275.0, ""order_id"": 5116.0, ""product_id"": 112.0, ""quantity"": 1.0, ""unit_price"": 2828.0}",
+F19,L3,delete,order_items,11276,,"{""order_item_id"": 11276.0, ""order_id"": 5116.0, ""product_id"": 7.0, ""quantity"": 3.0, ""unit_price"": 1573.0}",
+F19,L3,delete,order_items,11277,,"{""order_item_id"": 11277.0, ""order_id"": 5116.0, ""product_id"": 84.0, ""quantity"": 4.0, ""unit_price"": 2828.0}",
+F19,L3,delete,order_items,550,,"{""order_item_id"": 550.0, ""order_id"": 247.0, ""product_id"": 4.0, ""quantity"": 3.0, ""unit_price"": 1694.0}",
+F19,L3,delete,order_items,3455,,"{""order_item_id"": 3455.0, ""order_id"": 1581.0, ""product_id"": 114.0, ""quantity"": 4.0, ""unit_price"": 1565.0}",
+F19,L3,delete,order_items,3456,,"{""order_item_id"": 3456.0, ""order_id"": 1581.0, ""product_id"": 67.0, ""quantity"": 2.0, ""unit_price"": 731.0}",
+F19,L3,delete,order_items,2912,,"{""order_item_id"": 2912.0, ""order_id"": 1320.0, ""product_id"": 133.0, ""quantity"": 2.0, ""unit_price"": 5482.0}",
+F19,L3,delete,order_items,2913,,"{""order_item_id"": 2913.0, ""order_id"": 1320.0, ""product_id"": 118.0, ""quantity"": 3.0, ""unit_price"": 385.0}",
+F19,L3,delete,order_items,5024,,"{""order_item_id"": 5024.0, ""order_id"": 2262.0, ""product_id"": 65.0, ""quantity"": 5.0, ""unit_price"": 8351.0}",
+F19,L3,delete,order_items,4889,,"{""order_item_id"": 4889.0, ""order_id"": 2208.0, ""product_id"": 121.0, ""quantity"": 5.0, ""unit_price"": 1376.0}",
+F19,L3,delete,order_items,4890,,"{""order_item_id"": 4890.0, ""order_id"": 2208.0, ""product_id"": 65.0, ""quantity"": 1.0, ""unit_price"": 8351.0}",
+F19,L3,delete,order_items,2395,,"{""order_item_id"": 2395.0, ""order_id"": 1084.0, ""product_id"": 79.0, ""quantity"": 4.0, ""unit_price"": 911.0}",
