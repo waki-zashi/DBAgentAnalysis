@@ -1,0 +1,10082 @@
+[
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "street",
+  "pk": 1,
+  "old": "394 Canal Street",
+  "new": "394 Canal tSreet"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "addresses",
+  "column": "postal_code",
+  "pk": 6,
+  "old": "90001",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "addresses",
+  "column": "postal_code",
+  "pk": 9,
+  "old": "33166",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "city",
+  "pk": 11,
+  "old": "San Diego",
+  "new": "SAN DIEGO"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "city",
+  "pk": 12,
+  "old": "New York",
+  "new": "New Yrok"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "country",
+  "pk": 13,
+  "old": "United States",
+  "new": "United Sttaes"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "addresses",
+  "column": "country",
+  "pk": 14,
+  "old": "United States",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "state",
+  "pk": 21,
+  "old": "FL",
+  "new": "fl"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "addresses",
+  "column": "street",
+  "pk": 27,
+  "old": "68850 Franklin Road",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "street",
+  "pk": 29,
+  "old": "5319 Western Avenue",
+  "new": "5319 Wesetrn Avenue"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "addresses",
+  "column": "city",
+  "pk": 35,
+  "old": "Phoenix",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "street",
+  "pk": 43,
+  "old": "6916 Homenick Shore",
+  "new": "6916 Homneick Shore"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "country",
+  "pk": 49,
+  "old": "United States",
+  "new": "UNITED STATES"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "addresses",
+  "column": "city",
+  "pk": 50,
+  "old": "Miami",
+  "new": "MIAMI"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "due_date",
+  "pk": 24,
+  "old": "2024-12-13 00:00:00",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "max_points",
+  "pk": 24,
+  "old": "100",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 30,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "title",
+  "pk": 37,
+  "old": "Lab report",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 41,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "max_points",
+  "pk": 41,
+  "old": "100",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "due_date",
+  "pk": 42,
+  "old": "2021-05-14 00:00:00",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 49,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 62,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "assignments",
+  "column": "description",
+  "pk": 66,
+  "old": "Individual",
+  "new": "INDIVIDUAL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "max_points",
+  "pk": 71,
+  "old": "100",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "due_date",
+  "pk": 73,
+  "old": "2023-05-12 00:00:00",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 74,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "due_date",
+  "pk": 75,
+  "old": "2023-12-15 00:00:00",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 79,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "assignments",
+  "column": "title",
+  "pk": 79,
+  "old": "Reading response",
+  "new": "READING RESPONSE"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "assignments",
+  "column": "description",
+  "pk": 82,
+  "old": "Individual",
+  "new": "INDIVIDUAL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "title",
+  "pk": 108,
+  "old": "Reading response",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 111,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "assignments",
+  "column": "description",
+  "pk": 115,
+  "old": "Individual",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "assignments",
+  "column": "description",
+  "pk": 117,
+  "old": "Individual",
+  "new": "INDIVIDUAL"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "assignments",
+  "column": null,
+  "pk": 121,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "assignments",
+  "column": null,
+  "pk": 122,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "book_loans",
+  "column": "due_date",
+  "pk": 11,
+  "old": "2023-11-14",
+  "new": "20231114"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "book_loans",
+  "column": "loan_date",
+  "pk": 28,
+  "old": "2021-11-05",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "book_loans",
+  "column": "return_date",
+  "pk": 45,
+  "old": "2023-10-17",
+  "new": "2023-09-17"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "book_loans",
+  "column": "loan_date",
+  "pk": 65,
+  "old": "2022-03-03",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "book_loans",
+  "column": "due_date",
+  "pk": 68,
+  "old": "2024-07-11",
+  "new": "11/07/2024"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "book_loans",
+  "column": "loan_date",
+  "pk": 68,
+  "old": "2024-06-28",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "book_loans",
+  "column": "library_card_id",
+  "pk": 69,
+  "old": "1",
+  "new": "329"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "book_loans",
+  "column": "due_date",
+  "pk": 73,
+  "old": "2023-02-18",
+  "new": "18/02/2023"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "book_loans",
+  "column": "return_date",
+  "pk": 79,
+  "old": "2023-08-29",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "book_loans",
+  "column": "due_date",
+  "pk": 93,
+  "old": "2025-12-01",
+  "new": "2025-10-27"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "book_loans",
+  "column": "return_date",
+  "pk": 94,
+  "old": "2021-04-22",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 11,
+  "old": "978-0-0687-5292-0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 20,
+  "old": "Littel and Sons",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 24,
+  "old": "Principles Design",
+  "new": "Pirnciples Design"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 27,
+  "old": "Chasity Anderson MD",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 30,
+  "old": "Theory Physics",
+  "new": "THEORY PHYSICS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 38,
+  "old": "2018",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 40,
+  "old": "2023",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 45,
+  "old": "978-8-8046-2280-6",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 46,
+  "old": "Colleen Carter",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 52,
+  "old": "2025",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 67,
+  "old": "Kenton Powlowski-Hickle",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 76,
+  "old": "Sanford - Johnston",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 80,
+  "old": "Literature European",
+  "new": "Literature Europena"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 103,
+  "old": "Programming Economics On Principles",
+  "new": "Programming Economics nO Principles"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 107,
+  "old": "Handbook Literature Philosophy Music",
+  "new": "Handbook Literature Philosophy Msuic"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 111,
+  "old": "Arlene Welch",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 112,
+  "old": "1982",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 113,
+  "old": "Buck Koelpin",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 114,
+  "old": "Theory To Mind Literature Economics",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 126,
+  "old": "Marquardt and Sons",
+  "new": "MARQUARDT AND SONS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 132,
+  "old": "978-2-2120-0695-8",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 136,
+  "old": "Hudson-MacGyver Inc",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 140,
+  "old": "Tobin Cronin",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 144,
+  "old": "Era O'Hara",
+  "new": "ERA O'HARA"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 154,
+  "old": "2016",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 154,
+  "old": "Hudson, Hirthe and Hahn",
+  "new": "Hudson, iHrthe and Hahn"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 164,
+  "old": "Dr. Kailey Kautzer",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 189,
+  "old": "Literature Calculus",
+  "new": "LITERATURE CALCULUS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 194,
+  "old": "Camilla DuBuque",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 203,
+  "old": "Mr. Unique Dare",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 212,
+  "old": "Dr. Zack Friesen I",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 212,
+  "old": "2008",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 231,
+  "old": "978-3-1784-8176-0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 231,
+  "old": "Rippin, Considine and Maggio",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 232,
+  "old": "Shaina Hagenes",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 241,
+  "old": "Biology European Society Programming",
+  "new": "BIOLOGY EUROPEAN SOCIETY PROGRAMMING"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 244,
+  "old": "Ricky Maggio",
+  "new": "Ricky Mgagio"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 248,
+  "old": "Principles Philosophy Of American",
+  "new": "PRINCIPLES PHILOSOPHY OF AMERICAN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 251,
+  "old": "Spinka, Johns and Conroy",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 252,
+  "old": "Wuckert, Flatley and Bosco",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 256,
+  "old": "Hauck Group",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 260,
+  "old": "Trevion Sauer",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 263,
+  "old": "Statistics European Physics World",
+  "new": "STATISTICS EUROPEAN PHYSICS WORLD"
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 265,
+  "old": "2020",
+  "new": "-2020"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 267,
+  "old": "World Of Society Biology Philosophy",
+  "new": "World Of Society Biology Philosopyh"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 276,
+  "old": "Hirthe, Hane and Harris",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 294,
+  "old": "Ruthie Howell",
+  "new": "RUTHIE HOWELL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 312,
+  "old": "Runte, Bayer and Hintz",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 314,
+  "old": "Introduction Essays Of",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 336,
+  "old": "Programming Modern Biology Chemistry",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 343,
+  "old": "Florence Buckridge",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 345,
+  "old": "Of Statistics Calculus",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 350,
+  "old": "978-8-4027-2931-0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 366,
+  "old": "Veum-Kuvalis - Halvorson",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 368,
+  "old": "1991",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 372,
+  "old": "Ryder Wintheiser",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 374,
+  "old": "978-6-4931-7094-6",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 377,
+  "old": "978-0-6999-3182-5",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 377,
+  "old": "Rice - Goldner",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 383,
+  "old": "Becker, Hauck and Grady",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 384,
+  "old": "Society Of",
+  "new": "SOCIETY OF"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 399,
+  "old": "Alanna Okuneva Sr.",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 399,
+  "old": "Tromp - Treutel",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 405,
+  "old": "Hansen - Dare",
+  "new": "Hansen - Daer"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 410,
+  "old": "Dwight Mann",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 411,
+  "old": "Connelly, O'Connell and Wolff",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 425,
+  "old": "Murazik - Runolfsson",
+  "new": "MURAZIK - RUNOLFSSON"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 427,
+  "old": "On World Programming Society",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 430,
+  "old": "2008",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 431,
+  "old": "Wm Ratke",
+  "new": "WM RATKE"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 435,
+  "old": "1982",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 436,
+  "old": "Spencer, Breitenberg and Hickle",
+  "new": "Spencer, Bretienberg and Hickle"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 445,
+  "old": "Wintheiser, Wolf and Pfeffer",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 447,
+  "old": "Emmerich, Johns and Jaskolski",
+  "new": "EMMERICH, JOHNS AND JASKOLSKI"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 449,
+  "old": "Terrill Hyatt",
+  "new": "TERRILL HYATT"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 457,
+  "old": "2023",
+  "new": "20230"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 464,
+  "old": "Nicholas Corkery V",
+  "new": "Nichloas Corkery V"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 466,
+  "old": "Towne, Koepp and Stehr",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 479,
+  "old": "Chelsea Padberg",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 479,
+  "old": "2024",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 481,
+  "old": "Statistics Calculus Handbook Chemistry Economics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 488,
+  "old": "2020",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 491,
+  "old": "Alessandro Rath",
+  "new": "Alessadnro Rath"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 493,
+  "old": "978-1-0827-7749-3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 495,
+  "old": "978-5-1273-0290-1",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 509,
+  "old": "Modern Literature The Music Economics",
+  "new": "Modern Literature The Muisc Economics"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 512,
+  "old": "2020",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 514,
+  "old": "Hilll Inc",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 519,
+  "old": "2024",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 527,
+  "old": "978-5-9333-6138-9",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 527,
+  "old": "Design Essays Programming On",
+  "new": "eDsign Essays Programming On"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 534,
+  "old": "The Introduction",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 537,
+  "old": "978-0-3506-0535-0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 537,
+  "old": "Rice, Schimmel and Senger",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 552,
+  "old": "Nolan Group",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 555,
+  "old": "Barton Gutmann IV",
+  "new": "Barton Gumtann IV"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 556,
+  "old": "Fisher, Jaskolski and Schimmel",
+  "new": "Fisher, Jaskolski and Scihmmel"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 569,
+  "old": "Curtis Herman Sr.",
+  "new": "Crutis Herman Sr."
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 569,
+  "old": "Leuschke - Lindgren",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 570,
+  "old": "Schamberger, Dickens and Mayer",
+  "new": "Schamebrger, Dickens and Mayer"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 571,
+  "old": "Lavern Hahn",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 572,
+  "old": "Theory Modern World Essays",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 573,
+  "old": "Steven Torp III",
+  "new": "Stevne Torp III"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 592,
+  "old": "American Design European Literature Modern",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 593,
+  "old": "978-2-8565-3216-6",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 601,
+  "old": "Kuphal Inc",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 603,
+  "old": "1990",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 604,
+  "old": "2000",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 607,
+  "old": "Design History Literature Theory Handbook",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 612,
+  "old": "978-4-1182-3438-6",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 615,
+  "old": "2008",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 618,
+  "old": "978-1-9105-9296-5",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 619,
+  "old": "Bergstrom - Stracke",
+  "new": "Bergstrom - Srtacke"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 620,
+  "old": "2017",
+  "new": "20170"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 623,
+  "old": "Jackson Kilback",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 624,
+  "old": "978-4-3983-2657-3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 628,
+  "old": "978-7-9494-1947-7",
+  "new": null
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 637,
+  "old": "2014",
+  "new": "-2014"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 640,
+  "old": "Principles Chemistry On Music Programming",
+  "new": "PRINCIPLES CHEMISTRY ON MUSIC PROGRAMMING"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 650,
+  "old": "Maegan Sipes",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 656,
+  "old": "Principles Chemistry History To Physics",
+  "new": "Principles Chemistry Histroy To Physics"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 658,
+  "old": "2020",
+  "new": "20200"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 669,
+  "old": "Principles Design The",
+  "new": "rPinciples Design The"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 671,
+  "old": "Physics Principles History Introduction Design",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 672,
+  "old": "Electa Beier",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 673,
+  "old": "Hassie Hickle",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 677,
+  "old": "978-1-4472-8830-0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 687,
+  "old": "Statistics History Economics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 697,
+  "old": "2011",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 700,
+  "old": "Of Practice Design Economics Essays",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 714,
+  "old": "Pfannerstill - Jakubowski",
+  "new": "PFANNERSTILL - JAKUBOWSKI"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 716,
+  "old": "Design Calculus",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 721,
+  "old": "1984",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 723,
+  "old": "Introduction Modern Chemistry",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 725,
+  "old": "Hettinger - Funk",
+  "new": "Hettingre - Funk"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 727,
+  "old": "2021",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 730,
+  "old": "1995",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 736,
+  "old": "1985",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 739,
+  "old": "Jerome Considine V",
+  "new": "JEROME CONSIDINE V"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 741,
+  "old": "978-8-0056-8334-2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 741,
+  "old": "Lindgren LLC",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 759,
+  "old": "2017",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 762,
+  "old": "978-2-9100-6229-5",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 769,
+  "old": "Johnny Murphy IV",
+  "new": "Johnyn Murphy IV"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 772,
+  "old": "Louise Larson",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 772,
+  "old": "978-7-0390-5276-7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 777,
+  "old": "D'Amore and Sons",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 778,
+  "old": "978-0-2902-1082-2",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 780,
+  "old": "Turcotte, Kozey and Collier",
+  "new": "TURCOTTE, KOZEY AND COLLIER"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 783,
+  "old": "O'Reilly LLC",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 787,
+  "old": "Aiyana Marvin",
+  "new": "Aiayna Marvin"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 790,
+  "old": "Myron Ankunding",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 792,
+  "old": "Walton Connelly",
+  "new": "WALTON CONNELLY"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 799,
+  "old": "2007",
+  "new": "20070"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 808,
+  "old": "978-0-4274-7422-4",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 822,
+  "old": "Welch - Nicolas",
+  "new": "Weclh - Nicolas"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 830,
+  "old": "978-9-1942-6328-9",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 833,
+  "old": "978-4-6507-3731-7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 835,
+  "old": "978-4-3209-8795-9",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 844,
+  "old": "Mr. Lon Boehm",
+  "new": "rM. Lon Boehm"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 845,
+  "old": "DuBuque Inc",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 846,
+  "old": "Economics Handbook",
+  "new": "Economics Hanbdook"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 849,
+  "old": "Strosin - Tromp",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 855,
+  "old": "Carli Leuschke",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 860,
+  "old": "978-6-5224-9565-4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 862,
+  "old": "Charity McKenzie",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 866,
+  "old": "2021",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 868,
+  "old": "Philosophy Theory History Statistics",
+  "new": "Pihlosophy Theory History Statistics"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 873,
+  "old": "Petra Runolfsson",
+  "new": "Petra Runoflsson"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 885,
+  "old": "Rice LLC",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 886,
+  "old": "Herta Rempel",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 888,
+  "old": "Amanda O'Hara-Metz",
+  "new": "Amanda O'Hara-Mezt"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 893,
+  "old": "Nadia Kihn",
+  "new": "NADIA KIHN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 901,
+  "old": "978-9-8293-3023-5",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 903,
+  "old": "To Handbook Modern",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 906,
+  "old": "Adell Hand",
+  "new": "Adlel Hand"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 907,
+  "old": "2000",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 910,
+  "old": "Sam Gutkowski-Jast",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 919,
+  "old": "Handbook Biology Physics History",
+  "new": "HANDBOOK BIOLOGY PHYSICS HISTORY"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 921,
+  "old": "978-9-4220-5253-9",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 923,
+  "old": "Cormier LLC",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 934,
+  "old": "Rahsaan Treutel",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 934,
+  "old": "Daniel - Funk",
+  "new": "Daniel - Fukn"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 938,
+  "old": "Guillermo Weissnat IV",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 938,
+  "old": "Statistics To Chemistry Design",
+  "new": "Statistics To Chemistry eDsign"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 939,
+  "old": "Programming Essays To Modern",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 943,
+  "old": "Beahan, Greenfelder and Wolf",
+  "new": "Beahan, Greefnelder and Wolf"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 944,
+  "old": "Design Introduction On",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 945,
+  "old": "2023",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 949,
+  "old": "Gonzalo Moen",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 950,
+  "old": "Handbook Statistics Chemistry European Of",
+  "new": "Hadnbook Statistics Chemistry European Of"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 952,
+  "old": "978-1-5789-7398-9",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 954,
+  "old": "Chemistry European The Principles",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 961,
+  "old": "978-5-6771-6720-6",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 969,
+  "old": "Lucienne Schumm",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 971,
+  "old": "978-3-0693-7047-3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 973,
+  "old": "Calculus Principles Chemistry",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 976,
+  "old": "Taylor Grady",
+  "new": "TAYLOR GRADY"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 980,
+  "old": "1985",
+  "new": "19850"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 981,
+  "old": "Bruen, Hamill and Friesen",
+  "new": "BRUEN, HAMILL AND FRIESEN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 984,
+  "old": "978-9-1960-7617-0",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 984,
+  "old": "Music European",
+  "new": "Msuic European"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 987,
+  "old": "Theory Economics Biology",
+  "new": "hTeory Economics Biology"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 996,
+  "old": "978-2-0806-0797-3",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 996,
+  "old": "Stoltenberg and Sons",
+  "new": "STOLTENBERG AND SONS"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1003,
+  "old": "The Essays Calculus Practice Of",
+  "new": "The Essays Calculus Pratcice Of"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1012,
+  "old": "978-7-5036-3787-3",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1019,
+  "old": "Marvin, Satterfield and Schimmel",
+  "new": "Marvin, Satterifeld and Schimmel"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1026,
+  "old": "Erna Upton",
+  "new": "Eran Upton"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1029,
+  "old": "Stanley Hintz MD",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1039,
+  "old": "Kreiger Group",
+  "new": "Kreiger Gropu"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1041,
+  "old": "World Practice Handbook Programming Modern",
+  "new": "WORLD PRACTICE HANDBOOK PROGRAMMING MODERN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1045,
+  "old": "Burdette Bartoletti",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1048,
+  "old": "Emilio Ebert",
+  "new": "Emliio Ebert"
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1054,
+  "old": "2025",
+  "new": "-2025"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1057,
+  "old": "To The Physics",
+  "new": "TO THE PHYSICS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1058,
+  "old": "Hane - Weimann",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1058,
+  "old": "Chemistry World Programming Introduction American",
+  "new": "Chemitsry World Programming Introduction American"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1061,
+  "old": "Franklin Howell",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1062,
+  "old": "2014",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1065,
+  "old": "Chadrick Cruickshank",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1066,
+  "old": "Design Economics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1068,
+  "old": "Anais Windler DDS",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1074,
+  "old": "Lula Wisozk",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1077,
+  "old": "Okuneva Inc",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1080,
+  "old": "Schamberger-Schinner - Corkery",
+  "new": "Schambegrer-Schinner - Corkery"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1081,
+  "old": "Introduction Physics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1086,
+  "old": "Principles Music",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1088,
+  "old": "978-9-1150-6301-3",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1089,
+  "old": "Essays Music Practice",
+  "new": "ESSAYS MUSIC PRACTICE"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1096,
+  "old": "Johnathan Nikolaus Jr.",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1102,
+  "old": "978-3-6316-6650-3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1104,
+  "old": "978-3-6789-7579-4",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1106,
+  "old": "Mr. Moses Ebert",
+  "new": "Mr. Moses Ebetr"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1108,
+  "old": "978-0-5292-1249-4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1111,
+  "old": "Programming American Introduction To Biology",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1112,
+  "old": "978-9-2912-6353-7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1119,
+  "old": "Mr. Nick Franecki",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1129,
+  "old": "2019",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1133,
+  "old": "DuBuque-Bode, Lindgren-Champlin and Grady",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1142,
+  "old": "Jenkins, Predovic and Swaniawski-Abshire",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1143,
+  "old": "Design Statistics",
+  "new": "Dseign Statistics"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1146,
+  "old": "Watsica LLC",
+  "new": "Watsiac LLC"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1147,
+  "old": "978-3-0515-0200-0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1149,
+  "old": "Monte Johnson",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1157,
+  "old": "978-5-3812-9503-5",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1158,
+  "old": "Traci Dickens",
+  "new": "Traci Dicekns"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1158,
+  "old": "Theory Music",
+  "new": "THEORY MUSIC"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1159,
+  "old": "Jarrod Christiansen",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1161,
+  "old": "Design American Literature Mind",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1163,
+  "old": "Kirk Kozey",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1172,
+  "old": "Elisa Lebsack DVM",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1177,
+  "old": "978-0-8730-9861-3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1186,
+  "old": "Myrl Durgan",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1188,
+  "old": "Literature Modern Philosophy Music",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1200,
+  "old": "Mildred Dach",
+  "new": "MILDRED DACH"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1200,
+  "old": "Bashirian Inc",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1207,
+  "old": "1997",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1215,
+  "old": "1997",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1215,
+  "old": "Calculus Modern",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1216,
+  "old": "Reichel - Macejkovic",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1217,
+  "old": "Boyle - Fay",
+  "new": "BOYLE - FAY"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1222,
+  "old": "978-2-7539-0475-9",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1229,
+  "old": "2010",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1249,
+  "old": "To Introduction",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1253,
+  "old": "2025",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1269,
+  "old": "Of Chemistry Society Programming Essays",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1272,
+  "old": "Mind On Introduction Of",
+  "new": "Mind On Introduciton Of"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1275,
+  "old": "Bechtelar, Conroy and White",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1291,
+  "old": "978-1-3771-0361-5",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1292,
+  "old": "Physics The",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1298,
+  "old": "Halvorson LLC",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1300,
+  "old": "2025",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1311,
+  "old": "Lueilwitz - Kuvalis",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1317,
+  "old": "Cecelia Johnston",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1317,
+  "old": "978-9-4856-7137-5",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1320,
+  "old": "Aisha Kuphal",
+  "new": "AISHA KUPHAL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1322,
+  "old": "978-1-6669-2324-1",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1322,
+  "old": "Essays Society Music Mind",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1324,
+  "old": "978-1-3593-5985-7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1325,
+  "old": "978-1-9313-2687-1",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1330,
+  "old": "Hackett - Wehner",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1340,
+  "old": "Lang and Sons",
+  "new": "LANG AND SONS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1349,
+  "old": "978-0-2669-3696-5",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1354,
+  "old": "978-7-1696-4742-4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1356,
+  "old": "Literature Handbook Essays To",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1357,
+  "old": "Economics Design World Theory European",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1361,
+  "old": "The Literature Calculus World",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1364,
+  "old": "Jayme Denesik",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1365,
+  "old": "Edna Hand",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1366,
+  "old": "978-3-4561-1661-6",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1367,
+  "old": "McDermott - Stoltenberg",
+  "new": "McDermott - Stoltenbreg"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1375,
+  "old": "2023",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1375,
+  "old": "Philosophy Chemistry To Programming Physics",
+  "new": "PHILOSOPHY CHEMISTRY TO PROGRAMMING PHYSICS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1381,
+  "old": "Economics Statistics",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1386,
+  "old": "Jessie Runolfsdottir II",
+  "new": "Jessie Runlofsdottir II"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1392,
+  "old": "2023",
+  "new": "20230"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1401,
+  "old": "978-6-8036-5188-0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1402,
+  "old": "Breitenberg, Jerde and Wisozk",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1408,
+  "old": "Terrell Trantow",
+  "new": "Tererll Trantow"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1409,
+  "old": "Luettgen Group",
+  "new": "LUETTGEN GROUP"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1410,
+  "old": "Music World Calculus",
+  "new": "Music World Calcluus"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1421,
+  "old": "Cummerata Inc",
+  "new": "CUMMERATA INC"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1422,
+  "old": "Ondricka, Mosciski and Feil",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1426,
+  "old": "Essays Programming Physics Modern European",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1432,
+  "old": "2020",
+  "new": null
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1435,
+  "old": "2025",
+  "new": "-2025"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1436,
+  "old": "Alysson Bashirian",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1447,
+  "old": "2023",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1449,
+  "old": "2025",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1455,
+  "old": "1991",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1456,
+  "old": "Rowland Pfannerstill",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1457,
+  "old": "Ronny Senger",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1460,
+  "old": "Metz - Hand",
+  "new": "METZ - HAND"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1474,
+  "old": "Modern Programming On Practice",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1477,
+  "old": "Shaina Leffler",
+  "new": "SHAINA LEFFLER"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1478,
+  "old": "Hoppe, Will and Marks",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1496,
+  "old": "Marks - Sanford",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1498,
+  "old": "Theory On Design The",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1502,
+  "old": "Erdman-Kilback - Kshlerin",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1513,
+  "old": "978-1-5851-3419-2",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1513,
+  "old": "Design Introduction Practice Modern Economics",
+  "new": "DESIGN INTRODUCTION PRACTICE MODERN ECONOMICS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1515,
+  "old": "American The Physics",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1518,
+  "old": "Society Theory Programming",
+  "new": "Society Theoyr Programming"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1526,
+  "old": "Friesen - Haag",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1527,
+  "old": "Jeffry Schamberger",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1527,
+  "old": "Volkman, Yost and Auer-Murray",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1529,
+  "old": "Literature Principles European Music",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1532,
+  "old": "Fritsch, Ankunding and Lueilwitz",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1535,
+  "old": "Lebsack - O'Conner",
+  "new": "LEBSACK - O'CONNER"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1545,
+  "old": "World Practice Mind Handbook Theory",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1550,
+  "old": "2022",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1553,
+  "old": "Dallin Leffler",
+  "new": "DALLIN LEFFLER"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1568,
+  "old": "Wolf, Kulas and Dicki",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1571,
+  "old": "1986",
+  "new": "19860"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1576,
+  "old": "Ricardo Legros",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1583,
+  "old": "Gerard Walter",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1585,
+  "old": "Stephen Runolfsson",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1590,
+  "old": "Haley LLC",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1593,
+  "old": "Derick O'Reilly V",
+  "new": "DERICK O'REILLY V"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1595,
+  "old": "European Biology",
+  "new": "EUROPEAN BIOLOGY"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1615,
+  "old": "Mosciski Inc",
+  "new": "MOSCISKI INC"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1616,
+  "old": "Barry Corkery",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1618,
+  "old": "978-0-6085-2198-1",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1621,
+  "old": "978-0-8710-1573-5",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1623,
+  "old": "Roberts - Renner",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1626,
+  "old": "Senger and Sons",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1629,
+  "old": "Johnathan Schaden",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1629,
+  "old": "Ryan, Spinka and Armstrong",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1631,
+  "old": "Philosophy Music Of",
+  "new": "Philoosphy Music Of"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1635,
+  "old": "Literature To Handbook History Statistics",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1642,
+  "old": "Myron Walter",
+  "new": "Myron Watler"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1643,
+  "old": "2005",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1647,
+  "old": "Tate Rempel",
+  "new": "TATE REMPEL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1650,
+  "old": "Practice Essays Philosophy Calculus On",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1654,
+  "old": "978-8-5634-4981-6",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1655,
+  "old": "2024",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1655,
+  "old": "Bashirian and Sons",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1660,
+  "old": "2024",
+  "new": "20240"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1662,
+  "old": "978-3-1517-7227-2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1674,
+  "old": "Shirley Beer",
+  "new": null
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1674,
+  "old": "2016",
+  "new": "-2016"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1675,
+  "old": "Kilback - Douglas",
+  "new": "KILBACK - DOUGLAS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1678,
+  "old": "Lexi Reilly",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1683,
+  "old": "Sipes - Howell",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1683,
+  "old": "Physics Calculus Music",
+  "new": "PHYSICS CALCULUS MUSIC"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1695,
+  "old": "Economics Calculus Handbook Introduction",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1697,
+  "old": "Shakira Pacocha",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1707,
+  "old": "Essays Practice Modern",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1710,
+  "old": "Rickey Shanahan",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1725,
+  "old": "Bernier, Yost-Shields and Gorczany",
+  "new": "BERNIER, YOST-SHIELDS AND GORCZANY"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1731,
+  "old": "Society Mind Essays Music",
+  "new": "Scoiety Mind Essays Music"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1735,
+  "old": "1987",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1737,
+  "old": "Heidenreich LLC",
+  "new": "Heidenreihc LLC"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1738,
+  "old": "Zackery Ward",
+  "new": "Zacekry Ward"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1746,
+  "old": "Lloyd Feil",
+  "new": "LLOYD FEIL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1747,
+  "old": "978-2-9752-5259-2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1748,
+  "old": "On Essays Physics Biology Principles",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1760,
+  "old": "1984",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1765,
+  "old": "Asa Bergstrom",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1765,
+  "old": "1991",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1772,
+  "old": "Ryan-Pagac - Fritsch",
+  "new": "Ryan-Pagac - Fritshc"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1774,
+  "old": "1994",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1775,
+  "old": "Economics History",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1788,
+  "old": "Wintheiser Inc",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1792,
+  "old": "Cleo Murazik V",
+  "new": "CLEO MURAZIK V"
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1792,
+  "old": "2018",
+  "new": "-2018"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1793,
+  "old": "Statistics Theory Design Practice Essays",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1805,
+  "old": "978-8-8516-0106-7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1817,
+  "old": "Modern Mind Society Economics European",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1824,
+  "old": "978-0-4933-4127-3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1825,
+  "old": "Powlowski, Rice and Runolfsson",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1825,
+  "old": "Society Principles",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1835,
+  "old": "978-2-1158-2357-8",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1835,
+  "old": "Sporer - Schuster",
+  "new": "SPORER - SCHUSTER"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1839,
+  "old": "978-2-6491-1842-2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1843,
+  "old": "978-5-1443-1849-9",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1844,
+  "old": "2018",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1845,
+  "old": "Ms. Sunny McLaughlin",
+  "new": "MS. SUNNY MCLAUGHLIN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1846,
+  "old": "2021",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1860,
+  "old": "Koelpin - Doyle",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1870,
+  "old": "2017",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "isbn",
+  "pk": 1876,
+  "old": "978-1-2556-8595-4",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1890,
+  "old": "Lueilwitz Inc",
+  "new": "LUEILWITZ INC"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1892,
+  "old": "Mack Kovacek",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1894,
+  "old": "Essays Society World Programming",
+  "new": "ESSAYS SOCIETY WORLD PROGRAMMING"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1899,
+  "old": "Hintz - Kovacek",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1906,
+  "old": "Nathaniel Ruecker",
+  "new": "Nathaniel Ruceker"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1908,
+  "old": "1988",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1908,
+  "old": "O'Reilly Inc",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1909,
+  "old": "Bartoletti and Sons",
+  "new": "BARTOLETTI AND SONS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1914,
+  "old": "Music Economics Statistics Society",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1921,
+  "old": "Lance Koepp",
+  "new": "Lnace Koepp"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1927,
+  "old": "2008",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1931,
+  "old": "Kihn - Leffler",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1938,
+  "old": "Elinore Pouros",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "title",
+  "pk": 1972,
+  "old": "World Mind Theory Statistics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1977,
+  "old": "Odessa Purdy",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1983,
+  "old": "Dane Smith",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "author",
+  "pk": 1987,
+  "old": "Marjory Raynor-Hoeger",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1988,
+  "old": "Gerlach - Aufderhar",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "title",
+  "pk": 1989,
+  "old": "Economics Of World American The",
+  "new": "ECONOMICS OF WORLD AMERICAN THE"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "publisher",
+  "pk": 1992,
+  "old": "Kilback, Hilll and Kihn",
+  "new": "KILBACK, HILLL AND KIHN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "books",
+  "column": "publication_year",
+  "pk": 1995,
+  "old": "2024",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "books",
+  "column": "author",
+  "pk": 1999,
+  "old": "Dusty Fisher",
+  "new": "DUSTY FISHER"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2001,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2002,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2003,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2004,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2005,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2006,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2007,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2008,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2009,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2010,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2011,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2012,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2013,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2014,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2015,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2016,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2017,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2018,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2019,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2020,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2021,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2022,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2023,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2024,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2025,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2026,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2027,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2028,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2029,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2030,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2031,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2032,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2033,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2034,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2035,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2036,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "books",
+  "column": null,
+  "pk": 2037,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "buildings",
+  "column": "floors",
+  "pk": 6,
+  "old": "7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "buildings",
+  "column": "floors",
+  "pk": 10,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "club_memberships",
+  "column": "role",
+  "pk": 7,
+  "old": "member",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "club_memberships",
+  "column": "student_id",
+  "pk": 8,
+  "old": "4",
+  "new": "630"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "club_memberships",
+  "column": "join_date",
+  "pk": 10,
+  "old": "2021-01-21",
+  "new": "21/01/2021"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "club_memberships",
+  "column": "role",
+  "pk": 29,
+  "old": "member",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "clubs",
+  "column": "name",
+  "pk": 3,
+  "old": "Esports League Astronomy",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "clubs",
+  "column": "name",
+  "pk": 11,
+  "old": "Poetry Hiking Running",
+  "new": "Poetry Hiknig Running"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "clubs",
+  "column": "description",
+  "pk": 12,
+  "old": "By audition",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "clubs",
+  "column": "budget",
+  "pk": 13,
+  "old": "7685.87",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "clubs",
+  "column": "description",
+  "pk": 21,
+  "old": "Meets monthly",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "clubs",
+  "column": "budget",
+  "pk": 24,
+  "old": "4616.13",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "clubs",
+  "column": "establishment_date",
+  "pk": 28,
+  "old": "1995-11-20",
+  "new": "19951120"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "clubs",
+  "column": "budget",
+  "pk": 39,
+  "old": "18526.20",
+  "new": "185262.00"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "clubs",
+  "column": null,
+  "pk": 41,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 15,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 16,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_materials",
+  "column": "course_id",
+  "pk": 18,
+  "old": "149",
+  "new": "1410"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 26,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 29,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_materials",
+  "column": "book_id",
+  "pk": 35,
+  "old": "111",
+  "new": "4962"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 49,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 92,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 199,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_materials",
+  "column": "book_id",
+  "pk": 225,
+  "old": "273",
+  "new": "4868"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 378,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 384,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 410,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 411,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 428,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 429,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 459,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 510,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 558,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 566,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_materials",
+  "column": "book_id",
+  "pk": 595,
+  "old": "1209",
+  "new": "4540"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_materials",
+  "column": "book_id",
+  "pk": 662,
+  "old": "218",
+  "new": "4273"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_materials",
+  "column": "book_id",
+  "pk": 681,
+  "old": "1875",
+  "new": "4401"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 694,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 841,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 848,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_materials",
+  "column": "book_id",
+  "pk": 858,
+  "old": "1257",
+  "new": "4183"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 880,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 882,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 893,
+  "old": "FALSE",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "course_materials",
+  "column": "is_required",
+  "pk": 894,
+  "old": "TRUE",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 901,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 902,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 903,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 904,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 905,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 906,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 907,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 908,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 909,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 910,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 911,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_materials",
+  "column": null,
+  "pk": 912,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_prerequisites",
+  "column": "course_id",
+  "pk": 78,
+  "old": "355",
+  "new": "1791"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_prerequisites",
+  "column": "course_id",
+  "pk": 102,
+  "old": "57",
+  "new": "2015"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "course_prerequisites",
+  "column": "course_id",
+  "pk": 159,
+  "old": "220",
+  "new": "1353"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "course_prerequisites",
+  "column": null,
+  "pk": 301,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 1,
+  "old": "VPGW-307",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 3,
+  "old": "LYNS-749",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 3,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 5,
+  "old": "Seminar",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 5,
+  "old": "In Statistics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 6,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 6,
+  "old": "Laboratory Topics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 9,
+  "old": "Seminar",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 17,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 30,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 38,
+  "old": "Topics In History Applied",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 46,
+  "old": "BSAN-641",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "courses",
+  "column": "credits",
+  "pk": 57,
+  "old": "4",
+  "new": "40"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 59,
+  "old": "Foundations To In Modern",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "courses",
+  "column": "department_id",
+  "pk": 61,
+  "old": "1",
+  "new": "105"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "courses",
+  "column": "department_id",
+  "pk": 70,
+  "old": "14",
+  "new": "493"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 75,
+  "old": "Lecture and lab",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 85,
+  "old": "Research Methods",
+  "new": "RESEARCH METHODS"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 86,
+  "old": "Ethics Writing",
+  "new": "ETHICS WRITING"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 89,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 92,
+  "old": "XIFM-802",
+  "new": "xifm-802"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 96,
+  "old": "1",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 101,
+  "old": "Lecture and lab",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 105,
+  "old": "POSD-291",
+  "new": "posd-291"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 107,
+  "old": "IKNF-519",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 109,
+  "old": "Seminar",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 112,
+  "old": "Algorithms Statistics To Applied",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 114,
+  "old": "THOA-093",
+  "new": "thoa-093"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 114,
+  "old": "History Calculus Algorithms Laboratory",
+  "new": "HISTORY CALCULUS ALGORITHMS LABORATORY"
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "courses",
+  "column": "credits",
+  "pk": 116,
+  "old": "4",
+  "new": "-4"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 127,
+  "old": "Laboratory Algorithms Principles Statistics",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 128,
+  "old": "BAMJ-481",
+  "new": "ABMJ-481"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 138,
+  "old": "Principles Seminar Modern",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 145,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 152,
+  "old": "AVDT-753",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 152,
+  "old": "Research Systems History In",
+  "new": "RESEARCH SYSTEMS HISTORY IN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 153,
+  "old": "2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 163,
+  "old": "JHKC-147",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 169,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "description",
+  "pk": 171,
+  "old": "Lecture",
+  "new": "LECTURE"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "courses",
+  "column": "department_id",
+  "pk": 180,
+  "old": "3",
+  "new": "381"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 188,
+  "old": "GOWE-105",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 192,
+  "old": "Methods Applied History Foundations",
+  "new": "Methods Applied Hitsory Foundations"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 193,
+  "old": "Algorithms Research",
+  "new": "Algorithms Resaerch"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "description",
+  "pk": 197,
+  "old": "Online",
+  "new": "ONLINE"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 200,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 202,
+  "old": "JKNK-326",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 203,
+  "old": "Research Laboratory",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 204,
+  "old": "RULU-732",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 206,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 217,
+  "old": "Calculus Foundations",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 220,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 222,
+  "old": "TGHG-225",
+  "new": "tghg-225"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 224,
+  "old": "STBJ-002",
+  "new": "TSBJ-002"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 226,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 229,
+  "old": "2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 229,
+  "old": "Principles Topics Foundations Research",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 233,
+  "old": "GTKM-929",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 255,
+  "old": "XVCO-640",
+  "new": "xvco-640"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 258,
+  "old": "YPCY-749",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 263,
+  "old": "2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 269,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 270,
+  "old": "Principles Calculus Topics Advanced",
+  "new": "Principles Calculus Topics Avdanced"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 274,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 277,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 277,
+  "old": "Introduction Calculus Writing",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 296,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 300,
+  "old": "Design In Ethics",
+  "new": "Desing In Ethics"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 301,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 305,
+  "old": "HRGW-791",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 309,
+  "old": "KXCD-751",
+  "new": "KCXD-751"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 311,
+  "old": "XNQX-380",
+  "new": "xnqx-380"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 311,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 311,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 321,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 321,
+  "old": "Analysis Seminar Calculus Laboratory",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 322,
+  "old": "Statistics Research Theory",
+  "new": "STATISTICS RESEARCH THEORY"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 339,
+  "old": "YVIM-972",
+  "new": "YIVM-972"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 341,
+  "old": "OHIX-974",
+  "new": "OIHX-974"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 347,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 354,
+  "old": "MILN-632",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 368,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 369,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 382,
+  "old": "History Applied Introduction",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 383,
+  "old": "Studio",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 388,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 393,
+  "old": "DOST-495",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 397,
+  "old": "LWMN-591",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 401,
+  "old": "Systems In Statistics Principles",
+  "new": "SYSTEMS IN STATISTICS PRINCIPLES"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 404,
+  "old": "Of Algorithms Advanced Principles",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 417,
+  "old": "PLBH-396",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 418,
+  "old": "Seminar",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 424,
+  "old": "TWXP-204",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 435,
+  "old": "2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 436,
+  "old": "Introduction Ethics Topics",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 453,
+  "old": "BHVC-552",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 464,
+  "old": "UZUW-317",
+  "new": "UUZW-317"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 465,
+  "old": "In To Of",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 467,
+  "old": "BMRL-676",
+  "new": "MBRL-676"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 469,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "courses",
+  "column": "department_id",
+  "pk": 470,
+  "old": "3",
+  "new": "777"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 473,
+  "old": "Writing Foundations Of Advanced",
+  "new": "Writing Foundations fO Advanced"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 487,
+  "old": "Methods Algorithms",
+  "new": "METHODS ALGORITHMS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 489,
+  "old": "ENEY-045",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 495,
+  "old": "BBNN-230",
+  "new": "bbnn-230"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "credits",
+  "pk": 496,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "courses",
+  "column": "credits",
+  "pk": 497,
+  "old": "4",
+  "new": "40"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 504,
+  "old": "WRVH-457",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "description",
+  "pk": 506,
+  "old": "Lecture and lab",
+  "new": "LECTURE AND LAB"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 508,
+  "old": "To Seminar Writing Of",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 509,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 515,
+  "old": "Introduction Applied Calculus To",
+  "new": "Introduction Aplpied Calculus To"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 519,
+  "old": "Seminar",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 522,
+  "old": "XOFS-739",
+  "new": "XFOS-739"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 528,
+  "old": "Foundations Applied Research",
+  "new": "FOUNDATIONS APPLIED RESEARCH"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "title",
+  "pk": 543,
+  "old": "Applied History Seminar In",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "description",
+  "pk": 545,
+  "old": "Seminar",
+  "new": "SEMINAR"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 550,
+  "old": "Lecture",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 552,
+  "old": "RWMS-259",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "description",
+  "pk": 553,
+  "old": "Lecture and lab",
+  "new": "LECTURE AND LAB"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 555,
+  "old": "Design Statistics History",
+  "new": "Design Sattistics History"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 557,
+  "old": "IBAV-445",
+  "new": "IBVA-445"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 559,
+  "old": "UCTX-922",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "courses",
+  "column": "department_id",
+  "pk": 560,
+  "old": "1",
+  "new": "557"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "description",
+  "pk": 560,
+  "old": "Lecture",
+  "new": "LECTURE"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 562,
+  "old": "APZC-339",
+  "new": "AZPC-339"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 563,
+  "old": "Methods Algorithms",
+  "new": "Methods Aglorithms"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "description",
+  "pk": 571,
+  "old": "Studio",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "code",
+  "pk": 581,
+  "old": "KCND-123",
+  "new": "kcnd-123"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "description",
+  "pk": 581,
+  "old": "Seminar",
+  "new": "SEMINAR"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "courses",
+  "column": "title",
+  "pk": 581,
+  "old": "Analysis Modern Writing Algorithms",
+  "new": "ANALYSIS MODERN WRITING ALGORITHMS"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "courses",
+  "column": "code",
+  "pk": 591,
+  "old": "EUWU-041",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 608,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 609,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 610,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 611,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 601,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 602,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 603,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 604,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 605,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 606,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "courses",
+  "column": null,
+  "pk": 607,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "departments",
+  "column": "name",
+  "pk": 1,
+  "old": "Mechanical Engineering",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 63,
+  "old": "A-",
+  "new": "a-"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 66,
+  "old": "A-",
+  "new": null
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 93,
+  "old": "4",
+  "new": "-4"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 112,
+  "old": "3",
+  "new": "30"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 156,
+  "old": "C-",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "section_id",
+  "pk": 176,
+  "old": "8",
+  "new": "709"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 195,
+  "old": "C-",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 202,
+  "old": "2.3",
+  "new": "23"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 225,
+  "old": "A-",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 248,
+  "old": "C-",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 277,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 306,
+  "old": "A",
+  "new": "a"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 348,
+  "old": "D",
+  "new": "d"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 373,
+  "old": "C",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 377,
+  "old": "C-",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 389,
+  "old": "25",
+  "new": "439"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 392,
+  "old": "32",
+  "new": "1046"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 393,
+  "old": "A",
+  "new": "a"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 393,
+  "old": "16",
+  "new": "611"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 396,
+  "old": "B-",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 401,
+  "old": "2.3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 426,
+  "old": "C",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 481,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 485,
+  "old": "26",
+  "new": "600"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 491,
+  "old": "B-",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 501,
+  "old": "A",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "section_id",
+  "pk": 501,
+  "old": "1",
+  "new": "299"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 529,
+  "old": "C+",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 536,
+  "old": "C+",
+  "new": "c+"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 551,
+  "old": "B-",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "section_id",
+  "pk": 565,
+  "old": "5",
+  "new": "259"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 566,
+  "old": "2.7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 583,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 585,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "section_id",
+  "pk": 587,
+  "old": "9",
+  "new": "666"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 597,
+  "old": "C+",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 607,
+  "old": "2",
+  "new": "20"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 609,
+  "old": "8",
+  "new": "1028"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 612,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 614,
+  "old": "B-",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 619,
+  "old": "4",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 624,
+  "old": "2",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 631,
+  "old": "B+",
+  "new": "b+"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 645,
+  "old": "B-",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 657,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "section_id",
+  "pk": 663,
+  "old": "20",
+  "new": "114"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "section_id",
+  "pk": 668,
+  "old": "2",
+  "new": "442"
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 674,
+  "old": "2.7",
+  "new": "-2.7"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 708,
+  "old": "B+",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 720,
+  "old": "C-",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 787,
+  "old": "32",
+  "new": "1060"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 789,
+  "old": "2.3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 799,
+  "old": "3.7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 813,
+  "old": "1.7",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 846,
+  "old": "2",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 855,
+  "old": "3",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 865,
+  "old": "B+",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "enrollments",
+  "column": "grade_points",
+  "pk": 884,
+  "old": "2.7",
+  "new": "27"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 894,
+  "old": "48",
+  "new": "717"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 899,
+  "old": "B",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "enrollments",
+  "column": "student_id",
+  "pk": 919,
+  "old": "49",
+  "new": "149"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 937,
+  "old": "A-",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 946,
+  "old": "A",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 951,
+  "old": "W",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "enrollments",
+  "column": "letter_grade",
+  "pk": 963,
+  "old": "D",
+  "new": "d"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1024,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1001,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1002,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1003,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1004,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1005,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1006,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1007,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1008,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1009,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1010,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1011,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1012,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1013,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1014,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1015,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1016,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1017,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1018,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1019,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1020,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1021,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1022,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "enrollments",
+  "column": null,
+  "pk": 1023,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 31,
+  "old": "77",
+  "new": "-77"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 97,
+  "old": "96",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 135,
+  "old": "99",
+  "new": "990"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 184,
+  "old": "80",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 185,
+  "old": "64",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 208,
+  "old": "99",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 213,
+  "old": "89",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 244,
+  "old": "92",
+  "new": "920"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exam_results",
+  "column": "score",
+  "pk": 286,
+  "old": "49",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "exam_results",
+  "column": null,
+  "pk": 301,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "exam_results",
+  "column": null,
+  "pk": 302,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "max_points",
+  "pk": 2,
+  "old": "100",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "exams",
+  "column": "exam_date",
+  "pk": 9,
+  "old": "2021-03-28 13:26:37",
+  "new": "Mar 28, 2021 13:26"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 10,
+  "old": "Final",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 14,
+  "old": "Midterm",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 25,
+  "old": "Midterm",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 38,
+  "old": "Practical",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 41,
+  "old": "Midterm",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 52,
+  "old": "Quiz 2",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "exams",
+  "column": "title",
+  "pk": 61,
+  "old": "Final",
+  "new": "FINAL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 68,
+  "old": "Quiz 2",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "exams",
+  "column": "max_points",
+  "pk": 74,
+  "old": "100",
+  "new": "1000"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "exams",
+  "column": "title",
+  "pk": 80,
+  "old": "Practical",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "exams",
+  "column": null,
+  "pk": 81,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "exams",
+  "column": null,
+  "pk": 82,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "fee_types",
+  "column": "name",
+  "pk": 4,
+  "old": "technology_fee",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "instructors",
+  "column": "salary",
+  "pk": 1,
+  "old": "96928.75",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "instructors",
+  "column": "salary",
+  "pk": 3,
+  "old": "109284.68",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "instructors",
+  "column": "rank",
+  "pk": 7,
+  "old": "professor",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "instructors",
+  "column": "salary",
+  "pk": 10,
+  "old": "171437.85",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 26,
+  "old": "4242.16",
+  "new": "42421.6"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 62,
+  "old": "13612.01",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 64,
+  "old": "9673.16",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 106,
+  "old": "13612.01",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 109,
+  "old": "5302.83",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "invoice_items",
+  "column": "fee_type_id",
+  "pk": 129,
+  "old": "1",
+  "new": "707"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 130,
+  "old": "13612.01",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 147,
+  "old": "4242.16",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 170,
+  "old": "4242.16",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 172,
+  "old": "8752.34",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 181,
+  "old": "4242.16",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 197,
+  "old": "8752.34",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 198,
+  "old": "4242.16",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 211,
+  "old": "168.34",
+  "new": "1683.4"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 225,
+  "old": "4242.16",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "invoice_items",
+  "column": "invoice_id",
+  "pk": 236,
+  "old": "13",
+  "new": "561"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "invoice_items",
+  "column": "invoice_id",
+  "pk": 239,
+  "old": "3",
+  "new": "231"
+ },
+ {
+  "kind": "sign_flip_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "invoice_items",
+  "column": "amount",
+  "pk": 245,
+  "old": "4242.16",
+  "new": "-4242.16"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "invoice_items",
+  "column": null,
+  "pk": 251,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "invoice_items",
+  "column": null,
+  "pk": 252,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "invoice_items",
+  "column": null,
+  "pk": 253,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "invoices",
+  "column": "due_date",
+  "pk": 2,
+  "old": "2025-04-27",
+  "new": "27/04/2025"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "total_amount",
+  "pk": 16,
+  "old": "17136.98",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "issue_date",
+  "pk": 25,
+  "old": "2025-11-29",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "issue_date",
+  "pk": 28,
+  "old": "2023-09-01",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "due_date",
+  "pk": 32,
+  "old": "2025-04-18",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "total_amount",
+  "pk": 52,
+  "old": "0",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "invoices",
+  "column": "due_date",
+  "pk": 57,
+  "old": "2021-04-07",
+  "new": "07/04/2021"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "issue_date",
+  "pk": 75,
+  "old": "2021-06-17",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "invoices",
+  "column": "semester_id",
+  "pk": 78,
+  "old": "2",
+  "new": "674"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "total_amount",
+  "pk": 82,
+  "old": "0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "invoices",
+  "column": "issue_date",
+  "pk": 83,
+  "old": "2024-01-06",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "invoices",
+  "column": null,
+  "pk": 101,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "invoices",
+  "column": null,
+  "pk": 102,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "invoices",
+  "column": null,
+  "pk": 103,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "library_cards",
+  "column": "expiry_date",
+  "pk": 9,
+  "old": "2026-12-11",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "library_cards",
+  "column": "issue_date",
+  "pk": 13,
+  "old": "2023-01-06",
+  "new": "Jan 6, 2023"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "library_cards",
+  "column": "issue_date",
+  "pk": 20,
+  "old": "2025-04-17",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "payments",
+  "column": "invoice_id",
+  "pk": 14,
+  "old": "78",
+  "new": "984"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "payments",
+  "column": "amount",
+  "pk": 16,
+  "old": "13612.01",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "payments",
+  "column": "payment_date",
+  "pk": 22,
+  "old": "2025-10-19",
+  "new": "Oct 19, 2025"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "payments",
+  "column": "payment_date",
+  "pk": 26,
+  "old": "2023-08-19",
+  "new": "Aug 19, 2023"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "payments",
+  "column": "amount",
+  "pk": 29,
+  "old": "100447.84",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "payments",
+  "column": "payment_method",
+  "pk": 48,
+  "old": "card",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "payments",
+  "column": "payment_date",
+  "pk": 55,
+  "old": "2023-10-28",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "payments",
+  "column": "amount",
+  "pk": 62,
+  "old": "0",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "payments",
+  "column": "payment_method",
+  "pk": 82,
+  "old": "financial_aid",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "payments",
+  "column": null,
+  "pk": 91,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "people",
+  "column": "date_of_birth",
+  "pk": 6,
+  "old": "1993-08-28",
+  "new": "28/08/1993"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "date_of_birth",
+  "pk": 10,
+  "old": "1999-07-24",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "people",
+  "column": "first_name",
+  "pk": 18,
+  "old": "James",
+  "new": "Jamse"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "people",
+  "column": "last_name",
+  "pk": 19,
+  "old": "Hermiston",
+  "new": "HERMISTON"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "phone",
+  "pk": 35,
+  "old": "(696) 354-6527",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "date_of_birth",
+  "pk": 37,
+  "old": "1996-01-31",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "gender",
+  "pk": 37,
+  "old": "female",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "people",
+  "column": "gender",
+  "pk": 39,
+  "old": "male",
+  "new": "MALE"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "date_of_birth",
+  "pk": 43,
+  "old": "1970-08-02",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "gender",
+  "pk": 44,
+  "old": "male",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "phone",
+  "pk": 47,
+  "old": "(509) 902-9994",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "people",
+  "column": "first_name",
+  "pk": 49,
+  "old": "Jovan",
+  "new": "JOVAN"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "people",
+  "column": "last_name",
+  "pk": 51,
+  "old": "Hirthe",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "people",
+  "column": null,
+  "pk": 56,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "programs",
+  "column": "name",
+  "pk": 9,
+  "old": "Research Literature Design Health",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "programs",
+  "column": "name",
+  "pk": 27,
+  "old": "International Finance Modern",
+  "new": "Itnernational Finance Modern"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "programs",
+  "column": "credits_required",
+  "pk": 33,
+  "old": "30",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "programs",
+  "column": null,
+  "pk": 41,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 8,
+  "old": "209",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 13,
+  "old": "608",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 28,
+  "old": "138",
+  "new": "1380"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "rooms",
+  "column": "type",
+  "pk": 47,
+  "old": "classroom",
+  "new": "CLASSROOM"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 49,
+  "old": "31",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "type",
+  "pk": 82,
+  "old": "classroom",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 98,
+  "old": "500",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 113,
+  "old": "006",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 114,
+  "old": "400",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 117,
+  "old": "28",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 118,
+  "old": "187",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 128,
+  "old": "64",
+  "new": "640"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "type",
+  "pk": 129,
+  "old": "classroom",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 130,
+  "old": "106",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "rooms",
+  "column": "type",
+  "pk": 130,
+  "old": "lecture_hall",
+  "new": "LECTURE_HALL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 140,
+  "old": "803",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "rooms",
+  "column": "type",
+  "pk": 143,
+  "old": "lecture_hall",
+  "new": "LECTURE_HALL"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 154,
+  "old": "52",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "type",
+  "pk": 164,
+  "old": "lecture_hall",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 183,
+  "old": "243",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "type",
+  "pk": 188,
+  "old": "lab",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 192,
+  "old": "307",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "type",
+  "pk": 208,
+  "old": "lecture_hall",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "type",
+  "pk": 212,
+  "old": "classroom",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "type",
+  "pk": 220,
+  "old": "lab",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "capacity",
+  "pk": 225,
+  "old": "283",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "rooms",
+  "column": "number",
+  "pk": 238,
+  "old": "301",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "rooms",
+  "column": null,
+  "pk": 241,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "rooms",
+  "column": null,
+  "pk": 242,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "schedules",
+  "column": "day_of_week",
+  "pk": 5,
+  "old": "tuesday",
+  "new": "TUESDAY"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "schedules",
+  "column": "day_of_week",
+  "pk": 12,
+  "old": "thursday",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "schedules",
+  "column": "day_of_week",
+  "pk": 16,
+  "old": "monday",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "schedules",
+  "column": "section_id",
+  "pk": 24,
+  "old": "39",
+  "new": "190"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "schedules",
+  "column": "section_id",
+  "pk": 57,
+  "old": "7",
+  "new": "701"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "schedules",
+  "column": "day_of_week",
+  "pk": 60,
+  "old": "wednesday",
+  "new": "WEDNESDAY"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "schedules",
+  "column": null,
+  "pk": 64,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "schedules",
+  "column": null,
+  "pk": 61,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "schedules",
+  "column": null,
+  "pk": 62,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "schedules",
+  "column": null,
+  "pk": 63,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "scholarships",
+  "column": "amount",
+  "pk": 5,
+  "old": "13828.68",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "scholarships",
+  "column": "type",
+  "pk": 7,
+  "old": "merit",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "scholarships",
+  "column": "provider",
+  "pk": 12,
+  "old": "University",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "scholarships",
+  "column": "provider",
+  "pk": 18,
+  "old": "Private foundation",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "sections",
+  "column": "instructor_id",
+  "pk": 3,
+  "old": "6",
+  "new": "840"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "sections",
+  "column": "capacity",
+  "pk": 10,
+  "old": "106",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "sections",
+  "column": "capacity",
+  "pk": 29,
+  "old": "27",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "sections",
+  "column": null,
+  "pk": 41,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "semesters",
+  "column": "season",
+  "pk": 1,
+  "old": "spring",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "semesters",
+  "column": "end_date",
+  "pk": 9,
+  "old": "2025-05-16",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "semesters",
+  "column": "start_date",
+  "pk": 9,
+  "old": "2025-01-21",
+  "new": "Jan 21, 2025"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "students",
+  "column": "enrollment_date",
+  "pk": 10,
+  "old": "2021-07-26",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "students",
+  "column": "enrollment_date",
+  "pk": 19,
+  "old": "2025-03-27",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "students",
+  "column": "enrollment_date",
+  "pk": 22,
+  "old": "2024-02-16",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "students",
+  "column": "enrollment_date",
+  "pk": 24,
+  "old": "2021-12-04",
+  "new": "04/12/2021"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "students",
+  "column": "enrollment_date",
+  "pk": 27,
+  "old": "2021-11-06",
+  "new": "06/11/2021"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "students",
+  "column": "enrollment_date",
+  "pk": 30,
+  "old": "2022-09-10",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "students",
+  "column": "enrollment_date",
+  "pk": 37,
+  "old": "2023-09-30",
+  "new": "20230930"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 9,
+  "old": "97",
+  "new": null
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 15,
+  "old": "99",
+  "new": "990"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 30,
+  "old": "Late, but complete",
+  "new": "LATE, BUT COMPLETE"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 30,
+  "old": "73",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 35,
+  "old": "2023-01-29 11:41:04",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 42,
+  "old": "2021-02-12 00:22:14",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 43,
+  "old": "2021-02-05 11:03:47",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 64,
+  "old": "79",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 64,
+  "old": "2021-09-26 08:10:06",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "submissions",
+  "column": "student_id",
+  "pk": 71,
+  "old": "10",
+  "new": "270"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 84,
+  "old": "Late, but complete",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "submissions",
+  "column": "student_id",
+  "pk": 87,
+  "old": "5",
+  "new": "576"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 91,
+  "old": "2021-12-05 19:02:26",
+  "new": "05/12/2021 19:02"
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 110,
+  "old": "2021-11-28 12:17:41",
+  "new": "Nov 28, 2021 12:17"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 113,
+  "old": "32",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 116,
+  "old": "2021-02-06 03:39:37",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "submissions",
+  "column": "student_id",
+  "pk": 121,
+  "old": "45",
+  "new": "108"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 121,
+  "old": "2025-02-11 03:47:51",
+  "new": null
+ },
+ {
+  "kind": "value_changed_other",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 128,
+  "old": "2022-03-22 00:14:57",
+  "new": "2022-03-22T00:14:57Z"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 131,
+  "old": "Late, but complete",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 140,
+  "old": "22",
+  "new": null
+ },
+ {
+  "kind": "mixed_date_format",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 149,
+  "old": "2025-02-02 15:37:25",
+  "new": "Feb 2, 2025 15:37"
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "submissions",
+  "column": "assignment_id",
+  "pk": 153,
+  "old": "88",
+  "new": "742"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 153,
+  "old": "64",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 163,
+  "old": "2025-04-30 07:38:49",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 176,
+  "old": "Late, but complete",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 202,
+  "old": "Show your working",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "submissions",
+  "column": "assignment_id",
+  "pk": 228,
+  "old": "8",
+  "new": "626"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 228,
+  "old": "2024-11-02 23:09:47",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 239,
+  "old": "100",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 246,
+  "old": "See comments in the margin",
+  "new": "SEE COMMENTS IN THE MARGIN"
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 263,
+  "old": "Well argued",
+  "new": "WELL ARGUED"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 265,
+  "old": "2022-03-03 08:50:28",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 270,
+  "old": "2025-04-25 20:09:20",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 273,
+  "old": "2023-10-28 01:33:26",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "submissions",
+  "column": "student_id",
+  "pk": 277,
+  "old": "2",
+  "new": "440"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 293,
+  "old": "80",
+  "new": "800"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 295,
+  "old": "92",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 304,
+  "old": "91",
+  "new": null
+ },
+ {
+  "kind": "fk_orphan",
+  "level": "L3",
+  "dimension": "referential_integrity",
+  "table": "submissions",
+  "column": "assignment_id",
+  "pk": 324,
+  "old": "11",
+  "new": "1133"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 341,
+  "old": "2025-03-24 21:43:13",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 343,
+  "old": "Late, but complete",
+  "new": null
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "submission_time",
+  "pk": 348,
+  "old": "2025-10-15 21:55:36",
+  "new": null
+ },
+ {
+  "kind": "case_anomaly",
+  "level": "L1",
+  "dimension": "validity",
+  "table": "submissions",
+  "column": "feedback",
+  "pk": 349,
+  "old": "See comments in the margin",
+  "new": "SEE COMMENTS IN THE MARGIN"
+ },
+ {
+  "kind": "scale_outlier",
+  "level": "L1",
+  "dimension": "accuracy",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 381,
+  "old": "86",
+  "new": "860"
+ },
+ {
+  "kind": "missing_value",
+  "level": "L1",
+  "dimension": "completeness",
+  "table": "submissions",
+  "column": "grade_earned",
+  "pk": 393,
+  "old": "60",
+  "new": null
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "submissions",
+  "column": null,
+  "pk": 401,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "submissions",
+  "column": null,
+  "pk": 402,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "submissions",
+  "column": null,
+  "pk": 403,
+  "old": null,
+  "new": "inserted"
+ },
+ {
+  "kind": "duplicate_row",
+  "level": "L2",
+  "dimension": "uniqueness",
+  "table": "submissions",
+  "column": null,
+  "pk": 404,
+  "old": null,
+  "new": "inserted"
+ }
+]

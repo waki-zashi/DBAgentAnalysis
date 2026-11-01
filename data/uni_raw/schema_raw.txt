@@ -1,0 +1,214 @@
+-- addresses
+  id integer
+  city varchar(40)
+  country varchar(120)
+  postal_code varchar(10)
+  state varchar(3)
+  street varchar(101)
+
+-- books
+  id integer
+  author varchar(62)
+  isbn varchar(17)
+  publication_year integer
+  publisher varchar(114)
+  title varchar(120)
+
+-- buildings
+  id integer
+  code varchar(3)
+  floors integer
+  name varchar(20)
+
+-- clubs
+  id integer
+  budget numeric(14,2)
+  description varchar(20)
+  establishment_date date
+  name varchar(120)
+
+-- fee_types
+  id integer
+  amount numeric(14,2)
+  description varchar(12)
+  name varchar(20)
+
+-- people
+  id integer
+  address_id integer
+  date_of_birth date
+  email varchar(78)
+  first_name varchar(30)
+  gender varchar(11)
+  last_name varchar(44)
+  phone varchar(26)
+
+-- library_cards
+  id integer
+  expiry_date date
+  issue_date date
+  person_id integer
+
+-- book_loans
+  id integer
+  book_id integer
+  due_date date
+  library_card_id integer
+  loan_date date
+  return_date date
+
+-- rooms
+  id integer
+  building_id integer
+  capacity integer
+  number varchar(3)
+  type varchar(12)
+
+-- departments
+  id integer
+  budget numeric(14,2)
+  code varchar(4)
+  name varchar(22)
+  office_room_id integer
+
+-- courses
+  id integer
+  code varchar(8)
+  credits integer
+  department_id integer
+  description varchar(15)
+  title varchar(120)
+
+-- course_materials
+  id integer
+  book_id integer
+  course_id integer
+  is_required boolean
+
+-- course_prerequisites
+  id integer
+  course_id integer
+  prerequisite_course_id integer
+
+-- instructors
+  id integer
+  department_id integer
+  person_id integer
+  rank varchar(19)
+  salary numeric(14,2)
+
+-- programs
+  id integer
+  credits_required integer
+  degree_level varchar(11)
+  department_id integer
+  name varchar(120)
+
+-- scholarships
+  id integer
+  amount numeric(14,2)
+  name varchar(120)
+  provider varchar(18)
+  type varchar(10)
+
+-- semesters
+  id integer
+  end_date date
+  season varchar(6)
+  start_date date
+  year integer
+
+-- sections
+  id integer
+  capacity integer
+  course_id integer
+  instructor_id integer
+  number integer
+  room_id integer
+  semester_id integer
+
+-- assignments
+  id integer
+  description varchar(13)
+  due_date timestamp
+  max_points integer
+  section_id integer
+  title varchar(17)
+
+-- exams
+  id integer
+  duration_minutes integer
+  exam_date timestamp
+  max_points integer
+  section_id integer
+  title varchar(9)
+
+-- schedules
+  id integer
+  day_of_week varchar(9)
+  end_time time
+  section_id integer
+  start_time time
+
+-- students
+  id integer
+  advisor_instructor_id integer
+  enrollment_date date
+  person_id integer
+  program_id integer
+  status varchar(9)
+
+-- club_memberships
+  id integer
+  club_id integer
+  join_date date
+  role varchar(9)
+  student_id integer
+
+-- enrollments
+  id integer
+  grade_points numeric(14,2)
+  letter_grade varchar(2)
+  section_id integer
+  student_id integer
+
+-- exam_results
+  id integer
+  exam_id integer
+  score integer
+  student_id integer
+
+-- invoices
+  id integer
+  due_date date
+  issue_date date
+  semester_id integer
+  student_id integer
+  total_amount numeric(14,2)
+
+-- invoice_items
+  id integer
+  amount numeric(14,2)
+  fee_type_id integer
+  invoice_id integer
+
+-- payments
+  id integer
+  amount numeric(14,2)
+  invoice_id integer
+  payment_date date
+  payment_method varchar(13)
+
+-- student_scholarships
+  id integer
+  award_date date
+  scholarship_id integer
+  student_id integer
+
+-- submissions
+  id integer
+  assignment_id integer
+  feedback varchar(26)
+  grade_earned integer
+  student_id integer
+  submission_time timestamp
