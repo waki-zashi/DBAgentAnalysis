@@ -51,7 +51,7 @@ def usage_of(response):
     return getattr(u, "prompt_tokens", 0) or 0, getattr(u, "completion_tokens", 0) or 0
 
 
-def run_episode(completion_fn, model_cfg, step_budget: int = 15, row_cap: int = 20):
+def run_episode(completion_fn, model_cfg, step_budget: int = 25, row_cap: int = 20):
     con = duckdb.connect(str(DIRTY_DB), read_only=True)
     messages = [{"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": KICKOFF}]
