@@ -81,8 +81,10 @@ def main():
             line = f"[{cfg['label']}] run {k + 1}: {rec['status']}, {rec['n_steps']} steps, {rec['elapsed_s']}s"
             if ev:
                 c = ev["coverage_by_level"]
+                prec = ev["precision_overall"]
+                prec_str = f"{prec:.2f}" if prec is not None else "n/a"
                 line += (f" | rules={ev['n_rules']} exec={ev['execution_rate']:.2f} "
-                         f"prec={ev['precision_overall']:.2f} "
+                         f"prec={prec_str} "
                          f"cov L1={c.get('L1', 0):.2f} L2={c.get('L2', 0):.2f} L3={c.get('L3', 0):.2f}")
             print(line, file=sys.stderr, flush=True)
 

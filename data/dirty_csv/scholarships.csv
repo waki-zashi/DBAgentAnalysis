@@ -1,0 +1,26 @@
+id,amount,name,provider,type
+1,3785.57,Community Excellence,University,merit
+2,5520.95,Arts Founders,Private foundation,athletic
+3,10822.77,Generation Founders,University,need_based
+4,1289.10,Stem Alumni Leadership,State,merit
+5,,Fellowship Merit,State,athletic
+6,500.27,Fellowship Grant,University,athletic
+7,514.16,Generation Alumni,Alumni association,
+8,502.75,Generation Stem,University,merit
+9,2447.76,Award Founders,University,merit
+10,19621.23,Scholarship Arts Community,Private foundation,need_based
+11,535.53,First Merit Award,University,research
+12,9496.92,Fellowship Award Presidential,,merit
+13,656.26,Merit Generation Presidential,University,athletic
+14,514.65,Generation Grant,Alumni association,athletic
+15,16487.76,Fellowship Scholarship Generation,Alumni association,need_based
+16,9905.23,Excellence Arts Scholarship,Private foundation,research
+17,3264.05,Presidential Alumni,University,merit
+18,10938.00,Presidential Generation First,,merit
+19,5564.49,Merit Presidential Generation,Alumni association,need_based
+20,10991.71,Generation Scholarship Founders,Alumni association,merit
+21,703.05,Dean Generation Fellowship,University,research
+22,9818.00,Excellence Arts,University,need_based
+23,587.81,Community Founders,University,need_based
+24,3300.90,Generation Presidential,Alumni association,athletic
+25,18658.90,Award Arts,State,athletic

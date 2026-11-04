@@ -1,0 +1,42 @@
+id,credits_required,degree_level,department_id,name
+1,120,master,3,Design Finance Practice Health
+2,60,doctorate,4,Environmental Finance
+3,30,bachelor,1,Research Analytics Design Practice
+4,120,master,1,Literature Engineering
+5,120,master,7,Research Systems
+6,120,bachelor,3,Systems Data
+7,120,bachelor,1,International Research Science Studies
+8,30,certificate,1,Management Science
+9,120,bachelor,3,
+10,60,bachelor,9,Environmental Health Engineering
+11,120,certificate,9,Management Theory Science
+12,120,master,9,Practice Research Science
+13,120,bachelor,10,International Management Computational Theory
+14,120,bachelor,9,Research Management
+15,120,master,1,Design Computational Management Applied
+16,60,bachelor,8,Engineering Modern
+17,120,certificate,1,Computational Finance Policy Data
+18,120,certificate,4,Science Systems Finance Studies
+19,120,bachelor,3,Data Health Finance International
+20,120,bachelor,2,Finance Design Literature Data
+21,60,bachelor,1,Science Engineering
+22,30,master,10,Design Applied Management
+23,120,bachelor,5,Studies Management Literature Health
+24,120,bachelor,3,Data Modern Studies
+25,60,master,10,Applied Literature Engineering
+26,120,master,5,Theory Data Modern
+27,120,bachelor,1,Itnernational Finance Modern
+28,30,bachelor,6,International Research
+29,60,master,8,Data Practice Theory
+30,60,bachelor,1,Environmental Computational
+31,120,bachelor,4,International Health
+32,120,bachelor,1,Science Analytics
+33,,master,1,Management Modern Finance Systems
+34,120,master,1,Science Research Health
+35,30,bachelor,5,Environmental Computational Health
+36,120,bachelor,6,Research Finance
+37,120,bachelor,1,Systems Policy Environmental
+38,60,master,1,Policy Science Literature
+39,60,master,1,Studies Policy International
+40,30,master,2,Computational Engineering
+41,120,bachelor,3,Data Modern Studies

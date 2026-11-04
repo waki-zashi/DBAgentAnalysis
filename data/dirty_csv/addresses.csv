@@ -1,0 +1,51 @@
+id,city,country,postal_code,state,street
+1,Los Angeles,United States,90049,CA,394 Canal tSreet
+2,Houston,United States,77056,TX,898 Park Avenue
+3,Portland,United States,97270,OR,13007 S 14th Street
+4,Los Angeles,United States,90005,CA,764 Nathanael Village
+5,Chicago,United States,60626,IL,301 Broadway Street
+6,Los Angeles,United States,,CA,27127 Nickolas Shores
+7,Philadelphia,United States,19122,PA,898 Kihn Track
+8,San Francisco,United States,94187,CA,36818 Keeling Fords
+9,Miami,United States,,FL,4212 Lindgren Turnpike
+10,Atlanta,United States,30396,GA,6033 Tillman Lock
+11,SAN DIEGO,United States,92104,CA,43808 Franecki Flat
+12,New Yrok,United States,11466,NY,3325 E 12th Street
+13,Dallas,United Sttaes,75201,TX,605 Eulalia Lights
+14,San Diego,,92183,CA,56366 W Maple Street
+15,Los Angeles,United States,90076,CA,5545 McKenzie Crest
+16,Minneapolis,United States,55499,MN,13410 Main Street N
+17,Salt Lake City,United States,84147,UT,5849 N Elm Street
+18,Charlotte,United States,28249,NC,313 Luke Ferry
+19,Charlotte,United States,28251,NC,619 Evalyn Overpass
+20,Portland,United States,97251,OR,955 Roob Lights
+21,Miami,United States,33103,fl,61413 W 10th Street
+22,San Antonio,United States,78285,TX,2015 Cedar Street
+23,Chicago,United States,60615,IL,97813 Bartell Pass
+24,Los Angeles,United States,90079,CA,630 Connelly Lakes
+25,Chicago,United States,60655,IL,34114 Olive Loaf
+26,Phoenix,United States,85099,AZ,30708 N Poplar Street
+27,Los Angeles,United States,90017,CA,
+28,New York,United States,10453,NY,1778 Lafayette Street
+29,Charlotte,United States,28228,NC,5319 Wesetrn Avenue
+30,Atlanta,United States,30357,GA,750 Jessica Shoal
+31,Miami,United States,33146,FL,2674 Klocko Hills
+32,Philadelphia,United States,19173,PA,833 7th Street
+33,Philadelphia,United States,19167,PA,91074 Davis Meadows
+34,Chicago,United States,60638,IL,505 Jess Court
+35,,United States,85049,AZ,1385 N Market Street
+36,Chicago,United States,60695,IL,104 Johns Village
+37,Phoenix,United States,85074,AZ,383 W Bridge Street
+38,Chicago,United States,60629,IL,929 8th Street
+39,Chicago,United States,60650,IL,98655 Park Drive
+40,Chicago,United States,60693,IL,18542 Bergstrom Valleys
+41,Charlotte,United States,28230,NC,152 Earline Glens
+42,Seattle,United States,98194,WA,2749 Doyle Overpass
+43,Austin,United States,78702,TX,6916 Homneick Shore
+44,Miami,United States,33185,FL,54765 Fritsch Mountain
+45,Phoenix,United States,85041,AZ,213 Wellington Ford
+46,Austin,United States,78742,TX,38049 O'Kon Brook
+47,Minneapolis,United States,55422,MN,753 Loma Harbors
+48,Houston,United States,77043,TX,139 Shields Fords
+49,Phoenix,UNITED STATES,85069,AZ,486 W Main
+50,MIAMI,United States,33130,FL,204 Thiel Ports

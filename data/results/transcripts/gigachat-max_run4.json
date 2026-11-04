@@ -1,0 +1,314 @@
+[
+ {
+  "role": "system",
+  "content": "Ты — очень старательный аналитик данных. Тебе дана база данных университета в DuckDB\n(только для чтения, 30 таблиц). Твоя задача: изучить каждую таблицу и \nсформировать КАК МОЖНО БОЛЬШЕ правил проверки качества данных\n(data quality rules) — SQL-запросы, которые находят проблемные строки.\n\nСхема БД (ограничений PK/FK/NOT NULL в самой БД нет — все ограничения ниже логические,\nих проверка и есть твоя задача):\n\n```sql\nCREATE TABLE addresses (\n    id INTEGER,\n    city VARCHAR,\n    country VARCHAR,\n    postal_code VARCHAR,\n    state VARCHAR,\n    street VARCHAR\n);\n\nCREATE TABLE books (\n    id INTEGER,\n    author VARCHAR,\n    isbn VARCHAR,\n    publication_year INTEGER,\n    publisher VARCHAR,\n    title VARCHAR\n);\n\nCREATE TABLE buildings (\n    id INTEGER,\n    code VARCHAR,\n    floors INTEGER,\n    name VARCHAR\n);\n\nCREATE TABLE clubs (\n    id INTEGER,\n    budget DECIMAL(14,2),\n    description VARCHAR,\n    establishment_date VARCHAR,\n    name VARCHAR\n);\n\nCREATE TABLE fee_types (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    description VARCHAR,\n    name VARCHAR\n);\n\nCREATE TABLE people (\n    id INTEGER,\n    address_id INTEGER,\n    date_of_birth VARCHAR,\n    email VARCHAR,\n    first_name VARCHAR,\n    gender VARCHAR,\n    last_name VARCHAR,\n    phone VARCHAR\n);\n\nCREATE TABLE library_cards (\n    id INTEGER,\n    expiry_date VARCHAR,\n    issue_date VARCHAR,\n    person_id INTEGER\n);\n\nCREATE TABLE book_loans (\n    id INTEGER,\n    book_id INTEGER,\n    due_date VARCHAR,\n    library_card_id INTEGER,\n    loan_date VARCHAR,\n    return_date VARCHAR\n);\n\nCREATE TABLE rooms (\n    id INTEGER,\n    building_id INTEGER,\n    capacity INTEGER,\n    number VARCHAR,\n    type VARCHAR\n);\n\nCREATE TABLE departments (\n    id INTEGER,\n    budget DECIMAL(14,2),\n    code VARCHAR,\n    name VARCHAR,\n    office_room_id INTEGER\n);\n\nCREATE TABLE courses (\n    id INTEGER,\n    code VARCHAR,\n    credits INTEGER,\n    department_id INTEGER,\n    description VARCHAR,\n    title VARCHAR\n);\n\nCREATE TABLE course_materials (\n    id INTEGER,\n    book_id INTEGER,\n    course_id INTEGER,\n    is_required BOOLEAN\n);\n\nCREATE TABLE course_prerequisites (\n    id INTEGER,\n    course_id INTEGER,\n    prerequisite_course_id INTEGER\n);\n\nCREATE TABLE instructors (\n    id INTEGER,\n    department_id INTEGER,\n    person_id INTEGER,\n    rank VARCHAR,\n    salary DECIMAL(14,2)\n);\n\nCREATE TABLE programs (\n    id INTEGER,\n    credits_required INTEGER,\n    degree_level VARCHAR,\n    department_id INTEGER,\n    name VARCHAR\n);\n\nCREATE TABLE scholarships (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    name VARCHAR,\n    provider VARCHAR,\n    type VARCHAR\n);\n\nCREATE TABLE semesters (\n    id INTEGER,\n    end_date VARCHAR,\n    season VARCHAR,\n    start_date VARCHAR,\n    year INTEGER\n);\n\nCREATE TABLE sections (\n    id INTEGER,\n    capacity INTEGER,\n    course_id INTEGER,\n    instructor_id INTEGER,\n    number INTEGER,\n    room_id INTEGER,\n    semester_id INTEGER\n);\n\nCREATE TABLE assignments (\n    id INTEGER,\n    description VARCHAR,\n    due_date VARCHAR,\n    max_points INTEGER,\n    section_id INTEGER,\n    title VARCHAR\n);\n\nCREATE TABLE exams (\n    id INTEGER,\n    duration_minutes INTEGER,\n    exam_date VARCHAR,\n    max_points INTEGER,\n    section_id INTEGER,\n    title VARCHAR\n);\n\nCREATE TABLE schedules (\n    id INTEGER,\n    day_of_week VARCHAR,\n    end_time VARCHAR,\n    section_id INTEGER,\n    start_time VARCHAR\n);\n\nCREATE TABLE students (\n    id INTEGER,\n    advisor_instructor_id INTEGER,\n    enrollment_date VARCHAR,\n    person_id INTEGER,\n    program_id INTEGER,\n    status VARCHAR\n);\n\nCREATE TABLE club_memberships (\n    id INTEGER,\n    club_id INTEGER,\n    join_date VARCHAR,\n    role VARCHAR,\n    student_id INTEGER\n);\n\nCREATE TABLE enrollments (\n    id INTEGER,\n    grade_points DECIMAL(14,2),\n    letter_grade VARCHAR,\n    section_id INTEGER,\n    student_id INTEGER\n);\n\nCREATE TABLE exam_results (\n    id INTEGER,\n    exam_id INTEGER,\n    score INTEGER,\n    student_id INTEGER\n);\n\nCREATE TABLE invoices (\n    id INTEGER,\n    due_date VARCHAR,\n    issue_date VARCHAR,\n    semester_id INTEGER,\n    student_id INTEGER,\n    total_amount DECIMAL(14,2)\n);\n\nCREATE TABLE invoice_items (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    fee_type_id INTEGER,\n    invoice_id INTEGER\n);\n\nCREATE TABLE payments (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    invoice_id INTEGER,\n    payment_date VARCHAR,\n    payment_method VARCHAR\n);\n\nCREATE TABLE student_scholarships (\n    id INTEGER,\n    award_date VARCHAR,\n    scholarship_id INTEGER,\n    student_id INTEGER\n);\n\nCREATE TABLE submissions (\n    id INTEGER,\n    assignment_id INTEGER,\n    feedback VARCHAR,\n    grade_earned INTEGER,\n    student_id INTEGER,\n    submission_time VARCHAR\n);\n\n```\n\n\n## Словарь данных\n\nДатасет описывает университет: люди, адреса, учебные программы, курсы и их секции\n(конкретные запуски курса в семестре), преподаватели и студенты, запись на секции и оценки,\nэкзамены и задания, счета и оплаты, стипендии, библиотека, клубы.\n\nВо всех 30 таблицах первичный ключ называется `id`. Внешних ключей и ограничений NOT NULL\nв самой БД нет (staging-слой) — все связи и ограничения ниже логические, их проверка и есть\nтвоя задача. Столбцы с датой/временем хранятся как VARCHAR: формат по умолчанию — ISO\n(`YYYY-MM-DD` или `YYYY-MM-DD HH:MM:SS`), но могут встречаться искажённые форматы (это дефект).\n\n### Справочники и люди\n- addresses(id, street, city, state, postal_code, country) — адреса людей\n- people(id, first_name, last_name, date_of_birth, gender, email, phone, address_id)\n  — address_id -> addresses.id; gender одно из: female, male, non_binary, unspecified\n- buildings(id, name, code, floors) — корпуса\n- rooms(id, building_id, number, type, capacity) — building_id -> buildings.id;\n  type одно из: classroom, lab, lecture_hall, office, другие варианты специфичны для датасета\n- departments(id, name, code, budget, office_room_id) — office_room_id -> rooms.id\n\n### Учебная программа\n- programs(id, name, degree_level, credits_required, department_id) — department_id -> departments.id\n- courses(id, code, title, description, credits, department_id) — department_id -> departments.id;\n  description у этого датасета хранит формат курса (Lecture, Seminar, Online, Lecture and lab, ...),\n  не свободный текст\n- course_prerequisites(id, course_id, prerequisite_course_id) — обе ссылки -> courses.id;\n  course_id не должен совпадать с prerequisite_course_id (курс не может быть сам себе пререквизитом)\n- course_materials(id, course_id, book_id, is_required) — course_id -> courses.id, book_id -> books.id\n- semesters(id, year, season, start_date, end_date) — season одно из: spring, summer, fall (или похожие);\n  start_date < end_date\n- sections(id, course_id, semester_id, instructor_id, room_id, number, capacity)\n  — course_id -> courses.id, semester_id -> semesters.id, instructor_id -> instructors.id,\n  room_id -> rooms.id\n- schedules(id, section_id, day_of_week, start_time, end_time) — section_id -> sections.id;\n  start_time < end_time\n- instructors(id, person_id, department_id, rank, salary) — person_id -> people.id,\n  department_id -> departments.id; rank, например: lecturer, assistant_professor,\n  associate_professor, professor\n\n### Студенты и оценки\n- students(id, person_id, program_id, advisor_instructor_id, enrollment_date, status)\n  — person_id -> people.id, program_id -> programs.id, advisor_instructor_id -> instructors.id\n- enrollments(id, student_id, section_id, letter_grade, grade_points)\n  — student_id -> students.id, section_id -> sections.id; letter_grade одно из:\n  A, A-, B+, B, B-, C+, C, C-, D, F, W; у W (withdrawn, отчислен с курса) grade_points\n  обычно NULL — ЭТО НЕ ДЕФЕКТ; у остальных letter_grade grade_points обязателен,\n  диапазон обычно 0..4\n- assignments(id, section_id, title, description, due_date, max_points) — section_id -> sections.id\n- submissions(id, assignment_id, student_id, submission_time, grade_earned, feedback)\n  — assignment_id -> assignments.id, student_id -> students.id; 0 <= grade_earned <= max_points\n  соответствующего assignment\n- exams(id, section_id, title, exam_date, duration_minutes, max_points) — section_id -> sections.id\n- exam_results(id, exam_id, student_id, score) — exam_id -> exams.id, student_id -> students.id;\n  0 <= score <= max_points соответствующего exam\n\n### Финансы\n- fee_types(id, name, description, amount) — справочник видов платежей\n- invoices(id, student_id, semester_id, issue_date, due_date, total_amount)\n  — student_id -> students.id, semester_id -> semesters.id; issue_date <= due_date;\n  total_amount должен равняться сумме invoice_items.amount по этому счёту\n- invoice_items(id, invoice_id, fee_type_id, amount) — invoice_id -> invoices.id,\n  fee_type_id -> fee_types.id\n- payments(id, invoice_id, payment_date, amount, payment_method) — invoice_id -> invoices.id;\n  payment_method, например: card, cash, bank_transfer, financial_aid; сумма платежей по счёту\n  не должна превышать его total_amount\n- scholarships(id, name, provider, type, amount) — справочник стипендий\n- student_scholarships(id, student_id, scholarship_id, award_date)\n  — student_id -> students.id, scholarship_id -> scholarships.id\n\n### Библиотека и клубы\n- books(id, title, author, isbn, publisher, publication_year)\n- library_cards(id, person_id, issue_date, expiry_date) — person_id -> people.id;\n  issue_date < expiry_date\n- book_loans(id, library_card_id, book_id, loan_date, due_date, return_date)\n  — library_card_id -> library_cards.id, book_id -> books.id; return_date, если заполнен,\n  должен быть >= loan_date; NULL в return_date означает, что книга ещё не возвращена —\n  ЭТО НЕ ДЕФЕКТ САМО ПО СЕБЕ (дефект — пропуск там, где по смыслу значение обязано быть\n  заполнено, либо явно испорченное/нелогичное значение)\n- clubs(id, name, description, establishment_date, budget)\n- club_memberships(id, club_id, student_id, join_date, role) — club_id -> clubs.id,\n  student_id -> students.id\n\n## Известные законные особенности данных (это не дефекты)\n- У letter_grade = 'W' (withdrawn) grade_points обычно NULL — студент снят с курса без оценки.\n- NULL в book_loans.return_date — книга ещё не возвращена, это нормальное текущее состояние.\n- Суммы (budget, salary, amount, total_amount) распределены с тяжёлым правым хвостом —\n  большие, но правдоподобные значения сами по себе не дефект.\n\n\nИнструкции:\n1. У тебя есть инструмент run_sql — используй его, чтобы исследовать данные: посмотреть\n   распределения значений, найти, какие именно некорректные значения встречаются в столбцах,\n   проверить гипотезы. Диалект SQL — DuckDB (близок к PostgreSQL; доступны, например,\n   regexp_matches, lower/trim, median, quantile_cont, try_cast, оконные функции).\n2. Когда закончишь исследование, вызови submit_rules ровно один раз со списком правил.\n3. Каждое правило — это один SELECT (или WITH ... SELECT), первая колонка результата —\n   первичный ключ (`id`) строки-нарушителя в указанной таблице `table`.\n4. Старайся покрыть разные измерения качества данных: полноту (completeness), допустимость\n   значений (validity), уникальность (uniqueness), согласованность (consistency), точность\n   (accuracy), ссылочную целостность (referential_integrity) — по разным таблицам, а не только\n   по одной-двум.\n5. Не включай в правила законные особенности данных, перечисленные выше.\n6. Ты не можешь и не должен изменять данные — у тебя только read-only доступ.\n7. Прежде чем вызвать submit_rules, убедись, что ты исследовал (вызвал run_sql)\n   хотя бы одну таблицу из каждого из 5 разделов словаря данных выше\n   (Справочники и люди / Учебная программа / Студенты и оценки / Финансы /\n   Библиотека и клубы), и что итоговый список правил покрывает\n   хотя бы одну таблицу из каждого раздела."
+ },
+ {
+  "role": "user",
+  "content": "Начинай исследование БД и формирование правил проверки качества данных. Когда закончишь, вызови submit_rules."
+ },
+ {
+  "role": "assistant",
+  "content": "Сначала посмотрим структуру некоторых ключевых таблиц, чтобы понять, какие проблемы можно ожидать.\n\nНачнём с таблицы `people`, так как она является центральной для многих других сущностей:\n\n```sql\nSELECT * FROM people LIMIT 10;\n```\n\n",
+  "tool_calls": [
+   {
+    "id": "call_a7a7de9e7fbc4fbdb8ded1be",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT * FROM people LIMIT 10;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_a7a7de9e7fbc4fbdb8ded1be",
+  "name": "run_sql",
+  "content": "id, address_id, date_of_birth, email, first_name, gender, last_name, phone\n1, 2, 1971-02-28, dina.turner7@gmail.com, Dina, female, Turner, (621) 870-2621\n2, 28, 1988-01-22, otho_barrows43@yahoo.com, Otho, female, Barrows, (363) 330-5306\n3, 18, 2005-09-14, jorge_auer5@yahoo.com, Jorge, female, Auer, (669) 886-1722\n4, 3, 2005-01-03, gerhard_ledner@gmail.com, Gerhard, female, Ledner, (610) 969-3926\n5, 1, 1981-06-15, forrest_hagenes@yahoo.com, Forrest, female, Hagenes, (772) 815-0323\n6, 7, 28/08/1993, blair.aufderhar@gmail.com, Blair, male, Aufderhar, (639) 534-4253\n7, 10, 1964-08-03, corbin_jaskolski34@gmail.com, Corbin, female, Jaskolski, (836) 555-5569\n8, 34, 1968-08-27, arjun_tremblay7@gmail.com, Arjun, male, Tremblay, (661) 292-9006\n9, 46, 1967-07-11, delpha.mcclure97@hotmail.com, Delpha, male, McClure, (964) 365-4422\n10, 28, None, nyah_conn@hotmail.com, Nyah, male, Conn, (922) 995-6183\n(10 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "В выборке уже видны некоторые потенциальные проблемы:\n- В строке 6 дата рождения записана в формате \"DD/MM/YYYY\", тогда как остальные даты — в стандартном \"YYYY-MM-DD\".\n- В строке 10 отсутствует дата рождения (\"None\").\n\nПроверим подробнее качество данных в поле `date_of_birth`:\n\n```sql\nSELECT COUNT(*) AS count_invalid_dates\nFROM people\nWHERE TRY_CAST(date_of_birth AS DATE) IS NULL AND date_of_birth != '';\n```\n\nТакже проверим наличие пустых адресов:\n\n```sql\nSELECT COUNT(*) AS count_null_addresses\nFROM people\nWHERE address_id IS NULL OR address_id = '';\n```\n\nИ проанализируем распределение полов, чтобы убедиться, что они соответствуют указанным категориям:\n\n```sql\nSELECT DISTINCT gender\nFROM people;\n```\n\nЭти запросы помогут нам лучше понять возможные нарушения качества данных в таблице `people`.",
+  "tool_calls": [
+   {
+    "id": "call_309cd6348cde40ed88db93be",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT COUNT(*) AS count_invalid_dates\\nFROM people\\nWHERE TRY_CAST(date_of_birth AS DATE) IS NULL AND date_of_birth != '';\\n\\nSELECT COUNT(*) AS count_null_addresses\\nFROM people\\nWHERE address_id IS NULL OR address_id = '';\\n\\nSELECT DISTINCT gender\\nFROM people;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_309cd6348cde40ed88db93be",
+  "name": "run_sql",
+  "content": "ERROR (validation): multiple statements are not allowed"
+ },
+ {
+  "role": "assistant",
+  "content": "Из-за того, что система не позволяет выполнить несколько запросов одновременно, я разобью выполнение этих проверок на отдельные шаги.\n\nДля начала проверю количество строк с некорректными датами рождения:\n\n```sql\nSELECT COUNT(*) AS count_invalid_dates\nFROM people\nWHERE TRY_CAST(date_of_birth AS DATE) IS NULL AND date_of_birth != '';\n```\n\nЗатем отдельно выполню запрос для подсчёта количества записей с отсутствующими адресами:\n\n```sql\nSELECT COUNT(*) AS count_null_addresses\nFROM people\nWHERE address_id IS NULL OR address_id = '';\n```\n\nИ наконец, посмотрю уникальные значения пола:\n\n```sql\nSELECT DISTINCT gender\nFROM people;\n```\n\nВыполню эти три запроса последовательно.",
+  "tool_calls": [
+   {
+    "id": "call_12b405652dd74f71a8f09e8a",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT COUNT(*) AS count_invalid_dates\\nFROM people\\nWHERE TRY_CAST(date_of_birth AS DATE) IS NULL AND date_of_birth != '';\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_12b405652dd74f71a8f09e8a",
+  "name": "run_sql",
+  "content": "count_invalid_dates\n1\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "У нас одна строка с неверным форматом даты рождения. Теперь проверю количество записей с отсутствующими адресами:\n\n```sql\nSELECT COUNT(*) AS count_null_addresses\nFROM people\nWHERE address_id IS NULL OR address_id = '';\n```\n\nПосле этого перейду к просмотру уникальных значений поля `gender`.",
+  "tool_calls": [
+   {
+    "id": "call_7e588bdd09564b47b9abc448",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT COUNT(*) AS count_null_addresses\\nFROM people\\nWHERE address_id IS NULL OR address_id = '';\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_7e588bdd09564b47b9abc448",
+  "name": "run_sql",
+  "content": "ERROR (runtime): Conversion Error: Could not convert string '' to INT32\n\nLINE 3: WHERE address_id IS NULL OR address_id = '';\n                                                 ^^"
+ },
+ {
+  "role": "assistant",
+  "content": "Ошибка произошла потому, что поле `address_id` имеет тип INTEGER, поэтому сравнивать его со строкой неправильно. Исправлю условие и повторю попытку:\n\n```sql\nSELECT COUNT(*) AS count_null_addresses\nFROM people\nWHERE address_id IS NULL;\n```\n\nДалее проверю уникальные значения пола:\n\n```sql\nSELECT DISTINCT gender\nFROM people;\n```\n\nЗапущу оба запроса последовательно.",
+  "tool_calls": [
+   {
+    "id": "call_0b757938fce34909bad10179",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT COUNT(*) AS count_null_addresses\\nFROM people\\nWHERE address_id IS NULL;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_0b757938fce34909bad10179",
+  "name": "run_sql",
+  "content": "count_null_addresses\n0\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Адрес указан во всех записях, теперь смотрю уникальные значения пола:\n\n```sql\nSELECT DISTINCT gender\nFROM people;\n```\n\nПродолжаю исследования дальше после получения результатов данного запроса.",
+  "tool_calls": [
+   {
+    "id": "call_84e7168ff303462d84d24eed",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT DISTINCT gender\\nFROM people;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_84e7168ff303462d84d24eed",
+  "name": "run_sql",
+  "content": "gender\nfemale\nunspecified\nmale\nNone\nMALE\n(5 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Здесь мы видим два потенциальных дефекта:\n1. Значение \"None\" вместо ожидаемого NULL или одного из допустимых вариантов.\n2. Верхний регистр слова \"MALE\", когда оно должно быть в нижнем регистре согласно документации.\n\nДобавляем первое правило для поиска неправильных дат рождения и второе для полных имен с ошибками регистра и недопустимыми значениями:\n\n```sql\n-- Правило 1: Проверить корректность формата даты рождения\nSELECT id\nFROM people\nWHERE TRY_CAST(date_of_birth AS DATE) IS NULL AND date_of_birth != '';\n\n-- Правило 2: Найти записи с неверно заданным полом\nSELECT id\nFROM people\nWHERE LOWER(gender) NOT IN ('female', 'male', 'non_binary', 'unspecified');\n```\n\nТеперь перейдем к исследованию другой важной таблицы — `students`. Посмотрим её содержимое:\n\n```sql\nSELECT * FROM students LIMIT 10;\n```\n\nЭто поможет выявить новые аспекты для создания дополнительных правил.",
+  "tool_calls": [
+   {
+    "id": "call_36396234433c431bb8864083",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT * FROM students LIMIT 10;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_36396234433c431bb8864083",
+  "name": "run_sql",
+  "content": "id, advisor_instructor_id, enrollment_date, person_id, program_id, status\n1, 3, 2024-06-21, 44, 4, graduated\n2, 3, 2020-10-27, 27, 9, withdrawn\n3, 6, 2023-08-20, 30, 1, withdrawn\n4, 10, 2023-02-17, 53, 2, enrolled\n5, 1, 2024-10-15, 16, 20, enrolled\n6, 2, 2022-09-21, 23, 29, enrolled\n7, 2, 2023-03-30, 19, 6, enrolled\n8, 4, 2022-01-07, 22, 2, withdrawn\n9, 9, 2022-06-08, 48, 19, enrolled\n10, 5, None, 20, 26, withdrawn\n(10 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Наблюдаемые проблемы в этой выборке:\n- Строка 10 содержит NULL в дате зачисления, что выглядит подозрительно, поскольку ожидается указание конкретной даты.\n\nПосчитаем общее число студентов с пустой датой зачисления:\n\n```sql\nSELECT COUNT(*) AS count_empty_enrollment_dates\nFROM students\nWHERE enrollment_date IS NULL OR TRIM(enrollment_date) = '';\n```\n\nСледующий шаг — анализ структуры таблицы `sections`, которая связывает курсы и семестры:\n\n```sql\nSELECT * FROM sections LIMIT 10;\n```\n\nЭта таблица важна для понимания связей между курсами, преподавателями и аудиториями.",
+  "tool_calls": [
+   {
+    "id": "call_6098bdcbbf2a486bb0af5a72",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT COUNT(*) AS count_empty_enrollment_dates\\nFROM students\\nWHERE enrollment_date IS NULL OR TRIM(enrollment_date) = '';\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_6098bdcbbf2a486bb0af5a72",
+  "name": "run_sql",
+  "content": "count_empty_enrollment_dates\n4\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Итак, обнаружено четыре студента с пропущенной датой зачисления. Это нарушение целостности данных.\n\nПерейдём к изучению таблицы `sections`, которая показывает связь курсов, преподавателей и аудиторий:\n\n```sql\nSELECT * FROM sections LIMIT 10;\n```\n\nЗадача здесь — выявить аномалии, такие как несуществующие аудитории или курсы, дубликаты секций и т.д.",
+  "tool_calls": [
+   {
+    "id": "call_1c18e4b6b49d413db2f13f0b",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT * FROM sections LIMIT 10;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_1c18e4b6b49d413db2f13f0b",
+  "name": "run_sql",
+  "content": "id, capacity, course_id, instructor_id, number, room_id, semester_id\n1, 184, 371, 8, 1, 45, 9\n2, 26, 587, 5, 4, 45, 5\n3, 15, 357, 840, 2, 19, 10\n4, 96, 20, 5, 3, 1, 5\n5, 235, 56, 3, 4, 3, 8\n6, 135, 23, 2, 4, 71, 1\n7, 42, 513, 1, 2, 152, 7\n8, 106, 35, 8, 4, 144, 1\n9, 18, 44, 5, 1, 91, 3\n10, None, 294, 1, 6, 213, 5\n(10 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Мы обнаружили ряд потенциально интересных моментов в выборке:\n- Строка 10 содержит NULL в колонке `capacity`, что недопустимо, ведь вместимость аудитории всегда должна быть известна заранее.\n\nДавайте посчитаем количество таких случаев:\n\n```sql\nSELECT COUNT(*) AS count_null_capacities\nFROM sections\nWHERE capacity IS NULL;\n```\n\nКроме того, стоит также проверить возможные нарушения целостностей ссылок (например, ссылаются ли секции на существующие курсы, комнаты и преподавателей). Для этого выполним следующий запрос:\n\n```sql\nSELECT s.id\nFROM sections s\nLEFT JOIN courses c ON s.course_id = c.id\nLEFT JOIN rooms r ON s.room_id = r.id\nLEFT JOIN instructors i ON s.instructor_id = i.id\nWHERE c.id IS NULL OR r.id IS NULL OR i.id IS NULL;\n```\n\nНаконец, рассмотрим финансовую информацию о счетах за обучение в таблице `invoices`:\n\n```sql\nSELECT * FROM invoices LIMIT 10;\n```\n\nЭтот шаг позволит выявить потенциальные ошибки при выставлении счетов студентам.",
+  "tool_calls": [
+   {
+    "id": "call_46bc96a5cc8d447ba34d5e98",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT COUNT(*) AS count_null_capacities\\nFROM sections\\nWHERE capacity IS NULL;\\n\\nSELECT s.id\\nFROM sections s\\nLEFT JOIN courses c ON s.course_id = c.id\\nLEFT JOIN rooms r ON s.room_id = r.id\\nLEFT JOIN instructors i ON s.instructor_id = i.id\\nWHERE c.id IS NULL OR r.id IS NULL OR i.id IS NULL;\\n\\nSELECT * FROM invoices LIMIT 10;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_46bc96a5cc8d447ba34d5e98",
+  "name": "run_sql",
+  "content": "ERROR (validation): multiple statements are not allowed"
+ },
+ {
+  "role": "assistant",
+  "content": "Исправляю ошибку и выполняю каждый запрос отдельно.\n\nСначала считаем количество секций с неопределённой вместимостью:\n\n```sql\nSELECT COUNT(*) AS count_null_capacities\nFROM sections\nWHERE capacity IS NULL;\n```\n\nЗатем проверяем ссылочную целостность:\n\n```sql\nSELECT s.id\nFROM sections s\nLEFT JOIN courses c ON s.course_id = c.id\nLEFT JOIN rooms r ON s.room_id = r.id\nLEFT JOIN instructors i ON s.instructor_id = i.id\nWHERE c.id IS NULL OR r.id IS NULL OR i.id IS NULL;\n```\n\nНаконец, просматриваем первые десять строк таблицы `invoices`:\n\n```sql\nSELECT * FROM invoices LIMIT 10;\n```\n\nОтправляю первый запрос сейчас.",
+  "tool_calls": [
+   {
+    "id": "call_06c710d11cf74cc087699b52",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT COUNT(*) AS count_null_capacities\\nFROM sections\\nWHERE capacity IS NULL;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_06c710d11cf74cc087699b52",
+  "name": "run_sql",
+  "content": "count_null_capacities\n3\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Обнаружилось три секции с неизвестной вместимостью. Добавляем новое правило:\n\n```sql\n-- Правило 3: Обнаружить секции с неопределённым количеством мест\nSELECT id\nFROM sections\nWHERE capacity IS NULL;\n```\n\nПереходим к проверке внешних ключей в таблице `sections`:\n\n```sql\nSELECT s.id\nFROM sections s\nLEFT JOIN courses c ON s.course_id = c.id\nLEFT JOIN rooms r ON s.room_id = r.id\nLEFT JOIN instructors i ON s.instructor_id = i.id\nWHERE c.id IS NULL OR r.id IS NULL OR i.id IS NULL;\n```\n\nЗавершающим шагом будет просмотр первых десяти строк таблицы `invoices`:\n\n```sql\nSELECT * FROM invoices LIMIT 10;\n```\n\nСейчас отправляю второй запрос.",
+  "tool_calls": [
+   {
+    "id": "call_f026761f84f445e2b23f0e4c",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT s.id\\nFROM sections s\\nLEFT JOIN courses c ON s.course_id = c.id\\nLEFT JOIN rooms r ON s.room_id = r.id\\nLEFT JOIN instructors i ON s.instructor_id = i.id\\nWHERE c.id IS NULL OR r.id IS NULL OR i.id IS NULL;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_f026761f84f445e2b23f0e4c",
+  "name": "run_sql",
+  "content": "id\n3\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Видимо, существует одна секция с нарушением внешней ссылки (возможно, на курс, комнату или преподавателя). Нужно создать соответствующее правило:\n\n```sql\n-- Правило 4: Проверить соответствие внешних ключей\nSELECT s.id\nFROM sections s\nLEFT JOIN courses c ON s.course_id = c.id\nLEFT JOIN rooms r ON s.room_id = r.id\nLEFT JOIN instructors i ON s.instructor_id = i.id\nWHERE c.id IS NULL OR r.id IS NULL OR i.id IS NULL;\n```\n\nТеперь посмотрим первые десять строк таблицы `invoices`:\n\n```sql\nSELECT * FROM invoices LIMIT 10;\n```\n\nОтправляю этот запрос.",
+  "tool_calls": [
+   {
+    "id": "call_4d1b124ce1454ed89ff0bc61",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT * FROM invoices LIMIT 10;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_4d1b124ce1454ed89ff0bc61",
+  "name": "run_sql",
+  "content": "id, due_date, issue_date, semester_id, student_id, total_amount\n1, 2022-10-25, 2022-09-25, 1, 11, 142183.34\n2, 27/04/2025, 2025-03-28, 1, 17, 100447.84\n3, 2024-06-25, 2024-05-26, 1, 26, 63975.34\n4, 2023-06-12, 2023-05-13, 5, 5, 39972.98\n5, 2025-02-26, 2025-01-27, 3, 9, 31896.53\n6, 2021-10-20, 2021-09-20, 4, 47, 61161.82\n7, 2023-11-21, 2023-10-22, 9, 3, 50095.31\n8, 2023-10-10, 2023-09-10, 5, 7, 10218.35\n9, 2024-05-22, 2024-04-22, 2, 1, 31466.18\n10, 2022-11-25, 2022-10-26, 6, 21, 50852.67\n(10 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "Проблемы сразу бросаются в глаза:\n- Вторая строка содержит дату платежа в нестандартном формате («27/04/2025»).\n\nСоздадим правило для выявления подобных ошибок:\n\n```sql\n-- Правило 5: Поиск счетов с некорректным форматом даты\nSELECT id\nFROM invoices\nWHERE TRY_CAST(due_date AS DATE) IS NULL AND due_date != '' OR TRY_CAST(issue_date AS DATE) IS NULL AND issue_date != '';\n```\n\nПродолжая изучение финансовой информации, следует проверить общую сумму счета против суммы позиций в счете (таблица `invoice_items`). Выполним такой запрос:\n\n```sql\nSELECT inv.id\nFROM invoices inv\nJOIN (\n    SELECT invoice_id, SUM(amount) AS sum_items\n    FROM invoice_items\n    GROUP BY invoice_id\n) ii ON inv.id = ii.invoice_id\nWHERE abs(inv.total_amount - ii.sum_items) > 0.01;\n```\n\nОтмечу также необходимость проверки соответствия внешнего ключа `student_id` в таблице `enrollments` с существующими студентами:\n\n```sql\nSELECT e.id\nFROM enrollments e\nLEFT JOIN students st ON e.student_id = st.id\nWHERE st.id IS NULL;\n```\n\nЭти дополнительные проверки помогут обеспечить целостность и достоверность финансовых данных. Отправляю сначала запрос по поводу несоответствия сумм:\n\n```sql\nSELECT inv.id\nFROM invoices inv\nJOIN (\n    SELECT invoice_id, SUM(amount) AS sum_items\n    FROM invoice_items\n    GROUP BY invoice_id\n) ii ON inv.id = ii.invoice_id\nWHERE abs(inv.total_amount - ii.sum_items) > 0.01;\n```\n\nЗатем проверяю внешний ключ в таблице `enrollments`:\n\n```sql\nSELECT e.id\nFROM enrollments e\nLEFT JOIN students st ON e.student_id = st.id\nWHERE st.id IS NULL;\n```\n\nПосылаю первый запрос.",
+  "tool_calls": [
+   {
+    "id": "call_3a300dde35184434b9c6662a",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\": \"SELECT inv.id\\nFROM invoices inv\\nJOIN (\\n    SELECT invoice_id, SUM(amount) AS sum_items\\n    FROM invoice_items\\n    GROUP BY invoice_id\\n) ii ON inv.id = ii.invoice_id\\nWHERE abs(inv.total_amount - ii.sum_items) > 0.01;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_3a300dde35184434b9c6662a",
+  "name": "run_sql",
+  "content": "id\n1\n2\n3\n4\n6\n7\n11\n13\n18\n25\n27\n40\n45\n71\n(14 rows)"
+ },
+ {
+  "role": "user",
+  "content": "Бюджет шагов почти исчерпан. Следующим действием вызови submit_rules со всеми правилами, которые ты успел сформировать."
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "call_b073f60404494a4a96013b3a",
+    "type": "function",
+    "function": {
+     "name": "submit_rules",
+     "arguments": "{\"rules\": [{\"description\": \"Проверить корректность формата даты рождения. Найти записи с неверно заданной датой рождения.\", \"dimension\": \"validity\", \"sql\": \"SELECT id\\nFROM people\\nWHERE TRY_CAST(date_of_birth AS DATE) IS NULL AND date_of_birth != '';\", \"table\": \"people\"}, {\"description\": \"Найти записи с неверно заданным полом. Пол должен быть одним из допустимых вариантов: female, male, non_binary, unspecified.\", \"dimension\": \"validity\", \"sql\": \"SELECT id\\nFROM people\\nWHERE LOWER(gender) NOT IN ('female', 'male', 'non_binary', 'unspecified');\", \"table\": \"people\"}, {\"description\": \"Обнаружить секции с неопределённым количеством мест. Вместимость аудитории всегда должна быть известна заранее.\", \"dimension\": \"completeness\", \"sql\": \"SELECT id\\nFROM sections\\nWHERE capacity IS NULL;\", \"table\": \"sections\"}, {\"description\": \"Проверить соответствие внешних ключей в таблице sections. Секции должны ссылаться на существующие курсы, комнаты и преподавателей.\", \"dimension\": \"referential_integrity\", \"sql\": \"SELECT s.id\\nFROM sections s\\nLEFT JOIN courses c ON s.course_id = c.id\\nLEFT JOIN rooms r ON s.room_id = r.id\\nLEFT JOIN instructors i ON s.instructor_id = i.id\\nWHERE c.id IS NULL OR r.id IS NULL OR i.id IS NULL;\", \"table\": \"sections\"}, {\"description\": \"Поиск счетов с некорректным форматом даты. Даты должны быть в формате ISO.\", \"dimension\": \"validity\", \"sql\": \"SELECT id\\nFROM invoices\\nWHERE TRY_CAST(due_date AS DATE) IS NULL AND due_date != '' OR TRY_CAST(issue_date AS DATE) IS NULL AND issue_date != '';\", \"table\": \"invoices\"}, {\"description\": \"Проверить соответствие общей суммы счета и суммы позиций в счете. Сумма позиций должна совпадать с общей суммой счета.\", \"dimension\": \"accuracy\", \"sql\": \"SELECT inv.id\\nFROM invoices inv\\nJOIN (\\n    SELECT invoice_id, SUM(amount) AS sum_items\\n    FROM invoice_items\\n    GROUP BY invoice_id\\n) ii ON inv.id = ii.invoice_id\\nWHERE abs(inv.total_amount - ii.sum_items) > 0.01;\", \"table\": \"invoices\"}, {\"description\": \"Проверить соответствие внешнего ключа student_id в таблице enrollments с существующими студентами. Записи должны ссылаться на существующих студентов.\", \"dimension\": \"referential_integrity\", \"sql\": \"SELECT e.id\\nFROM enrollments e\\nLEFT JOIN students st ON e.student_id = st.id\\nWHERE st.id IS NULL;\", \"table\": \"enrollments\"}]}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "call_b073f60404494a4a96013b3a",
+  "name": "submit_rules",
+  "content": "Rules received. Episode finished."
+ }
+]

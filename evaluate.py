@@ -89,6 +89,9 @@ def evaluate_rules(rules, timeout_s: float = 10.0):
             prec_by_table[r["table"]].append(r["precision"])
     precision_by_table = {t: sum(v) / len(v) for t, v in prec_by_table.items()}
 
+    precise_rules = [r["precision"] for r in rule_reports if r["status"] == "ok" and r["precision"] is not None]
+    n_fired = len(precise_rules)
+
     summary = {
         "n_rules": n_total,
         "execution_rate": n_ok / n_total if n_total else 0.0,
@@ -96,9 +99,8 @@ def evaluate_rules(rules, timeout_s: float = 10.0):
         "coverage_by_fault": coverage,
         "coverage_by_level": coverage_by_level,
         "precision_by_table": precision_by_table,
-        "precision_overall": (sum(v for r in rule_reports if r["status"] == "ok" and r["precision"] is not None
-                                  for v in [r["precision"]])
-                              / max(n_ok, 1)),
+        "n_rules_fired": n_fired,
+        "precision_overall": (sum(precise_rules) / n_fired) if n_fired else None,
     }
     return {"summary": summary, "rules": rule_reports}
 
@@ -108,7 +110,8 @@ def print_report(result):
     print(f"rules submitted: {s['n_rules']}")
     print(f"execution rate:  {s['execution_rate']:.2f}")
     print(f"schema halluc.:  {s['schema_hallucination_rate']:.2f}")
-    print(f"precision (all): {s['precision_overall']:.2f}")
+    prec_str = f"{s['precision_overall']:.2f}" if s['precision_overall'] is not None else "n/a (ни одно правило не нашло ни строки)"
+    print(f"precision (all): {prec_str}")
     print("precision by table:")
     for t, p in sorted(s["precision_by_table"].items()):
         print(f"  {t:12s} {p:.2f}")

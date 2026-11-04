@@ -1,0 +1,941 @@
+{
+ "model": "gigachat-pro",
+ "family": "gigachat",
+ "params_b": null,
+ "rank": 2,
+ "model_id": "gigachat/GigaChat-2-Pro",
+ "repeat": 2,
+ "status": "ok",
+ "n_steps": 9,
+ "n_sql_calls": 7,
+ "tokens_in": 39813,
+ "tokens_out": 1155,
+ "elapsed_s": 22.6,
+ "rules": [
+  {
+   "description": "Проверка наличия пустых имен и фамилий в таблице people.",
+   "dimension": "completeness",
+   "sql": "SELECT id FROM people WHERE TRIM(first_name) = '' OR TRIM(last_name) = '';",
+   "table": "people"
+  },
+  {
+   "description": "Проверка корректности пола в таблице people.",
+   "dimension": "validity",
+   "sql": "SELECT id FROM people WHERE gender NOT IN ('female', 'male', 'non_binary', 'unspecified');",
+   "table": "people"
+  },
+  {
+   "description": "Проверка отсутствия обязательных полей в таблице departments.",
+   "dimension": "completeness",
+   "sql": "SELECT id FROM departments WHERE TRIM(code) = '' OR TRIM(name) = '';",
+   "table": "departments"
+  },
+  {
+   "description": "Проверка соответствия формата даты дня рождения в таблице people.",
+   "dimension": "validity",
+   "sql": "SELECT id FROM people WHERE date_of_birth IS NOT NULL AND date_of_birth <> '' AND TRY_CAST(date_of_birth AS DATE) IS NULL;",
+   "table": "people"
+  },
+  {
+   "description": "Проверка отрицательных бюджетов в таблице departments.",
+   "dimension": "validity",
+   "sql": "SELECT id FROM departments WHERE budget < 0;",
+   "table": "departments"
+  },
+  {
+   "description": "Проверка отсутствующих курсов в таблице courses.",
+   "dimension": "completeness",
+   "sql": "SELECT id FROM courses WHERE TRIM(title) = '';",
+   "table": "courses"
+  },
+  {
+   "description": "Проверка студентов без статуса зачисления в таблице students.",
+   "dimension": "completeness",
+   "sql": "SELECT id FROM students WHERE TRIM(status) = '';",
+   "table": "students"
+  },
+  {
+   "description": "Проверка программ обучения без названия в таблице programs.",
+   "dimension": "completeness",
+   "sql": "SELECT id FROM programs WHERE TRIM(name) = '';",
+   "table": "programs"
+  }
+ ],
+ "log": [
+  {
+   "step": 0,
+   "event": "run_sql",
+   "sql": "SELECT * FROM addresses LIMIT 10;",
+   "ok": true,
+   "error_kind": null,
+   "latency": 0.7
+  },
+  {
+   "step": 1,
+   "event": "run_sql",
+   "sql": "SELECT * FROM people LIMIT 10;",
+   "ok": true,
+   "error_kind": null,
+   "latency": 0.72
+  },
+  {
+   "step": 2,
+   "event": "run_sql",
+   "sql": "SELECT * FROM departments LIMIT 10;",
+   "ok": true,
+   "error_kind": null,
+   "latency": 0.71
+  },
+  {
+   "step": 3,
+   "event": "run_sql",
+   "sql": "SELECT * FROM courses LIMIT 10;",
+   "ok": true,
+   "error_kind": null,
+   "latency": 0.68
+  },
+  {
+   "step": 4,
+   "event": "run_sql",
+   "sql": "SELECT * FROM students LIMIT 10;",
+   "ok": true,
+   "error_kind": null,
+   "latency": 0.72
+  },
+  {
+   "step": 5,
+   "event": "run_sql",
+   "sql": "SELECT * FROM instructors LIMIT 10;",
+   "ok": true,
+   "error_kind": null,
+   "latency": 0.7
+  },
+  {
+   "step": 6,
+   "event": "run_sql",
+   "sql": "SELECT * FROM programs LIMIT 10;",
+   "ok": true,
+   "error_kind": null,
+   "latency": 0.7
+  },
+  {
+   "step": 7,
+   "event": "no_tool_call",
+   "latency": 6.73,
+   "content": "На основании проведенного исследования данных предлагаю следующие правила проверки качества данных:\n\n1. Проверка наличия пустых имен и фамилий в таблице \"people\":\n```sql\nSELECT id FROM people WHERE TRIM(first_name) = '' OR TRIM(last_name) = '';\n```\n\n2. Проверка корректности пола в таблице \"people\" (допустимые значения: female, male, non_binary, unspecified):\n```sql\nSELECT id FROM people WHERE gender NOT IN ('female', 'male', 'non_binary', 'unspecified');\n```\n\n3. Проверка отсутствия обязательных "
+  },
+  {
+   "step": 8,
+   "event": "submit_rules",
+   "n_rules": 8,
+   "latency": 10.81
+  }
+ ],
+ "evaluation": {
+  "n_rules": 8,
+  "execution_rate": 1.0,
+  "schema_hallucination_rate": 0.0,
+  "coverage_by_fault": {
+   "VALUE_CHANGED_OTHER__addresses": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 6
+   },
+   "MISSING_VALUE__addresses": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 5
+   },
+   "CASE_ANOMALY__addresses": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "MISSING_VALUE__assignments": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 15
+   },
+   "CASE_ANOMALY__assignments": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "DUPLICATE_ROW__assignments": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MIXED_DATE_FORMAT__book_loans": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "MISSING_VALUE__book_loans": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 5
+   },
+   "VALUE_CHANGED_OTHER__book_loans": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "FK_ORPHAN__book_loans": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__books": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 276
+   },
+   "VALUE_CHANGED_OTHER__books": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 62
+   },
+   "CASE_ANOMALY__books": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 56
+   },
+   "SIGN_FLIP_OUTLIER__books": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 6
+   },
+   "SCALE_OUTLIER__books": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 8
+   },
+   "DUPLICATE_ROW__books": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 54
+   },
+   "MISSING_VALUE__buildings": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__club_memberships": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "FK_ORPHAN__club_memberships": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MIXED_DATE_FORMAT__club_memberships": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__clubs": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 5
+   },
+   "VALUE_CHANGED_OTHER__clubs": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MIXED_DATE_FORMAT__clubs": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "SCALE_OUTLIER__clubs": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "DUPLICATE_ROW__clubs": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__course_materials": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 24
+   },
+   "FK_ORPHAN__course_materials": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 7
+   },
+   "DUPLICATE_ROW__course_materials": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 24
+   },
+   "FK_ORPHAN__course_prerequisites": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "DUPLICATE_ROW__course_prerequisites": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__courses": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 75
+   },
+   "SCALE_OUTLIER__courses": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "FK_ORPHAN__courses": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 5
+   },
+   "CASE_ANOMALY__courses": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 15
+   },
+   "VALUE_CHANGED_OTHER__courses": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 26
+   },
+   "SIGN_FLIP_OUTLIER__courses": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "DUPLICATE_ROW__courses": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 21
+   },
+   "MISSING_VALUE__departments": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "VALUE_CHANGED_OTHER__enrollments": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 7
+   },
+   "MISSING_VALUE__enrollments": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 38
+   },
+   "SIGN_FLIP_OUTLIER__enrollments": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "SCALE_OUTLIER__enrollments": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "FK_ORPHAN__enrollments": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 14
+   },
+   "DUPLICATE_ROW__enrollments": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 43
+   },
+   "SIGN_FLIP_OUTLIER__exam_results": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__exam_results": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 6
+   },
+   "SCALE_OUTLIER__exam_results": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "DUPLICATE_ROW__exam_results": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "MISSING_VALUE__exams": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 9
+   },
+   "MIXED_DATE_FORMAT__exams": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "CASE_ANOMALY__exams": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "SCALE_OUTLIER__exams": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "DUPLICATE_ROW__exams": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "MISSING_VALUE__fee_types": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__instructors": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "SCALE_OUTLIER__invoice_items": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__invoice_items": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 12
+   },
+   "FK_ORPHAN__invoice_items": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "SIGN_FLIP_OUTLIER__invoice_items": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "DUPLICATE_ROW__invoice_items": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 6
+   },
+   "MIXED_DATE_FORMAT__invoices": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__invoices": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 8
+   },
+   "FK_ORPHAN__invoices": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "DUPLICATE_ROW__invoices": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 5
+   },
+   "MISSING_VALUE__library_cards": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MIXED_DATE_FORMAT__library_cards": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "FK_ORPHAN__payments": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__payments": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 6
+   },
+   "MIXED_DATE_FORMAT__payments": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "DUPLICATE_ROW__payments": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "VALUE_CHANGED_OTHER__people": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.5,
+    "best_rule": 3,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__people": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 7
+   },
+   "CASE_ANOMALY__people": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.3333333333333333,
+    "best_rule": 1,
+    "n_targets": 3
+   },
+   "DUPLICATE_ROW__people": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__programs": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "VALUE_CHANGED_OTHER__programs": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "DUPLICATE_ROW__programs": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__rooms": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 22
+   },
+   "SCALE_OUTLIER__rooms": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "CASE_ANOMALY__rooms": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "DUPLICATE_ROW__rooms": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "CASE_ANOMALY__schedules": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MISSING_VALUE__schedules": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "FK_ORPHAN__schedules": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "DUPLICATE_ROW__schedules": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 6
+   },
+   "MISSING_VALUE__scholarships": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "FK_ORPHAN__sections": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__sections": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "DUPLICATE_ROW__sections": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__semesters": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 2
+   },
+   "MIXED_DATE_FORMAT__semesters": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "MISSING_VALUE__students": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "MIXED_DATE_FORMAT__students": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "MISSING_VALUE__submissions": {
+    "level": "L1",
+    "dimension": "completeness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 27
+   },
+   "SCALE_OUTLIER__submissions": {
+    "level": "L1",
+    "dimension": "accuracy",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "CASE_ANOMALY__submissions": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 4
+   },
+   "FK_ORPHAN__submissions": {
+    "level": "L3",
+    "dimension": "referential_integrity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 7
+   },
+   "MIXED_DATE_FORMAT__submissions": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 3
+   },
+   "VALUE_CHANGED_OTHER__submissions": {
+    "level": "L1",
+    "dimension": "validity",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 1
+   },
+   "DUPLICATE_ROW__submissions": {
+    "level": "L2",
+    "dimension": "uniqueness",
+    "coverage": 0.0,
+    "best_rule": null,
+    "n_targets": 7
+   }
+  },
+  "coverage_by_level": {
+   "L1": 0.011904761904761904,
+   "L2": 0.0,
+   "L3": 0.0
+  },
+  "precision_by_table": {
+   "people": 1.0
+  },
+  "n_rules_fired": 2,
+  "precision_overall": 1.0
+ },
+ "rule_reports": [
+  {
+   "index": 0,
+   "table": "people",
+   "dimension": "completeness",
+   "description": "Проверка наличия пустых имен и фамилий в таблице people.",
+   "sql": "SELECT id FROM people WHERE TRIM(first_name) = '' OR TRIM(last_name) = '';",
+   "status": "ok",
+   "n_rows": 0,
+   "n_hit": 0,
+   "precision": null
+  },
+  {
+   "index": 1,
+   "table": "people",
+   "dimension": "validity",
+   "description": "Проверка корректности пола в таблице people.",
+   "sql": "SELECT id FROM people WHERE gender NOT IN ('female', 'male', 'non_binary', 'unspecified');",
+   "status": "ok",
+   "n_rows": 1,
+   "n_hit": 1,
+   "precision": 1.0
+  },
+  {
+   "index": 2,
+   "table": "departments",
+   "dimension": "completeness",
+   "description": "Проверка отсутствия обязательных полей в таблице departments.",
+   "sql": "SELECT id FROM departments WHERE TRIM(code) = '' OR TRIM(name) = '';",
+   "status": "ok",
+   "n_rows": 0,
+   "n_hit": 0,
+   "precision": null
+  },
+  {
+   "index": 3,
+   "table": "people",
+   "dimension": "validity",
+   "description": "Проверка соответствия формата даты дня рождения в таблице people.",
+   "sql": "SELECT id FROM people WHERE date_of_birth IS NOT NULL AND date_of_birth <> '' AND TRY_CAST(date_of_birth AS DATE) IS NULL;",
+   "status": "ok",
+   "n_rows": 1,
+   "n_hit": 1,
+   "precision": 1.0
+  },
+  {
+   "index": 4,
+   "table": "departments",
+   "dimension": "validity",
+   "description": "Проверка отрицательных бюджетов в таблице departments.",
+   "sql": "SELECT id FROM departments WHERE budget < 0;",
+   "status": "ok",
+   "n_rows": 0,
+   "n_hit": 0,
+   "precision": null
+  },
+  {
+   "index": 5,
+   "table": "courses",
+   "dimension": "completeness",
+   "description": "Проверка отсутствующих курсов в таблице courses.",
+   "sql": "SELECT id FROM courses WHERE TRIM(title) = '';",
+   "status": "ok",
+   "n_rows": 0,
+   "n_hit": 0,
+   "precision": null
+  },
+  {
+   "index": 6,
+   "table": "students",
+   "dimension": "completeness",
+   "description": "Проверка студентов без статуса зачисления в таблице students.",
+   "sql": "SELECT id FROM students WHERE TRIM(status) = '';",
+   "status": "ok",
+   "n_rows": 0,
+   "n_hit": 0,
+   "precision": null
+  },
+  {
+   "index": 7,
+   "table": "programs",
+   "dimension": "completeness",
+   "description": "Проверка программ обучения без названия в таблице programs.",
+   "sql": "SELECT id FROM programs WHERE TRIM(name) = '';",
+   "status": "ok",
+   "n_rows": 0,
+   "n_hit": 0,
+   "precision": null
+  }
+ ]
+}

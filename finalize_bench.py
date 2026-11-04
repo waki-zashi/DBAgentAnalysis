@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parent
 RAW = ROOT / "data" / "uni_raw"
 CLEAN_DB = ROOT / "data" / "clean.duckdb"
 DIRTY_DB = ROOT / "data" / "dirty.duckdb"
+CLEAN_CSV_DIR = ROOT / "data" / "clean_csv"
+DIRTY_CSV_DIR = ROOT / "data" / "dirty_csv"
 JOURNAL = ROOT / "data" / "journal.json"
 SCHEMA_SQL = ROOT / "schema.sql"
 
@@ -161,6 +163,12 @@ def main():
     write_db(CLEAN_DB, schema, clean_data)
     print("пишу dirty.duckdb ...")
     write_db(DIRTY_DB, schema, dirty_data)
+
+    from common import export_csv
+    print("экспортирую clean CSV ...")
+    export_csv(CLEAN_DB, CLEAN_CSV_DIR)
+    print("экспортирую dirty CSV ...")
+    export_csv(DIRTY_DB, DIRTY_CSV_DIR)
 
     clean_ids_by_table = {t: {int(r["id"]) for r in d["rows"]} for t, d in clean_data.items()}
 

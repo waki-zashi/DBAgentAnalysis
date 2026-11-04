@@ -1,10 +1,12 @@
 import json
+import os
 import time
 
 import duckdb
 
 from common import DIRTY_DB
 from prompt import SYSTEM_PROMPT
+from settings import groq_keys
 from tools import TOOLS, format_for_model, run_sql
 
 KICKOFF = ("Начинай исследование БД и формирование правил проверки качества данных. "
@@ -12,23 +14,56 @@ KICKOFF = ("Начинай исследование БД и формирован
 REMINDER = "Используй один из инструментов: run_sql для исследования или submit_rules для финального ответа."
 FINAL_NUDGE = ("Бюджет шагов почти исчерпан. Следующим действием вызови submit_rules "
                "со всеми правилами, которые ты успел сформировать.")
+HIDDEN_RESULT = "[результат скрыт для экономии контекста, см. свои выводы в последующих шагах]"
+KEEP_LAST_TOOL_RESULTS = 6
+
+
+def trim_history(messages, keep_last=KEEP_LAST_TOOL_RESULTS):
+    tool_idx = [i for i, m in enumerate(messages) if m.get("role") == "tool"]
+    hide = set(tool_idx[:-keep_last]) if len(tool_idx) > keep_last else set()
+    if not hide:
+        return messages
+    trimmed = []
+    for i, m in enumerate(messages):
+        if i in hide:
+            m = dict(m)
+            m["content"] = HIDDEN_RESULT
+        trimmed.append(m)
+    return trimmed
 
 
 def call_model(completion_fn, model_cfg, messages, retries=4):
-    kwargs = dict(model=model_cfg["model"], messages=messages, tools=TOOLS,
-                  tool_choice="auto", timeout=180)
-    kwargs.update(model_cfg.get("extra", {}))
+    extra = dict(model_cfg.get("extra", {}))
+    is_local = extra.pop("local", False)
+
+    kwargs = dict(model=model_cfg["model"], messages=trim_history(messages), tools=TOOLS,
+                  tool_choice="auto", timeout=180, max_tokens=4096)
+    kwargs.update(extra)
+    if is_local:
+        kwargs["api_base"] = os.environ.get("LOCAL_LLM_BASE_URL", "")
+        kwargs["api_key"] = "sk-local"
+
+    is_groq = model_cfg["model"].startswith("groq/")
+    keys = groq_keys() if is_groq else []
+    key_idx = 0
+
     delay = 5.0
     for attempt in range(retries + 1):
+        if keys:
+            kwargs["api_key"] = keys[key_idx % len(keys)]
         try:
             return completion_fn(**kwargs)
         except Exception as e:
             text = str(e).lower()
-            transient = any(s in text for s in ("rate", "429", "timeout", "overloaded", "503", "502",
+            rate_limited = any(s in text for s in ("rate", "429", "quota", "limit"))
+            transient = rate_limited or any(s in text for s in ("timeout", "overloaded", "503", "502", "500",
+                                                  "internal server error",
                                                   "temporar", "tool_use_failed",
                                                   "failed to parse tool call arguments"))
             if not transient or attempt == retries:
                 raise
+            if rate_limited and len(keys) > 1:
+                key_idx += 1
             time.sleep(delay)
             delay *= 2
 

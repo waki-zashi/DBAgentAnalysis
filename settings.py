@@ -1,4 +1,5 @@
 import os
+import re
 
 from dotenv import load_dotenv
 
@@ -34,7 +35,30 @@ def provider_of(model_id):
 
 
 def has_key(model_id):
-    return bool(os.environ.get(PROVIDER_KEY[provider_of(model_id)]))
+    provider = provider_of(model_id)
+    if provider == "openai":
+        return bool(os.environ.get("LOCAL_LLM_BASE_URL"))
+    return bool(os.environ.get(PROVIDER_KEY.get(provider, "")))
+
+
+GROQ_NUMBERED_RE = re.compile(r"^GROQ_API_KEY_(\d+)$")
+GROQ_FALLBACK_NAMES = ["GROQ_API_KEY", "GROQ_KEY", "GROQ_TOKEN", "GROQ_API_TOKEN"]
+
+
+def groq_keys():
+    numbered = []
+    for name in os.environ:
+        m = GROQ_NUMBERED_RE.match(name)
+        if m:
+            numbered.append((int(m.group(1)), name))
+    numbered.sort()
+    names = [name for _, name in numbered] + GROQ_FALLBACK_NAMES
+    seen = []
+    for name in names:
+        value = os.environ.get(name, "").strip().strip('"').strip("'")
+        if value and value not in seen:
+            seen.append(value)
+    return seen
 
 
 def mask(value):

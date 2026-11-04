@@ -29,7 +29,12 @@ def validate(sql: str):
     return None
 
 
+def unescape_literal_backslashes(sql: str) -> str:
+    return sql.replace("\\n", "\n").replace("\\t", "\t").replace("\\r", "\r")
+
+
 def run_sql(con: duckdb.DuckDBPyConnection, sql: str, timeout_s: float = 5.0, row_cap=None):
+    sql = unescape_literal_backslashes(sql)
     error = validate(sql)
     if error:
         return {"ok": False, "error": error, "error_kind": "validation"}
