@@ -1,0 +1,194 @@
+[
+ {
+  "role": "system",
+  "content": "Ты — аналитик данных. Тебе дана база данных университета в DuckDB\n(только для чтения, 30 таблиц). Твоя задача: сформировать правила проверки качества данных\n(data quality rules) — SQL-запросы, которые находят проблемные строки.\n\nСхема БД (ограничений PK/FK/NOT NULL в самой БД нет — все ограничения ниже логические,\nих проверка и есть твоя задача):\n\n```sql\nCREATE TABLE addresses (\n    id INTEGER,\n    city VARCHAR,\n    country VARCHAR,\n    postal_code VARCHAR,\n    state VARCHAR,\n    street VARCHAR\n);\n\nCREATE TABLE books (\n    id INTEGER,\n    author VARCHAR,\n    isbn VARCHAR,\n    publication_year INTEGER,\n    publisher VARCHAR,\n    title VARCHAR\n);\n\nCREATE TABLE buildings (\n    id INTEGER,\n    code VARCHAR,\n    floors INTEGER,\n    name VARCHAR\n);\n\nCREATE TABLE clubs (\n    id INTEGER,\n    budget DECIMAL(14,2),\n    description VARCHAR,\n    establishment_date VARCHAR,\n    name VARCHAR\n);\n\nCREATE TABLE fee_types (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    description VARCHAR,\n    name VARCHAR\n);\n\nCREATE TABLE people (\n    id INTEGER,\n    address_id INTEGER,\n    date_of_birth VARCHAR,\n    email VARCHAR,\n    first_name VARCHAR,\n    gender VARCHAR,\n    last_name VARCHAR,\n    phone VARCHAR\n);\n\nCREATE TABLE library_cards (\n    id INTEGER,\n    expiry_date VARCHAR,\n    issue_date VARCHAR,\n    person_id INTEGER\n);\n\nCREATE TABLE book_loans (\n    id INTEGER,\n    book_id INTEGER,\n    due_date VARCHAR,\n    library_card_id INTEGER,\n    loan_date VARCHAR,\n    return_date VARCHAR\n);\n\nCREATE TABLE rooms (\n    id INTEGER,\n    building_id INTEGER,\n    capacity INTEGER,\n    number VARCHAR,\n    type VARCHAR\n);\n\nCREATE TABLE departments (\n    id INTEGER,\n    budget DECIMAL(14,2),\n    code VARCHAR,\n    name VARCHAR,\n    office_room_id INTEGER\n);\n\nCREATE TABLE courses (\n    id INTEGER,\n    code VARCHAR,\n    credits INTEGER,\n    department_id INTEGER,\n    description VARCHAR,\n    title VARCHAR\n);\n\nCREATE TABLE course_materials (\n    id INTEGER,\n    book_id INTEGER,\n    course_id INTEGER,\n    is_required BOOLEAN\n);\n\nCREATE TABLE course_prerequisites (\n    id INTEGER,\n    course_id INTEGER,\n    prerequisite_course_id INTEGER\n);\n\nCREATE TABLE instructors (\n    id INTEGER,\n    department_id INTEGER,\n    person_id INTEGER,\n    rank VARCHAR,\n    salary DECIMAL(14,2)\n);\n\nCREATE TABLE programs (\n    id INTEGER,\n    credits_required INTEGER,\n    degree_level VARCHAR,\n    department_id INTEGER,\n    name VARCHAR\n);\n\nCREATE TABLE scholarships (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    name VARCHAR,\n    provider VARCHAR,\n    type VARCHAR\n);\n\nCREATE TABLE semesters (\n    id INTEGER,\n    end_date VARCHAR,\n    season VARCHAR,\n    start_date VARCHAR,\n    year INTEGER\n);\n\nCREATE TABLE sections (\n    id INTEGER,\n    capacity INTEGER,\n    course_id INTEGER,\n    instructor_id INTEGER,\n    number INTEGER,\n    room_id INTEGER,\n    semester_id INTEGER\n);\n\nCREATE TABLE assignments (\n    id INTEGER,\n    description VARCHAR,\n    due_date VARCHAR,\n    max_points INTEGER,\n    section_id INTEGER,\n    title VARCHAR\n);\n\nCREATE TABLE exams (\n    id INTEGER,\n    duration_minutes INTEGER,\n    exam_date VARCHAR,\n    max_points INTEGER,\n    section_id INTEGER,\n    title VARCHAR\n);\n\nCREATE TABLE schedules (\n    id INTEGER,\n    day_of_week VARCHAR,\n    end_time VARCHAR,\n    section_id INTEGER,\n    start_time VARCHAR\n);\n\nCREATE TABLE students (\n    id INTEGER,\n    advisor_instructor_id INTEGER,\n    enrollment_date VARCHAR,\n    person_id INTEGER,\n    program_id INTEGER,\n    status VARCHAR\n);\n\nCREATE TABLE club_memberships (\n    id INTEGER,\n    club_id INTEGER,\n    join_date VARCHAR,\n    role VARCHAR,\n    student_id INTEGER\n);\n\nCREATE TABLE enrollments (\n    id INTEGER,\n    grade_points DECIMAL(14,2),\n    letter_grade VARCHAR,\n    section_id INTEGER,\n    student_id INTEGER\n);\n\nCREATE TABLE exam_results (\n    id INTEGER,\n    exam_id INTEGER,\n    score INTEGER,\n    student_id INTEGER\n);\n\nCREATE TABLE invoices (\n    id INTEGER,\n    due_date VARCHAR,\n    issue_date VARCHAR,\n    semester_id INTEGER,\n    student_id INTEGER,\n    total_amount DECIMAL(14,2)\n);\n\nCREATE TABLE invoice_items (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    fee_type_id INTEGER,\n    invoice_id INTEGER\n);\n\nCREATE TABLE payments (\n    id INTEGER,\n    amount DECIMAL(14,2),\n    invoice_id INTEGER,\n    payment_date VARCHAR,\n    payment_method VARCHAR\n);\n\nCREATE TABLE student_scholarships (\n    id INTEGER,\n    award_date VARCHAR,\n    scholarship_id INTEGER,\n    student_id INTEGER\n);\n\nCREATE TABLE submissions (\n    id INTEGER,\n    assignment_id INTEGER,\n    feedback VARCHAR,\n    grade_earned INTEGER,\n    student_id INTEGER,\n    submission_time VARCHAR\n);\n\n```\n\n\n## Словарь данных\n\nДатасет описывает университет: люди, адреса, учебные программы, курсы и их секции\n(конкретные запуски курса в семестре), преподаватели и студенты, запись на секции и оценки,\nэкзамены и задания, счета и оплаты, стипендии, библиотека, клубы.\n\nВо всех 30 таблицах первичный ключ называется `id`. Внешних ключей и ограничений NOT NULL\nв самой БД нет (staging-слой) — все связи и ограничения ниже логические, их проверка и есть\nтвоя задача. Столбцы с датой/временем хранятся как VARCHAR: формат по умолчанию — ISO\n(`YYYY-MM-DD` или `YYYY-MM-DD HH:MM:SS`), но могут встречаться искажённые форматы (это дефект).\n\n### Справочники и люди\n- addresses(id, street, city, state, postal_code, country) — адреса людей\n- people(id, first_name, last_name, date_of_birth, gender, email, phone, address_id)\n  — address_id -> addresses.id; gender одно из: female, male, non_binary, unspecified\n- buildings(id, name, code, floors) — корпуса\n- rooms(id, building_id, number, type, capacity) — building_id -> buildings.id;\n  type одно из: classroom, lab, lecture_hall, office, другие варианты специфичны для датасета\n- departments(id, name, code, budget, office_room_id) — office_room_id -> rooms.id\n\n### Учебная программа\n- programs(id, name, degree_level, credits_required, department_id) — department_id -> departments.id\n- courses(id, code, title, description, credits, department_id) — department_id -> departments.id;\n  description у этого датасета хранит формат курса (Lecture, Seminar, Online, Lecture and lab, ...),\n  не свободный текст\n- course_prerequisites(id, course_id, prerequisite_course_id) — обе ссылки -> courses.id;\n  course_id не должен совпадать с prerequisite_course_id (курс не может быть сам себе пререквизитом)\n- course_materials(id, course_id, book_id, is_required) — course_id -> courses.id, book_id -> books.id\n- semesters(id, year, season, start_date, end_date) — season одно из: spring, summer, fall (или похожие);\n  start_date < end_date\n- sections(id, course_id, semester_id, instructor_id, room_id, number, capacity)\n  — course_id -> courses.id, semester_id -> semesters.id, instructor_id -> instructors.id,\n  room_id -> rooms.id\n- schedules(id, section_id, day_of_week, start_time, end_time) — section_id -> sections.id;\n  start_time < end_time\n- instructors(id, person_id, department_id, rank, salary) — person_id -> people.id,\n  department_id -> departments.id; rank, например: lecturer, assistant_professor,\n  associate_professor, professor\n\n### Студенты и оценки\n- students(id, person_id, program_id, advisor_instructor_id, enrollment_date, status)\n  — person_id -> people.id, program_id -> programs.id, advisor_instructor_id -> instructors.id\n- enrollments(id, student_id, section_id, letter_grade, grade_points)\n  — student_id -> students.id, section_id -> sections.id; letter_grade одно из:\n  A, A-, B+, B, B-, C+, C, C-, D, F, W; у W (withdrawn, отчислен с курса) grade_points\n  обычно NULL — ЭТО НЕ ДЕФЕКТ; у остальных letter_grade grade_points обязателен,\n  диапазон обычно 0..4\n- assignments(id, section_id, title, description, due_date, max_points) — section_id -> sections.id\n- submissions(id, assignment_id, student_id, submission_time, grade_earned, feedback)\n  — assignment_id -> assignments.id, student_id -> students.id; 0 <= grade_earned <= max_points\n  соответствующего assignment\n- exams(id, section_id, title, exam_date, duration_minutes, max_points) — section_id -> sections.id\n- exam_results(id, exam_id, student_id, score) — exam_id -> exams.id, student_id -> students.id;\n  0 <= score <= max_points соответствующего exam\n\n### Финансы\n- fee_types(id, name, description, amount) — справочник видов платежей\n- invoices(id, student_id, semester_id, issue_date, due_date, total_amount)\n  — student_id -> students.id, semester_id -> semesters.id; issue_date <= due_date;\n  total_amount должен равняться сумме invoice_items.amount по этому счёту\n- invoice_items(id, invoice_id, fee_type_id, amount) — invoice_id -> invoices.id,\n  fee_type_id -> fee_types.id\n- payments(id, invoice_id, payment_date, amount, payment_method) — invoice_id -> invoices.id;\n  payment_method, например: card, cash, bank_transfer, financial_aid; сумма платежей по счёту\n  не должна превышать его total_amount\n- scholarships(id, name, provider, type, amount) — справочник стипендий\n- student_scholarships(id, student_id, scholarship_id, award_date)\n  — student_id -> students.id, scholarship_id -> scholarships.id\n\n### Библиотека и клубы\n- books(id, title, author, isbn, publisher, publication_year)\n- library_cards(id, person_id, issue_date, expiry_date) — person_id -> people.id;\n  issue_date < expiry_date\n- book_loans(id, library_card_id, book_id, loan_date, due_date, return_date)\n  — library_card_id -> library_cards.id, book_id -> books.id; return_date, если заполнен,\n  должен быть >= loan_date; NULL в return_date означает, что книга ещё не возвращена —\n  ЭТО НЕ ДЕФЕКТ САМО ПО СЕБЕ (дефект — пропуск там, где по смыслу значение обязано быть\n  заполнено, либо явно испорченное/нелогичное значение)\n- clubs(id, name, description, establishment_date, budget)\n- club_memberships(id, club_id, student_id, join_date, role) — club_id -> clubs.id,\n  student_id -> students.id\n\n## Известные законные особенности данных (это не дефекты)\n- У letter_grade = 'W' (withdrawn) grade_points обычно NULL — студент снят с курса без оценки.\n- NULL в book_loans.return_date — книга ещё не возвращена, это нормальное текущее состояние.\n- Суммы (budget, salary, amount, total_amount) распределены с тяжёлым правым хвостом —\n  большие, но правдоподобные значения сами по себе не дефект.\n\n\nИнструкции:\n1. У тебя есть инструмент run_sql — используй его, чтобы исследовать данные: посмотреть\n   распределения значений, найти, какие именно некорректные значения встречаются в столбцах,\n   проверить гипотезы. Диалект SQL — DuckDB (близок к PostgreSQL; доступны, например,\n   regexp_matches, lower/trim, median, quantile_cont, try_cast, оконные функции).\n2. Когда закончишь исследование, вызови submit_rules ровно один раз со списком правил.\n3. Каждое правило — это один SELECT (или WITH ... SELECT), первая колонка результата —\n   первичный ключ (`id`) строки-нарушителя в указанной таблице `table`.\n4. Старайся покрыть разные измерения качества данных: полноту (completeness), допустимость\n   значений (validity), уникальность (uniqueness), согласованность (consistency), точность\n   (accuracy), ссылочную целостность (referential_integrity) — по разным таблицам, а не только\n   по одной-двум.\n5. Не включай в правила законные особенности данных, перечисленные выше.\n6. Ты не можешь и не должен изменять данные — у тебя только read-only доступ."
+ },
+ {
+  "role": "user",
+  "content": "Начинай исследование БД и формирование правил проверки качества данных. Когда закончишь, вызови submit_rules."
+ },
+ {
+  "role": "assistant",
+  "content": ""
+ },
+ {
+  "role": "user",
+  "content": "Используй один из инструментов: run_sql для исследования или submit_rules для финального ответа."
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_bad4aa3e-2143-41a1-86b2-90e54616c801",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\":\"SELECT COUNT(*) FROM people WHERE address_id IS NOT NULL AND address_id NOT IN (SELECT id FROM addresses);\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_bad4aa3e-2143-41a1-86b2-90e54616c801",
+  "name": "run_sql",
+  "content": "count_star()\n0\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_b5c610aa-4531-4588-888b-983f8597ff40",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\":\"SELECT id, date_of_birth FROM people WHERE try_cast(date_of_birth AS DATE) IS NULL AND date_of_birth IS NOT NULL LIMIT 20;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_b5c610aa-4531-4588-888b-983f8597ff40",
+  "name": "run_sql",
+  "content": "id, date_of_birth\n6, 28/08/1993\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_28c6e23c-0962-4ef0-ba37-1b90b65e33aa",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\":\"SELECT 'people' as tbl, id, date_of_birth FROM people WHERE date_of_birth IS NOT NULL AND try_cast(date_of_birth AS DATE) IS NULL AND date_of_birth \\u003c\\u003e '' LIMIT 20;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_28c6e23c-0962-4ef0-ba37-1b90b65e33aa",
+  "name": "run_sql",
+  "content": "tbl, id, date_of_birth\npeople, 6, 28/08/1993\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": ""
+ },
+ {
+  "role": "user",
+  "content": "Используй один из инструментов: run_sql для исследования или submit_rules для финального ответа."
+ },
+ {
+  "role": "assistant",
+  "content": ""
+ },
+ {
+  "role": "user",
+  "content": "Используй один из инструментов: run_sql для исследования или submit_rules для финального ответа."
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_22fd27d7-3ef9-4cde-8784-670322aac25f",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\":\"SELECT id FROM people WHERE gender NOT IN ('female','male','non_binary','unspecified') AND gender IS NOT NULL LIMIT 5;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_22fd27d7-3ef9-4cde-8784-670322aac25f",
+  "name": "run_sql",
+  "content": "id\n39\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_f452bb26-dbaa-489a-b79f-ed118cd64097",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\":\"SELECT id, loan_date, return_date FROM book_loans WHERE return_date IS NOT NULL AND try_cast(loan_date AS DATE) IS NOT NULL AND try_cast(return_date AS DATE) IS NOT NULL AND try_cast(return_date AS DATE) \\u003c try_cast(loan_date AS DATE) LIMIT 5;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_f452bb26-dbaa-489a-b79f-ed118cd64097",
+  "name": "run_sql",
+  "content": "id, loan_date, return_date\n45, 2023-09-21, 2023-09-17\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_a76b59e6-4b9d-4003-a629-07771a023fea",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\":\"SELECT COUNT(*) FROM people WHERE gender NOT IN ('female','male','non_binary','unspecified') AND gender IS NOT NULL;\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_a76b59e6-4b9d-4003-a629-07771a023fea",
+  "name": "run_sql",
+  "content": "count_star()\n1\n(1 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_0f7464fe-f229-4bda-8667-80b1a816b34c",
+    "type": "function",
+    "function": {
+     "name": "run_sql",
+     "arguments": "{\"sql\":\"SELECT id, email FROM people WHERE email IS NOT NULL AND email NOT LIKE '%@%.%';\"}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_0f7464fe-f229-4bda-8667-80b1a816b34c",
+  "name": "run_sql",
+  "content": "id, email\n(0 rows)"
+ },
+ {
+  "role": "assistant",
+  "content": "",
+  "tool_calls": [
+   {
+    "id": "fc_6fc8b0ca-d606-4a1c-b1f8-0c1ee6991194",
+    "type": "function",
+    "function": {
+     "name": "submit_rules",
+     "arguments": "{\"rules\":[{\"description\":\"Неверный формат даты рождения у людей\",\"dimension\":\"validity\",\"sql\":\"SELECT id FROM people WHERE date_of_birth IS NOT NULL AND TRY_CAST(date_of_birth AS DATE) IS NULL AND date_of_birth \\u003c\\u003e ''\",\"table\":\"people\"},{\"description\":\"Неверный gender у людей\",\"dimension\":\"validity\",\"sql\":\"SELECT id FROM people WHERE gender IS NOT NULL AND gender NOT IN ('female','male','non_binary','unspecified')\",\"table\":\"people\"},{\"description\":\"Неверный формат loan_date или return_date (return_date \\u003c loan_date) в book_loans\",\"dimension\":\"consistency\",\"sql\":\"SELECT id FROM book_loans WHERE return_date IS NOT NULL AND TRY_CAST(return_date AS DATE) IS NOT NULL AND TRY_CAST(loan_date AS DATE) IS NOT NULL AND TRY_CAST(return_date AS DATE) \\u003c TRY_CAST(loan_date AS DATE)\",\"table\":\"book_loans\"},{\"description\":\"Неверные ссылки в people.address_id\",\"dimension\":\"referential_integrity\",\"sql\":\"SELECT p.id FROM people p LEFT JOIN addresses a ON p.address_id = a.id WHERE p.address_id IS NOT NULL AND a.id IS NULL\",\"table\":\"people\"},{\"description\":\"Неверные ссылки в instructors.person_id\",\"dimension\":\"referential_integrity\",\"sql\":\"SELECT i.id FROM instructors i LEFT JOIN people p ON i.person_id = p.id WHERE i.person_id IS NOT NULL AND p.id IS NULL\",\"table\":\"instructors\"},{\"description\":\"Неверные ссылки в enrollments.grade_points для буквенных оценок (не W)\",\"dimension\":\"validity\",\"sql\":\"SELECT e.id FROM enrollments e WHERE e.letter_grade != 'W' AND (e.grade_points IS NULL OR e.grade_points \\u003c 0 OR e.grade_points \\u003e 4)\",\"table\":\"enrollments\"},{\"description\":\"Неверные ссылки в enrollments.student_id\",\"dimension\":\"referential_integrity\",\"sql\":\"SELECT e.id FROM enrollments e LEFT JOIN students s ON e.student_id = s.id WHERE s.id IS NULL\",\"table\":\"enrollments\"},{\"description\":\"Неверные ссылки в sections.room_id\",\"dimension\":\"referential_integrity\",\"sql\":\"SELECT s.id FROM sections s LEFT JOIN rooms r ON s.room_id = r.id WHERE s.room_id IS NOT NULL AND r.id IS NULL\",\"table\":\"sections\"},{\"description\":\"Неверные ссылки в assignments.assignment_id\",\"dimension\":\"referential_integrity\",\"sql\":\"SELECT a.id FROM assignments a LEFT JOIN assignments b ON a.id = b.id WHERE a.assignment_id IS NULL OR NOT EXISTS (SELECT 1 FROM assignments WHERE id = a.assignment_id)\",\"table\":\"assignments\"}]}"
+    }
+   }
+  ]
+ },
+ {
+  "role": "tool",
+  "tool_call_id": "fc_6fc8b0ca-d606-4a1c-b1f8-0c1ee6991194",
+  "name": "submit_rules",
+  "content": "Rules received. Episode finished."
+ }
+]

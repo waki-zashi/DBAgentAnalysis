@@ -27,7 +27,7 @@ CREATE TABLE clubs (
     id INTEGER,
     budget DECIMAL(14,2),
     description VARCHAR,
-    establishment_date DATE,
+    establishment_date VARCHAR,
     name VARCHAR
 );
 
@@ -41,7 +41,7 @@ CREATE TABLE fee_types (
 CREATE TABLE people (
     id INTEGER,
     address_id INTEGER,
-    date_of_birth DATE,
+    date_of_birth VARCHAR,
     email VARCHAR,
     first_name VARCHAR,
     gender VARCHAR,
@@ -51,18 +51,18 @@ CREATE TABLE people (
 
 CREATE TABLE library_cards (
     id INTEGER,
-    expiry_date DATE,
-    issue_date DATE,
+    expiry_date VARCHAR,
+    issue_date VARCHAR,
     person_id INTEGER
 );
 
 CREATE TABLE book_loans (
     id INTEGER,
     book_id INTEGER,
-    due_date DATE,
+    due_date VARCHAR,
     library_card_id INTEGER,
-    loan_date DATE,
-    return_date DATE
+    loan_date VARCHAR,
+    return_date VARCHAR
 );
 
 CREATE TABLE rooms (
@@ -129,9 +129,9 @@ CREATE TABLE scholarships (
 
 CREATE TABLE semesters (
     id INTEGER,
-    end_date DATE,
+    end_date VARCHAR,
     season VARCHAR,
-    start_date DATE,
+    start_date VARCHAR,
     year INTEGER
 );
 
@@ -148,7 +148,7 @@ CREATE TABLE sections (
 CREATE TABLE assignments (
     id INTEGER,
     description VARCHAR,
-    due_date TIMESTAMP,
+    due_date VARCHAR,
     max_points INTEGER,
     section_id INTEGER,
     title VARCHAR
@@ -157,7 +157,7 @@ CREATE TABLE assignments (
 CREATE TABLE exams (
     id INTEGER,
     duration_minutes INTEGER,
-    exam_date TIMESTAMP,
+    exam_date VARCHAR,
     max_points INTEGER,
     section_id INTEGER,
     title VARCHAR
@@ -166,15 +166,15 @@ CREATE TABLE exams (
 CREATE TABLE schedules (
     id INTEGER,
     day_of_week VARCHAR,
-    end_time TIME,
+    end_time VARCHAR,
     section_id INTEGER,
-    start_time TIME
+    start_time VARCHAR
 );
 
 CREATE TABLE students (
     id INTEGER,
     advisor_instructor_id INTEGER,
-    enrollment_date DATE,
+    enrollment_date VARCHAR,
     person_id INTEGER,
     program_id INTEGER,
     status VARCHAR
@@ -183,7 +183,7 @@ CREATE TABLE students (
 CREATE TABLE club_memberships (
     id INTEGER,
     club_id INTEGER,
-    join_date DATE,
+    join_date VARCHAR,
     role VARCHAR,
     student_id INTEGER
 );
@@ -205,8 +205,8 @@ CREATE TABLE exam_results (
 
 CREATE TABLE invoices (
     id INTEGER,
-    due_date DATE,
-    issue_date DATE,
+    due_date VARCHAR,
+    issue_date VARCHAR,
     semester_id INTEGER,
     student_id INTEGER,
     total_amount DECIMAL(14,2)
@@ -223,13 +223,13 @@ CREATE TABLE payments (
     id INTEGER,
     amount DECIMAL(14,2),
     invoice_id INTEGER,
-    payment_date DATE,
+    payment_date VARCHAR,
     payment_method VARCHAR
 );
 
 CREATE TABLE student_scholarships (
     id INTEGER,
-    award_date DATE,
+    award_date VARCHAR,
     scholarship_id INTEGER,
     student_id INTEGER
 );
@@ -240,5 +240,5 @@ CREATE TABLE submissions (
     feedback VARCHAR,
     grade_earned INTEGER,
     student_id INTEGER,
-    submission_time TIMESTAMP
+    submission_time VARCHAR
 );

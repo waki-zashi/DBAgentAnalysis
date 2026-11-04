@@ -24,7 +24,9 @@ def call_model(completion_fn, model_cfg, messages, retries=4):
             return completion_fn(**kwargs)
         except Exception as e:
             text = str(e).lower()
-            transient = any(s in text for s in ("rate", "429", "timeout", "overloaded", "503", "502", "temporar"))
+            transient = any(s in text for s in ("rate", "429", "timeout", "overloaded", "503", "502",
+                                                  "temporar", "tool_use_failed",
+                                                  "failed to parse tool call arguments"))
             if not transient or attempt == retries:
                 raise
             time.sleep(delay)

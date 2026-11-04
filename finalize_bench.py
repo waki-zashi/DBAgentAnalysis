@@ -83,10 +83,19 @@ PG_TO_DUCKDB = [
 ]
 
 
+DATE_TYPE_RE = re.compile(r'\b(date|timestamp|time)\b', re.IGNORECASE)
+
+
 def pg_type_to_duckdb(t):
     for pat, repl in PG_TO_DUCKDB:
         t = pat.sub(repl, t)
     return t.strip()
+
+
+def pg_type_to_duckdb_relaxed(t):
+    if DATE_TYPE_RE.search(t):
+        return "VARCHAR"
+    return pg_type_to_duckdb(t)
 
 
 def to_duckdb_literal(v, col_type):
@@ -106,7 +115,7 @@ def build_schema_sql(schema):
     lines = []
     for t, cols in schema.items():
         lines.append(f"CREATE TABLE {t} (")
-        col_lines = [f"    {c} {pg_type_to_duckdb(ty)}" for c, ty in cols]
+        col_lines = [f"    {c} {pg_type_to_duckdb_relaxed(ty)}" for c, ty in cols]
         lines.append(",\n".join(col_lines))
         lines.append(");\n")
     text = "\n".join(lines)

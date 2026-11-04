@@ -18,13 +18,14 @@ CHANGES_MD = ROOT / "CHANGES.md"
 CLEAN_MANIFEST = DATA / "clean_manifest.json"
 DIRTY_MANIFEST = DATA / "dirty_manifest.json"
 
-TABLES = {
-    "customers": "customer_id",
-    "products": "product_id",
-    "orders": "order_id",
-    "order_items": "order_item_id",
-    "payments": "payment_id",
-}
+TABLES = {t: "id" for t in (
+    "addresses", "books", "buildings", "clubs", "fee_types", "people",
+    "library_cards", "book_loans", "rooms", "departments", "courses",
+    "course_materials", "course_prerequisites", "instructors", "programs",
+    "scholarships", "semesters", "sections", "assignments", "exams",
+    "schedules", "students", "club_memberships", "enrollments", "exam_results",
+    "invoices", "invoice_items", "payments", "student_scholarships", "submissions",
+)}
 
 
 def write_db(path, frames):
