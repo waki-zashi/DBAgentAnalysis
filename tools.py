@@ -117,7 +117,7 @@ TOOLS = [
                             "type": "object",
                             "properties": {
                                 "table": {"type": "string",
-                                         "description": "One of: customers, products, orders, order_items, payments."},
+                                         "description": "Name of one of the 30 tables in the schema above."},
                                 "dimension": {"type": "string",
                                              "description": "Data quality dimension, e.g. completeness, validity, "
                                                             "uniqueness, consistency, accuracy, referential_integrity."},
